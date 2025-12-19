@@ -5,7 +5,7 @@
     "buildCommand": "npm install && npm run build"
   },
   "deploy": {
-    "startCommand": "cds run",
+    "startCommand": "npm run build:server && CDS_ENV=development cds run",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }

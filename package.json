@@ -17,7 +17,7 @@
   "scripts": {
     "build": "npm run build:server",
     "build:server": "tsc",
-    "start": "npm run build:server && cds run",
+    "start": "npm run build:server && CDS_ENV=development cds run",
     "watch": "cds watch",
     "dev": "cds watch"
   },
@@ -26,6 +26,9 @@
       "db": {
         "kind": "sqlite",
         "database": "db.sqlite"
+      },
+      "auth": {
+        "impl": "./srv/auth"
       }
     }
   },

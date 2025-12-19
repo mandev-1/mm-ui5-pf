@@ -2,6 +2,9 @@
   "requires": {
     "db": {
       "kind": "sqlite"
+    },
+    "auth": {
+      "impl": "./srv/auth"
     }
   },
   "cds": {

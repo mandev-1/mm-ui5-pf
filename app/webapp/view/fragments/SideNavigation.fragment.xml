@@ -6,7 +6,7 @@
 		<tnt:NavigationList>
 			<tnt:NavigationListItem text="Home" key="home" icon="sap-icon://home" press=".onNavigationItemSelect" />
 			<tnt:NavigationListItem text="Books" key="books" icon="sap-icon://book" press=".onNavigationItemSelect" />
-			<tnt:NavigationListGroup text="System &amp; Administration Management">
+			<tnt:NavigationListGroup text="Tech Stack and Articles I Maintain">
 				<tnt:NavigationListItem text="Business Analytics" icon="sap-icon://bar-chart" />
 				<tnt:NavigationListItem text="SAP Training Portal and Learning Management System" icon="sap-icon://course-book" href="https://sap.com" target="_blank" selectable="false" />
 				<tnt:NavigationListItem text="System Administration and Configuration Management" icon="sap-icon://manager-insight" >
@@ -24,11 +24,10 @@
 				</tnt:NavigationListItem>
 				<tnt:NavigationListItem text="Notifications and Alerts" icon="sap-icon://message-information" />
 			</tnt:NavigationListGroup>
-			<tnt:NavigationListGroup text="Business operations">
-				<tnt:NavigationListItem text="Resource Planning and Business Management Solutions My Area" icon="sap-icon://business-one" />
+			<tnt:NavigationListGroup text="Selected Projects">
+				<tnt:NavigationListItem text="CAP Application" icon="sap-icon://business-one" />
 				<tnt:NavigationListItem text="Sales Management and Revenue Operations" icon="sap-icon://crm-sales" />
-				<tnt:NavigationListItem text="SAP Best Practices" icon="sap-icon://learning-assistant" />
-				<tnt:NavigationListItem text="Customer Relationship Management" icon="sap-icon://account" selectable="false" >
+				<tnt:NavigationListItem text="Learning Journeys" icon="sap-icon://learning-assistant" selectable="false" >
 					<tnt:NavigationListItem text="Contact Information and Communication History" />
 					<tnt:NavigationListItem text="Business Partners" />
 					<tnt:NavigationListItem text="Strategic Relationships" />

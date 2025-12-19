@@ -7,8 +7,6 @@ const cds_1 = __importDefault(require("@sap/cds"));
 require("./handlers/CatalogService");
 cds_1.default.on('bootstrap', (app) => {
     // Add custom middleware if needed
-    // Note: @sap/xssec is installed to satisfy CAP's auth requirement
-    // but we're not enforcing authentication in this simple deployment
 });
 module.exports = cds_1.default.server;
 //# sourceMappingURL=server.js.map
