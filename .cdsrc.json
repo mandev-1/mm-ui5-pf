@@ -1,0 +1,13 @@
+{
+  "requires": {
+    "db": {
+      "kind": "sqlite"
+    }
+  },
+  "cds": {
+    "folders": {
+      "app": "app"
+    }
+  }
+}
+

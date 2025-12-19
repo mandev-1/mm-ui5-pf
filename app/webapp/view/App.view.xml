@@ -1,0 +1,57 @@
+<mvc:View
+	controllerName="com.mmd.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:tnt="sap.tnt"
+	height="100%"
+	id="AppView">
+	<tnt:ToolPage id="toolPage">
+		<tnt:header>
+			<f:ShellBar
+				title="MMD"
+				secondTitle="Application"
+				showMenuButton="true"
+				homeIcon="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg.adapt.svg/1493030643828.svg"
+				showCopilot="true"
+				showNotifications="true"
+				menuButtonPressed="onMenuButtonPress"
+				homeIconPressed="onHomeIconPress">
+				<f:menu>
+					<Menu>
+						<MenuItem 
+							text="{= ${language>/mode} === 'human' ? 'Switch to Corporate Mode' : 'Switch to Human Mode'}" 
+							icon="{= ${language>/mode} === 'human' ? 'sap-icon://business-objects-experience' : 'sap-icon://employee'}" 
+							press="onLanguageToggle" />
+						<MenuItem text="About" icon="sap-icon://information" press="onAboutPress" />
+					</Menu>
+				</f:menu>
+				<f:profile>
+					<Avatar
+						src="sap-icon://employee"
+						displaySize="S"
+						displayShape="Circle" />
+				</f:profile>
+				<f:searchManager>
+					<f:SearchManager/>
+				</f:searchManager>
+			</f:ShellBar>
+		</tnt:header>
+		<tnt:sideContent>
+			<core:Fragment
+				fragmentName="com.mmd.view.fragments.SideNavigation"
+				type="XML" />
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<NavContainer id="pageContainer" initialPage="home">
+				<pages>
+					<mvc:XMLView viewName="com.mmd.view.Home" id="home" />
+					<mvc:XMLView viewName="com.mmd.view.Books" id="books" />
+				</pages>
+			</NavContainer>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>
+

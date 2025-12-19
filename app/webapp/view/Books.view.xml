@@ -1,0 +1,102 @@
+<mvc:View
+	controllerName="com.mmd.controller.Books"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<ScrollContainer horizontal="false" vertical="true" height="100%">
+		<l:VerticalLayout class="sapUiContentPadding" width="100%">
+			<l:content>
+				<!-- Form Section -->
+				<Panel headerText="Add New Book" class="sapUiResponsiveMargin" width="auto">
+					<content>
+						<l:VerticalLayout width="100%">
+							<l:content>
+								<Label text="Title" labelFor="titleInput" class="sapUiSmallMarginTop" />
+								<Input
+									id="titleInput"
+									value="{form>/title}"
+									placeholder="Enter book title"
+									class="sapUiSmallMarginBottom"
+									width="100%" />
+								
+								<Label text="Stock" labelFor="stockInput" class="sapUiSmallMarginTop" />
+								<Input
+									id="stockInput"
+									type="Number"
+									value="{form>/stock}"
+									placeholder="Enter stock quantity"
+									class="sapUiSmallMarginBottom"
+									width="100%" />
+								
+								<Button
+									text="Add Book"
+									type="Emphasized"
+									press="onAddBook"
+									class="sapUiSmallMarginTop" />
+							</l:content>
+						</l:VerticalLayout>
+					</content>
+				</Panel>
+
+				<!-- Books List Section -->
+				<Panel headerText="Books" class="sapUiResponsiveMargin" width="auto">
+					<content>
+						<Table
+							id="booksTable"
+							items="{
+								path: '/Books',
+								parameters: {
+									$count: true
+								}
+							}"
+							mode="SingleSelectMaster"
+							growing="true"
+							growingThreshold="10"
+							noDataText="No books available">
+							<headerToolbar>
+								<OverflowToolbar>
+									<Title text="Books" level="H2" />
+									<ToolbarSpacer />
+									<Button
+										icon="sap-icon://refresh"
+										press="onRefresh"
+										tooltip="Refresh" />
+								</OverflowToolbar>
+							</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="ID" />
+								</Column>
+								<Column>
+									<Text text="Title" />
+								</Column>
+								<Column>
+									<Text text="Stock" />
+								</Column>
+								<Column>
+									<Text text="Actions" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{ID}" />
+										<Text text="{title}" />
+										<Text text="{stock}" />
+										<Button
+											icon="sap-icon://delete"
+											type="Transparent"
+											press="onDeleteBook"
+											tooltip="Delete" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Panel>
+			</l:content>
+		</l:VerticalLayout>
+	</ScrollContainer>
+</mvc:View>
+

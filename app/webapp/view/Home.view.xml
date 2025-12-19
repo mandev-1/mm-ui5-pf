@@ -1,0 +1,63 @@
+<mvc:View
+	controllerName="com.mmd.controller.Home"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<ScrollContainer horizontal="false" vertical="true" height="100%">
+		<l:VerticalLayout class="sapUiContentPadding" width="100%">
+			<l:content>
+				<Title 
+					text="{= ${language>/mode} === 'human' ? 'I build CAP Applications' : 'Enterprise-Grade CAP Application Development'}" 
+					level="H1" 
+					class="sapUiSmallMarginBottom" />
+				<Text 
+					text="{= ${language>/mode} === 'human' ? 'Hey! Welcome to my corner of the internet. I build cool stuff with SAP CAP.' : 'Welcome to our enterprise application platform. We deliver scalable cloud solutions using SAP Cloud Application Programming.'}" 
+					class="sapUiMediumMarginBottom" />
+				
+				<Panel headerText="{= ${language>/mode} === 'human' ? 'Cool Stuff I Build' : 'Portfolio & Solutions'}" class="sapUiResponsiveMargin" width="auto">
+					<content>
+						<l:VerticalLayout width="100%">
+							<l:content>
+								<Text 
+									text="{= ${language>/mode} === 'human' ? 'Here are some of the things I&apos;ve been working on:' : 'Our comprehensive portfolio includes the following solution offerings:'}" 
+									class="sapUiSmallMarginBottom" />
+								
+								<List class="sapUiNoContentPadding">
+									<StandardListItem
+										title="{= ${language>/mode} === 'human' ? 'CAP Apps with UI5 Frontends' : 'Full-Stack CAP Applications with Modern UI5 Interfaces'}"
+										description="{= ${language>/mode} === 'human' ? 'Building end-to-end apps that actually work' : 'Enterprise-grade applications leveraging SAP Cloud Application Programming Model with responsive UI5 user interfaces'}"
+										icon="sap-icon://application"
+										type="Active" />
+									<StandardListItem
+										title="{= ${language>/mode} === 'human' ? 'OData Services' : 'RESTful OData Service Architecture'}"
+										description="{= ${language>/mode} === 'human' ? 'Creating APIs that make sense' : 'Robust OData V4 service implementations following industry best practices'}"
+										icon="sap-icon://database"
+										type="Active" />
+									<StandardListItem
+										title="{= ${language>/mode} === 'human' ? 'Deployment Solutions' : 'Cloud Deployment & DevOps Automation'}"
+										description="{= ${language>/mode} === 'human' ? 'Getting stuff live on Railway and other platforms' : 'Streamlined deployment pipelines and infrastructure automation for cloud platforms'}"
+										icon="sap-icon://cloud"
+										type="Active" />
+									<StandardListItem
+										title="{= ${language>/mode} === 'human' ? 'Custom Business Logic' : 'Enterprise Business Process Automation'}"
+										description="{= ${language>/mode} === 'human' ? 'Solving real business problems with code' : 'Tailored business logic implementation aligned with organizational requirements'}"
+										icon="sap-icon://business-objects-experience"
+										type="Active" />
+								</List>
+							</l:content>
+						</l:VerticalLayout>
+					</content>
+				</Panel>
+				
+				<Panel headerText="{= ${language>/mode} === 'human' ? 'What I&apos;m About' : 'Overview'}" class="sapUiResponsiveMargin" width="auto">
+					<content>
+						<Text 
+							text="{= ${language>/mode} === 'human' ? 'I love building things that solve real problems. If you need a CAP app built or want to chat about tech, hit me up!' : 'Navigate to different sections using the sidebar menu to explore our comprehensive solution offerings.'}" />
+					</content>
+				</Panel>
+			</l:content>
+		</l:VerticalLayout>
+	</ScrollContainer>
+</mvc:View>
+

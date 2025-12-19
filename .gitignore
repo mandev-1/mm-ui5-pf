@@ -1,0 +1,12 @@
+node_modules/
+*.log
+*.sqlite
+*.sqlite-journal
+db/data/
+.cds/
+dist/
+*.js.map
+*.d.ts
+.env
+.DS_Store
+
