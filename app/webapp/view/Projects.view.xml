@@ -3,24 +3,161 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
-	height="100%">
-	<Page title="Projects" showNavButton="false">
+	xmlns:core="sap.ui.core"
+	height="100%"
+	class="projectsView">
+	<Page title="Projects" showNavButton="false" class="sapUiNoContentPadding">
 		<content>
 			<ScrollContainer horizontal="false" vertical="true" height="100%">
-				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:VerticalLayout class="sapUiLargeMargin" width="100%">
 					<l:content>
 						<Title 
-							text="My Projects"
+							text="SAP Projects"
 							level="H1" 
 							class="sapUiSmallMarginBottom" />
 						<Text 
-							text="Here are some of the projects I've been working on."
-							class="sapUiMediumMarginBottom" />
-						<!-- Projects content will go here -->
+							text="A collection of SAP-focused projects I've worked on."
+							class="sapUiMediumMarginBottom projectsSubtitle" />
+						
+						<!-- Projects Grid -->
+						<l:Grid defaultSpan="L4 M6 S12" class="sapUiSmallMarginTop">
+							<l:content>
+								<!-- Project Card 1 -->
+								<Panel class="projectCard">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="CAP Application Framework" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<l:VerticalLayout class="sapUiContentPadding">
+											<core:Icon src="sap-icon://application" size="3rem" class="sapUiSmallMarginBottom" color="#0070f3" />
+											<Text 
+												text="Enterprise-grade CAP applications with OData V4 services, UI5 frontends, and cloud deployment." 
+												class="sapUiSmallMarginTop" />
+											<l:HorizontalLayout class="sapUiSmallMarginTop">
+												<Label text="CAP" class="techTag" />
+												<Label text="UI5" class="techTag" />
+												<Label text="OData" class="techTag" />
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+								<!-- Project Card 2 -->
+								<Panel class="projectCard">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="SAP BTP Integration" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<l:VerticalLayout class="sapUiContentPadding">
+											<core:Icon src="sap-icon://cloud" size="3rem" class="sapUiSmallMarginBottom" color="#0070f3" />
+											<Text 
+												text="Cloud-native solutions on SAP Business Technology Platform with automated CI/CD pipelines." 
+												class="sapUiSmallMarginTop" />
+											<l:HorizontalLayout class="sapUiSmallMarginTop">
+												<Label text="BTP" class="techTag" />
+												<Label text="Cloud" class="techTag" />
+												<Label text="DevOps" class="techTag" />
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+								<!-- Project Card 3 -->
+								<Panel class="projectCard">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Fiori Elements Apps" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<l:VerticalLayout class="sapUiContentPadding">
+											<core:Icon src="sap-icon://business-objects-experience" size="3rem" class="sapUiSmallMarginBottom" color="#0070f3" />
+											<Text 
+												text="Rapid application development using Fiori Elements with custom extensions and annotations." 
+												class="sapUiSmallMarginTop" />
+											<l:HorizontalLayout class="sapUiSmallMarginTop">
+												<Label text="Fiori" class="techTag" />
+												<Label text="CDS" class="techTag" />
+												<Label text="Annotations" class="techTag" />
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+								<!-- Project Card 4 -->
+								<Panel class="projectCard">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="SAP Integration Suite" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<l:VerticalLayout class="sapUiContentPadding">
+											<core:Icon src="sap-icon://connected" size="3rem" class="sapUiSmallMarginBottom" color="#0070f3" />
+											<Text 
+												text="API management and integration scenarios connecting SAP and non-SAP systems." 
+												class="sapUiSmallMarginTop" />
+											<l:HorizontalLayout class="sapUiSmallMarginTop">
+												<Label text="API" class="techTag" />
+												<Label text="Integration" class="techTag" />
+												<Label text="REST" class="techTag" />
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+								<!-- Project Card 5 -->
+								<Panel class="projectCard">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="SAP Analytics Cloud" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<l:VerticalLayout class="sapUiContentPadding">
+											<core:Icon src="sap-icon://business-objects-mobile" size="3rem" class="sapUiSmallMarginBottom" color="#0070f3" />
+											<Text 
+												text="Custom analytics dashboards and data models for business intelligence and reporting." 
+												class="sapUiSmallMarginTop" />
+											<l:HorizontalLayout class="sapUiSmallMarginTop">
+												<Label text="SAC" class="techTag" />
+												<Label text="Analytics" class="techTag" />
+												<Label text="BI" class="techTag" />
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+								<!-- Project Card 6 -->
+								<Panel class="projectCard">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="SAP Build Apps" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<l:VerticalLayout class="sapUiContentPadding">
+											<core:Icon src="sap-icon://create" size="3rem" class="sapUiSmallMarginBottom" color="#0070f3" />
+											<Text 
+												text="Low-code mobile and web applications built with SAP Build for rapid prototyping." 
+												class="sapUiSmallMarginTop" />
+											<l:HorizontalLayout class="sapUiSmallMarginTop">
+												<Label text="Build" class="techTag" />
+												<Label text="Low-code" class="techTag" />
+												<Label text="Mobile" class="techTag" />
+											</l:HorizontalLayout>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+							</l:content>
+						</l:Grid>
 					</l:content>
 				</l:VerticalLayout>
 			</ScrollContainer>
 		</content>
 	</Page>
 </mvc:View>
-

@@ -3,24 +3,124 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
-	height="100%">
-	<Page title="Articles I Maintain" showNavButton="false">
+	xmlns:core="sap.ui.core"
+	height="100%"
+	class="articlesView">
+	<Page title="Articles I Maintain" showNavButton="false" class="sapUiNoContentPadding">
 		<content>
 			<ScrollContainer horizontal="false" vertical="true" height="100%">
-				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:VerticalLayout class="sapUiLargeMargin" width="100%">
 					<l:content>
 						<Title 
-							text="Articles I Maintain"
+							text="SAP Articles &amp; Documentation"
 							level="H1" 
 							class="sapUiSmallMarginBottom" />
 						<Text 
-							text="Articles and documentation I maintain."
-							class="sapUiMediumMarginBottom" />
-						<!-- Articles content will go here -->
+							text="Articles, guides, and documentation I maintain focused on SAP technologies."
+							class="sapUiMediumMarginBottom articlesSubtitle" />
+						
+						<!-- Articles List -->
+						<l:VerticalLayout class="sapUiMediumMarginTop">
+							<l:content>
+								<!-- Article 1 -->
+								<Panel class="articleCard sapUiSmallMarginBottom">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Getting Started with SAP CAP" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<Text 
+											text="A comprehensive guide to building applications with the SAP Cloud Application Programming model, covering CDS, services, and UI5 integration." 
+											class="sapUiSmallMarginTop" />
+										<Link 
+											text="Read more →"
+											href="https://cap.cloud.sap"
+											target="_blank"
+											class="sapUiSmallMarginTop" />
+									</content>
+								</Panel>
+								
+								<!-- Article 2 -->
+								<Panel class="articleCard sapUiSmallMarginBottom">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="SAP UI5 Best Practices" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<Text 
+											text="Best practices for building modern UI5 applications, including MVC patterns, routing, and responsive design." 
+											class="sapUiSmallMarginTop" />
+										<Link 
+											text="Read more →"
+											href="https://sapui5.hana.ondemand.com"
+											target="_blank"
+											class="sapUiSmallMarginTop" />
+									</content>
+								</Panel>
+								
+								<!-- Article 3 -->
+								<Panel class="articleCard sapUiSmallMarginBottom">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="OData V4 in CAP Applications" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<Text 
+											text="Deep dive into OData V4 service implementation, entity relationships, and query options in CAP applications." 
+											class="sapUiSmallMarginTop" />
+										<Link 
+											text="Read more →"
+											href="https://cap.cloud.sap/docs/guides/odata"
+											target="_blank"
+											class="sapUiSmallMarginTop" />
+									</content>
+								</Panel>
+								
+								<!-- Article 4 -->
+								<Panel class="articleCard sapUiSmallMarginBottom">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="Deploying CAP Apps to Cloud" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<Text 
+											text="Step-by-step guide to deploying CAP applications to SAP BTP, AWS, Azure, and other cloud platforms." 
+											class="sapUiSmallMarginTop" />
+										<Link 
+											text="Read more →"
+											href="https://cap.cloud.sap/docs/guides/deployment"
+											target="_blank"
+											class="sapUiSmallMarginTop" />
+									</content>
+								</Panel>
+								
+								<!-- Article 5 -->
+								<Panel class="articleCard sapUiSmallMarginBottom">
+									<headerToolbar>
+										<Toolbar>
+											<Title text="SAP Fiori Design Guidelines" level="H3" />
+										</Toolbar>
+									</headerToolbar>
+									<content>
+										<Text 
+											text="Understanding SAP Fiori design principles, user experience patterns, and accessibility standards." 
+											class="sapUiSmallMarginTop" />
+										<Link 
+											text="Read more →"
+											href="https://experience.sap.com/fiori-design-web"
+											target="_blank"
+											class="sapUiSmallMarginTop" />
+									</content>
+								</Panel>
+							</l:content>
+						</l:VerticalLayout>
 					</l:content>
 				</l:VerticalLayout>
 			</ScrollContainer>
 		</content>
 	</Page>
 </mvc:View>
-

@@ -170,6 +170,11 @@ button[type="submit"]:hover {
 .homeContainer {
     height: 100% !important;
     width: 100% !important;
+    display: flex !important;
+}
+
+.homeContentWidth {
+    width: 90% !important;
 }
 
 .homeLeftContent {
@@ -178,12 +183,26 @@ button[type="submit"]:hover {
     height: 100% !important;
     display: flex !important;
     flex-direction: column !important;
+    width: 66.67% !important;
+    flex: 0 0 66.67% !important;
 }
 
 .homeRightContent {
     background-color: #000000;
     padding: 0 !important;
     height: 100% !important;
+    width: 33.33% !important;
+    flex: 0 0 33.33% !important;
+}
+
+.whoAmIPanel {
+    background-color: #ffffff !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06) !important;
+}
+
+.whoAmIPanel .sapMPanelContent {
+    padding: 1rem !important;
 }
 
 .homeHeading {
@@ -311,5 +330,110 @@ button[type="submit"]:hover {
     .homeDescription {
         font-size: 1rem !important;
     }
+}
+
+/* Projects Page Styles */
+.projectsView {
+    background-color: #fafafa;
+}
+
+.projectsSubtitle {
+    font-size: 1.125rem !important;
+    color: #666666 !important;
+    line-height: 1.6 !important;
+}
+
+.projectCard {
+    margin-bottom: 1.5rem !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    height: 100% !important;
+    background-color: #ffffff !important;
+}
+
+.projectCard:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.projectCard .sapMPanelHeader {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.projectCard .sapMPanelContent {
+    padding: 1.5rem !important;
+}
+
+.techTag {
+    background-color: #f0f0f0 !important;
+    color: #333333 !important;
+    padding: 0.25rem 0.75rem !important;
+    border-radius: 1rem !important;
+    font-size: 0.875rem !important;
+    margin-right: 0.5rem !important;
+    margin-top: 0.5rem !important;
+    display: inline-block !important;
+    font-weight: 500 !important;
+}
+
+/* Articles Page Styles */
+.articlesView {
+    background-color: #fafafa;
+}
+
+.articlesSubtitle {
+    font-size: 1.125rem !important;
+    color: #666666 !important;
+    line-height: 1.6 !important;
+}
+
+.articleCard {
+    border-radius: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    background-color: #ffffff !important;
+}
+
+.articleCard:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+.articleCard .sapMPanelHeader {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.articleCard .sapMPanelContent {
+    padding: 1.5rem !important;
+}
+
+.articleCard .sapMLink {
+    color: #0070f3 !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+.articleCard .sapMLink:hover {
+    text-decoration: underline !important;
+}
+
+.articlesList {
+    background-color: transparent !important;
+}
+
+.articlesList .sapMSLI {
+    background-color: #ffffff !important;
+    border-radius: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06) !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.articlesList .sapMSLI:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
