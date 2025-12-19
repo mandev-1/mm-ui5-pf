@@ -1,0 +1,26 @@
+<mvc:View
+	controllerName="com.mmd.controller.Articles"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Articles I Maintain" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="Articles I Maintain"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="Articles and documentation I maintain."
+							class="sapUiMediumMarginBottom" />
+						<!-- Articles content will go here -->
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

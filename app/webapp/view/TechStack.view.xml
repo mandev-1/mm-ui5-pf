@@ -1,0 +1,26 @@
+<mvc:View
+	controllerName="com.mmd.controller.TechStack"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Tech Stack" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="Technology Stack"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="Technologies and tools I work with."
+							class="sapUiMediumMarginBottom" />
+						<!-- Tech stack content will go here -->
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

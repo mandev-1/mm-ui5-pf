@@ -1,0 +1,26 @@
+<mvc:View
+	controllerName="com.mmd.controller.Projects"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Projects" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="My Projects"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="Here are some of the projects I've been working on."
+							class="sapUiMediumMarginBottom" />
+						<!-- Projects content will go here -->
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

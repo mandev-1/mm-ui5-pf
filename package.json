@@ -5,6 +5,7 @@
   "main": "srv/server.js",
   "dependencies": {
     "@sap/cds": "^7",
+    "@sap/xssec": "^4",
     "express": "^4"
   },
   "devDependencies": {

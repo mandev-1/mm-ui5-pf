@@ -25,6 +25,28 @@ sap.ui.define([
 			
 			// Make language model available globally so all views can access it
 			this.getOwnerComponent().setModel(oLanguageModel, "language");
+			
+			// Ensure home page is shown by default
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.attachRouteMatched(this._onRouteMatched, this);
+			
+			// Navigate to home if no hash is present
+			if (!window.location.hash || window.location.hash === "#" || window.location.hash === "") {
+				this._navigateToPage("home");
+			}
+		},
+		
+		_onRouteMatched: function (oEvent) {
+			var sRouteName = oEvent.getParameter("name");
+			if (sRouteName === "RouteHome") {
+				this._navigateToPage("home");
+			} else if (sRouteName === "RouteProjects") {
+				this._navigateToPage("projects");
+			} else if (sRouteName === "RouteTechStack") {
+				this._navigateToPage("techstack");
+			} else if (sRouteName === "RouteArticles") {
+				this._navigateToPage("articles");
+			}
 		},
 
 		onMenuButtonPress: function () {

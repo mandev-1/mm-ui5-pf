@@ -48,7 +48,9 @@
 			<NavContainer id="pageContainer" initialPage="home">
 				<pages>
 					<mvc:XMLView viewName="com.mmd.view.Home" id="home" />
-					<mvc:XMLView viewName="com.mmd.view.Books" id="books" />
+					<mvc:XMLView viewName="com.mmd.view.Projects" id="projects" />
+					<mvc:XMLView viewName="com.mmd.view.TechStack" id="techstack" />
+					<mvc:XMLView viewName="com.mmd.view.Articles" id="articles" />
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>

@@ -69,22 +69,47 @@
         "async": true,
         "viewPath": "com.mmd.view",
         "controlAggregation": "pages",
-        "controlId": "app",
+        "controlId": "pageContainer",
         "clearControlAggregation": false
       },
       "routes": [
         {
-          "name": "RouteApp",
+          "name": "RouteHome",
           "pattern": "",
-          "target": ["TargetApp"]
+          "target": ["TargetHome"]
+        },
+        {
+          "name": "RouteProjects",
+          "pattern": "projects",
+          "target": ["TargetProjects"]
+        },
+        {
+          "name": "RouteTechStack",
+          "pattern": "techstack",
+          "target": ["TargetTechStack"]
+        },
+        {
+          "name": "RouteArticles",
+          "pattern": "articles",
+          "target": ["TargetArticles"]
         }
       ],
       "targets": {
-        "TargetApp": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewName": "App"
+        "TargetHome": {
+          "viewId": "home",
+          "viewName": "Home"
+        },
+        "TargetProjects": {
+          "viewId": "projects",
+          "viewName": "Projects"
+        },
+        "TargetTechStack": {
+          "viewId": "techstack",
+          "viewName": "TechStack"
+        },
+        "TargetArticles": {
+          "viewId": "articles",
+          "viewName": "Articles"
         }
       }
     }
