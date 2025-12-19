@@ -7,7 +7,11 @@
 			<tnt:NavigationListItem text="Home" key="home" icon="sap-icon://home" press=".onNavigationItemSelect" />
 			<tnt:NavigationListItem text="Demo" key="demo" icon="sap-icon://activate" press=".onNavigationItemSelect" />
 			<tnt:NavigationListGroup text="Projects">
-				<tnt:NavigationListItem text="BTP Applications - CAP and UI5" key="btp-apps" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
+                <tnt:NavigationListItem text="Tech Stack and Articles I Maintain" icon="sap-icon://customer-and-supplier" expanded="false" selectable="false" >
+				    <tnt:NavigationListItem text="BTP Applications - CAP and UI5" key="btp-apps" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
+                    <tnt:NavigationListItem text="Field Service" />
+                    <tnt:NavigationListItem text="Service Contracts and Agreement Management" />
+                </tnt:NavigationListItem>
 				<tnt:NavigationListItem text="LLMs and RAG" key="llms-rag" icon="sap-icon://artificial-intelligence" press=".onNavigationItemSelect" />
 				<tnt:NavigationListItem text="Data Analytics" key="data-analytics" icon="sap-icon://bar-chart" press=".onNavigationItemSelect" />
 				<tnt:NavigationListItem text="Low level Projects" key="low-level" icon="sap-icon://technical-object" press=".onNavigationItemSelect" />
