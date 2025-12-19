@@ -437,3 +437,28 @@ button[type="submit"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* ShellBar - Ensure Copilot is visible on mobile */
+.shellBarWithCopilot .sapFShellBarCopilot {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.shellBarWithCopilot .sapFShellBarCopilotButton {
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    /* Will be handled by UI5 theme switching */
+}
+
+/* Profile Dialog Styles */
+.sapMDialog .sapUiLayoutVerticalLayout {
+    padding: 1rem !important;
+}
+
+.sapMDialog .sapUiLayoutHorizontalLayout {
+    align-items: center !important;
+}
+

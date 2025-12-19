@@ -92,6 +92,11 @@
           "name": "RouteArticles",
           "pattern": "articles",
           "target": ["TargetArticles"]
+        },
+        {
+          "name": "RouteDemo",
+          "pattern": "demo",
+          "target": ["TargetDemo"]
         }
       ],
       "targets": {
@@ -110,6 +115,10 @@
         "TargetArticles": {
           "viewId": "articles",
           "viewName": "Articles"
+        },
+        "TargetDemo": {
+          "viewId": "demo",
+          "viewName": "Demo"
         }
       }
     }

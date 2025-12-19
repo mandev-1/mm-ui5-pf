@@ -5,7 +5,10 @@
 	<tnt:SideNavigation width="20rem" id="sideNavigation" selectedKey="home" expanded="true">
 		<tnt:NavigationList>
 			<tnt:NavigationListItem text="Home" key="home" icon="sap-icon://home" press=".onNavigationItemSelect" />
-			<tnt:NavigationListItem text="Books" key="books" icon="sap-icon://book" press=".onNavigationItemSelect" />
+			<tnt:NavigationListItem text="Projects" key="projects" icon="sap-icon://project-definition-triangle" press=".onNavigationItemSelect" />
+			<tnt:NavigationListItem text="Tech stack" key="techstack" icon="sap-icon://technical-object" press=".onNavigationItemSelect" />
+			<tnt:NavigationListItem text="Articles I maintain" key="articles" icon="sap-icon://document-text" press=".onNavigationItemSelect" />
+			<tnt:NavigationListItem text="Demo" key="demo" icon="sap-icon://activate" press=".onNavigationItemSelect" />
 			<tnt:NavigationListGroup text="Tech Stack and Articles I Maintain">
 				<tnt:NavigationListItem text="Business Analytics" icon="sap-icon://bar-chart" />
 				<tnt:NavigationListItem text="SAP Training Portal and Learning Management System" icon="sap-icon://course-book" href="https://sap.com" target="_blank" selectable="false" />

@@ -7,6 +7,7 @@
 	xmlns:form="sap.ui.layout.form"
 	xmlns:tnt="sap.tnt"
 	height="100%"
+  width="100%"
 	id="AppView">
 	<tnt:ToolPage id="toolPage">
 		<tnt:header>
@@ -18,21 +19,20 @@
 				showCopilot="true"
 				showNotifications="true"
 				menuButtonPressed="onMenuButtonPress"
-				homeIconPressed="onHomeIconPress">
+				homeIconPressed="onHomeIconPress"
+				class="shellBarWithCopilot">
 				<f:menu>
 					<Menu>
-						<MenuItem 
-							text="{= ${language>/mode} === 'human' ? 'Switch to Corporate Mode' : 'Switch to Human Mode'}" 
-							icon="{= ${language>/mode} === 'human' ? 'sap-icon://business-objects-experience' : 'sap-icon://employee'}" 
-							press="onLanguageToggle" />
 						<MenuItem text="About" icon="sap-icon://information" press="onAboutPress" />
 					</Menu>
 				</f:menu>
 				<f:profile>
 					<Avatar
+						id="profileAvatar"
 						src="sap-icon://employee"
 						displaySize="S"
-						displayShape="Circle" />
+						displayShape="Circle"
+						press="onProfilePress" />
 				</f:profile>
 				<f:searchManager>
 					<f:SearchManager/>
@@ -51,6 +51,7 @@
 					<mvc:XMLView viewName="com.mmd.view.Projects" id="projects" />
 					<mvc:XMLView viewName="com.mmd.view.TechStack" id="techstack" />
 					<mvc:XMLView viewName="com.mmd.view.Articles" id="articles" />
+					<mvc:XMLView viewName="com.mmd.view.Demo" id="demo" />
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>

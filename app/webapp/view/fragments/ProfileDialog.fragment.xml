@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout">
+	<Popover
+		id="profilePopover"
+		title="Settings"
+		titleAlignment="Center"
+		placement="Bottom"
+		afterClose=".onPopoverClose">
+		<core:Fragment fragmentName="com.mmd.view.fragments.ProfileMenu" type="XML" />
+	</Popover>
+</core:FragmentDefinition>

@@ -5,6 +5,7 @@
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
 	height="100%"
+	width="95%"
 	class="homeView">
 	<l:HorizontalLayout class="homeContainer">
 		<!-- Left Content Area (2/3 width) -->
@@ -28,7 +29,7 @@
 								content="&lt;h1 class=&quot;homeHeading&quot;&gt;I design digital products that &lt;em&gt;make a difference&lt;/em&gt;&lt;/h1&gt;" />
 							
 							<!-- Description Text -->
-							<Text 
+				<Text 
 								text="I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
 								class="sapUiMediumMarginTop homeDescription" />
 							
@@ -38,12 +39,12 @@
 								class="sapUiMediumMarginTop whoAmIPanel"
 								expandable="true"
 								expanded="true">
-								<content>
+					<content>
 									<l:VerticalLayout class="sapUiSmallMargin">
-										<l:content>
-											<Text 
+							<l:content>
+								<Text 
 												text="I'm currently studying at 42, where I'm developing my skills in software engineering and system design. As a young professional, I'm passionate about building modern applications that leverage SAP Business Technology Platform (BTP) to create scalable, cloud-native solutions." 
-												class="sapUiSmallMarginBottom" />
+									class="sapUiSmallMarginBottom" />
 											<Text 
 												text="My focus areas include:" 
 												class="sapUiSmallMarginTop" />
@@ -52,16 +53,16 @@
 												<StandardListItem title="SAP UI5 and Fiori development" />
 												<StandardListItem title="Business Technology Platform integration" />
 												<StandardListItem title="Cloud-native architecture and deployment" />
-											</List>
+								</List>
 											<Link 
 												text="View my GitHub →"
 												href="https://github.com/mandev-1"
 												target="_blank"
 												class="sapUiSmallMarginTop" />
-										</l:content>
-									</l:VerticalLayout>
-								</content>
-							</Panel>
+							</l:content>
+						</l:VerticalLayout>
+					</content>
+				</Panel>
 						</l:content>
 					</l:VerticalLayout>
 					
