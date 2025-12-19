@@ -48,10 +48,15 @@
 			<NavContainer id="pageContainer" initialPage="home">
 				<pages>
 					<mvc:XMLView viewName="com.mmd.view.Home" id="home" />
-					<mvc:XMLView viewName="com.mmd.view.Projects" id="projects" />
-					<mvc:XMLView viewName="com.mmd.view.TechStack" id="techstack" />
-					<mvc:XMLView viewName="com.mmd.view.Articles" id="articles" />
-					<mvc:XMLView viewName="com.mmd.view.Demo" id="demo" />
+					<mvc:XMLView viewName="com.mmd.view.BTPApps" id="btp-apps" />
+					<mvc:XMLView viewName="com.mmd.view.LLMsRAG" id="llms-rag" />
+					<mvc:XMLView viewName="com.mmd.view.DataAnalytics" id="data-analytics" />
+					<mvc:XMLView viewName="com.mmd.view.LowLevel" id="low-level" />
+					<mvc:XMLView viewName="com.mmd.view.Networking" id="networking" />
+					<mvc:XMLView viewName="com.mmd.view.DevOps" id="devops" />
+					<mvc:XMLView viewName="com.mmd.view.CloudNative" id="cloud-native" />
+					<mvc:XMLView viewName="com.mmd.view.LLMOps" id="llmops" />
+					<mvc:XMLView viewName="com.mmd.view.Studying42" id="42-prague" />
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>

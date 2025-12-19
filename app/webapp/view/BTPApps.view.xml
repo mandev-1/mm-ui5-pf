@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="com.mmd.controller.BTPApps"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="BTP Applications - CAP and UI5" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="BTP Applications - CAP and UI5"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="Projects and applications built with SAP Cloud Application Programming (CAP) and UI5."
+							class="sapUiMediumMarginBottom" />
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

@@ -5,6 +5,7 @@
 	<Popover
 		id="profilePopover"
 		title="Settings"
+        showHeader="false"
 		titleAlignment="Center"
 		placement="Bottom"
 		afterClose=".onPopoverClose">

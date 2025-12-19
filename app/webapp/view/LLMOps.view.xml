@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="com.mmd.controller.LLMOps"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="LLMOps" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="LLMOps"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="LLMOps articles and documentation."
+							class="sapUiMediumMarginBottom" />
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

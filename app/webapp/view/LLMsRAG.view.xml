@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="com.mmd.controller.LLMsRAG"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="LLMs and RAG" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="LLMs and RAG"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="Projects involving Large Language Models and Retrieval-Augmented Generation."
+							class="sapUiMediumMarginBottom" />
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

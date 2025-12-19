@@ -1,58 +1,23 @@
 <core:FragmentDefinition
 	xmlns="sap.m"
-	xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.layout">
-	<l:VerticalLayout width="100%" class="sapUiContentPadding">
-		<l:content>
-			<!-- Dark Mode Section -->
-			<l:HorizontalLayout>
-				<l:content>
-					<core:Icon
-						src="sap-icon://dark-mode"
-						size="1.5rem"
-						color="#0070f3"
-						class="sapUiSmallMarginEnd" />
-					<l:VerticalLayout width="100%">
-						<l:content>
-							<Label
-								text="Dark Mode"
-								labelFor="darkModeSwitch" />
-							<Switch
-								id="darkModeSwitch"
-								state="{language>/darkMode}"
-								customTextOn="On"
-								customTextOff="Off"
-								change=".onDarkModeToggle" />
-						</l:content>
-					</l:VerticalLayout>
-				</l:content>
-			</l:HorizontalLayout>
+	xmlns:core="sap.ui.core">
+	<List>
+		<items>
+			<!-- Dark Mode Toggle -->
+			<StandardListItem
+				id="darkModeListItem"
+				icon="{= ${language>/darkMode} ? 'sap-icon://light-mode' : 'sap-icon://dark-mode'}"
+				title="{= ${language>/darkMode} ? 'Switch to Light Mode' : 'Switch to Dark Mode'}"
+				type="Active"
+				press=".onDarkModePress" />
 			
-			<!-- Language Mode Section -->
-			<l:HorizontalLayout class="sapUiMediumMarginTop">
-				<l:content>
-					<core:Icon
-						id="languageModeIcon"
-						src="sap-icon://employee"
-						size="1.5rem"
-						color="#0070f3"
-						class="sapUiSmallMarginEnd" />
-					<l:VerticalLayout width="100%">
-						<l:content>
-							<Label
-								text="Language Mode"
-								labelFor="languageModeSwitch" />
-							<Switch
-								id="languageModeSwitch"
-								state="{= ${language>/mode} === 'corporate' || ${language>/mode} === 'weekend'}"
-								customTextOn="{= ${language>/mode} === 'corporate' ? 'Corporate' : 'Weekend'}"
-								customTextOff="Human"
-								change=".onLanguageModeToggle" />
-						</l:content>
-					</l:VerticalLayout>
-				</l:content>
-			</l:HorizontalLayout>
-		</l:content>
-	</l:VerticalLayout>
+			<!-- Language Mode Toggle -->
+			<StandardListItem
+				id="languageModeListItem"
+				icon="{= ${language>/mode} === 'corporate' ? 'sap-icon://weekend' : ${language>/mode} === 'weekend' ? 'sap-icon://business-objects-experience' : 'sap-icon://employee'}"
+				title="{= ${language>/mode} === 'corporate' ? 'Switch to Weekend Mode' : ${language>/mode} === 'weekend' ? 'Switch to Corporate Mode' : 'Switch to Corporate Mode'}"
+				type="Active"
+				press=".onLanguageModePress" />
+		</items>
+	</List>
 </core:FragmentDefinition>
-

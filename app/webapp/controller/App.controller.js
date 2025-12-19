@@ -12,7 +12,7 @@ sap.ui.define([
 			// Initialize navigation
 			// Initialize language model with dark mode
 			var oLanguageModel = new sap.ui.model.json.JSONModel({
-				mode: "human", // "human", "corporate", or "weekend"
+				mode: "corporate", // "corporate" (default) or "weekend"
 				darkMode: false
 			});
 			this.getView().setModel(oLanguageModel, "language");
@@ -53,16 +53,45 @@ sap.ui.define([
 		
 		_onRouteMatched: function (oEvent) {
 			var sRouteName = oEvent.getParameter("name");
-			if (sRouteName === "RouteHome") {
-				this._navigateToPage("home");
-			} else if (sRouteName === "RouteProjects") {
-				this._navigateToPage("projects");
-			} else if (sRouteName === "RouteTechStack") {
-				this._navigateToPage("techstack");
-			} else if (sRouteName === "RouteArticles") {
-				this._navigateToPage("articles");
-			} else if (sRouteName === "RouteDemo") {
-				this._navigateToPage("demo");
+			var sPageId;
+			
+			switch (sRouteName) {
+				case "RouteHome":
+					sPageId = "home";
+					break;
+				case "RouteBTPApps":
+					sPageId = "btp-apps";
+					break;
+				case "RouteLLMsRAG":
+					sPageId = "llms-rag";
+					break;
+				case "RouteDataAnalytics":
+					sPageId = "data-analytics";
+					break;
+				case "RouteLowLevel":
+					sPageId = "low-level";
+					break;
+				case "RouteNetworking":
+					sPageId = "networking";
+					break;
+				case "RouteDevOps":
+					sPageId = "devops";
+					break;
+				case "RouteCloudNative":
+					sPageId = "cloud-native";
+					break;
+				case "RouteLLMOps":
+					sPageId = "llmops";
+					break;
+				case "RouteStudying42":
+					sPageId = "42-prague";
+					break;
+				default:
+					sPageId = "home";
+			}
+			
+			if (sPageId) {
+				this._navigateToPage(sPageId);
 			}
 		},
 
@@ -81,7 +110,33 @@ sap.ui.define([
 
 		onNavigationItemSelect: function (oEvent) {
 			var sKey = oEvent.getParameter("item").getKey();
-			this._navigateToPage(sKey);
+			var oRouter = this.getOwnerComponent().getRouter();
+			
+			// Map navigation keys to route names
+			var sRouteName = "Route" + sKey.charAt(0).toUpperCase() + sKey.slice(1).replace(/-([a-z])/g, function(g) { return g[1].toUpperCase(); });
+			
+			// Handle special cases
+			if (sKey === "42-prague") {
+				sRouteName = "RouteStudying42";
+			} else if (sKey === "btp-apps") {
+				sRouteName = "RouteBTPApps";
+			} else if (sKey === "llms-rag") {
+				sRouteName = "RouteLLMsRAG";
+			} else if (sKey === "data-analytics") {
+				sRouteName = "RouteDataAnalytics";
+			} else if (sKey === "low-level") {
+				sRouteName = "RouteLowLevel";
+			} else if (sKey === "cloud-native") {
+				sRouteName = "RouteCloudNative";
+			} else if (sKey === "llmops") {
+				sRouteName = "RouteLLMOps";
+			} else if (sKey === "home") {
+				sRouteName = "RouteHome";
+			}
+			
+			if (sRouteName) {
+				oRouter.navTo(sRouteName);
+			}
 		},
 
 		_navigateToPage: function (sPageId) {
@@ -217,12 +272,12 @@ sap.ui.define([
 				// Open popover
 				if (this._oPopover) {
 					this._oPopover.openBy(oEventSource);
-					this._updateLanguageModeIcon();
+					this._updateMenuItems();
 				} else {
 					// Wait for popover to load
 					this._oPopoverPromise.then(function(oPopover) {
 						oPopover.openBy(oEventSource);
-						that._updateLanguageModeIcon();
+						that._updateMenuItems();
 					});
 				}
 			}
@@ -235,78 +290,85 @@ sap.ui.define([
 			}
 		},
 		
-		_updateLanguageModeIcon: function () {
+		_updateMenuItems: function () {
 			var sFragmentId = this.getView().getId();
-			var oIcon = Fragment.byId(sFragmentId, "languageModeIcon");
-			var oSwitch = Fragment.byId(sFragmentId, "languageModeSwitch");
+			var oDarkModeItem = Fragment.byId(sFragmentId, "darkModeListItem");
+			var oLanguageModeItem = Fragment.byId(sFragmentId, "languageModeListItem");
 			
-			if (!oIcon || !oSwitch) {
+			if (!oDarkModeItem || !oLanguageModeItem) {
 				return;
 			}
 			
 			var oLanguageModel = this.getView().getModel("language");
-			var sMode = oLanguageModel ? oLanguageModel.getProperty("/mode") : "human";
+			var bDarkMode = oLanguageModel ? oLanguageModel.getProperty("/darkMode") : false;
+			var sMode = oLanguageModel ? oLanguageModel.getProperty("/mode") : "corporate";
 			
-			var sIconSrc = sMode === "corporate" 
-				? "sap-icon://business-objects-experience" 
+			// Update dark mode list item
+			oDarkModeItem.setIcon(bDarkMode ? "sap-icon://light-mode" : "sap-icon://dark-mode");
+			oDarkModeItem.setTitle(bDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode");
+			
+			// Update language mode list item
+			var sLanguageIcon = sMode === "corporate" 
+				? "sap-icon://weekend" 
 				: sMode === "weekend"
-				? "sap-icon://weekend"
+				? "sap-icon://business-objects-experience"
 				: "sap-icon://employee";
-			oIcon.setSrc(sIconSrc);
+			var sLanguageTitle = sMode === "corporate" 
+				? "Switch to Weekend Mode" 
+				: sMode === "weekend"
+				? "Switch to Corporate Mode"
+				: "Switch to Corporate Mode";
 			
-			oSwitch.setCustomTextOn(sMode === "corporate" ? "Corporate" : "Weekend");
-			oSwitch.setState(sMode !== "human");
+			oLanguageModeItem.setIcon(sLanguageIcon);
+			oLanguageModeItem.setTitle(sLanguageTitle);
 		},
 		
-		onDarkModeToggle: function (oEvent) {
-			var bDark = oEvent.getParameter("state");
+		onDarkModePress: function (oEvent) {
 			var oLanguageModel = this.getView().getModel("language");
-			oLanguageModel.setProperty("/darkMode", bDark);
+			var bCurrentDark = oLanguageModel.getProperty("/darkMode");
+			var bNewDark = !bCurrentDark;
+			
+			oLanguageModel.setProperty("/darkMode", bNewDark);
 			
 			// Update component model
 			this.getOwnerComponent().setModel(oLanguageModel, "language");
 			
 			// Apply theme
-			this._applyTheme(bDark);
+			this._applyTheme(bNewDark);
 			
-			MessageToast.show(bDark ? "Dark mode enabled" : "Light mode enabled");
+			// Update menu items
+			this._updateMenuItems();
+			
+			// Close popover
+			if (this._oPopover) {
+				this._oPopover.close();
+			}
+			
+			MessageToast.show(bNewDark ? "Dark mode enabled" : "Light mode enabled");
 		},
 		
-		onLanguageModeToggle: function (oEvent) {
+		onLanguageModePress: function (oEvent) {
 			var oLanguageModel = this.getView().getModel("language");
 			var sCurrentMode = oLanguageModel.getProperty("/mode");
-			var bState = oEvent.getParameter("state");
 			
-			// Toggle between human (off) and corporate/weekend (on)
-			// When switching on, alternate between corporate and weekend
-			var sNewMode;
-			if (!bState) {
-				sNewMode = "human";
-			} else {
-				// If currently human, go to corporate
-				// If currently corporate, go to weekend
-				// If currently weekend, go to corporate
-				if (sCurrentMode === "human") {
-					sNewMode = "corporate";
-				} else if (sCurrentMode === "corporate") {
-					sNewMode = "weekend";
-				} else {
-					sNewMode = "corporate";
-				}
-			}
+			// Toggle between corporate (default) and weekend
+			var sNewMode = sCurrentMode === "corporate" ? "weekend" : "corporate";
 			
 			oLanguageModel.setProperty("/mode", sNewMode);
 			
 			// Update component model
 			this.getOwnerComponent().setModel(oLanguageModel, "language");
 			
-			// Update switch text and icon
-			this._updateLanguageModeIcon();
+			// Update menu items
+			this._updateMenuItems();
 			
-			var sMessage = sNewMode === "human" 
-				? "Switched to human mode" 
-				: sNewMode === "corporate"
-				? "Switched to corporate mode"
+			// Close popover
+			if (this._oPopover) {
+				this._oPopover.close();
+			}
+			
+			var sMessage = sNewMode === "corporate" 
+				? "Switched to corporate mode" 
 				: "Switched to weekend mode";
 			MessageToast.show(sMessage);
 		}

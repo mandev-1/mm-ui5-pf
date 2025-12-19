@@ -5,35 +5,20 @@
 	<tnt:SideNavigation width="20rem" id="sideNavigation" selectedKey="home" expanded="true">
 		<tnt:NavigationList>
 			<tnt:NavigationListItem text="Home" key="home" icon="sap-icon://home" press=".onNavigationItemSelect" />
-			<tnt:NavigationListItem text="Projects" key="projects" icon="sap-icon://project-definition-triangle" press=".onNavigationItemSelect" />
-			<tnt:NavigationListItem text="Tech stack" key="techstack" icon="sap-icon://technical-object" press=".onNavigationItemSelect" />
-			<tnt:NavigationListItem text="Articles I maintain" key="articles" icon="sap-icon://document-text" press=".onNavigationItemSelect" />
 			<tnt:NavigationListItem text="Demo" key="demo" icon="sap-icon://activate" press=".onNavigationItemSelect" />
-			<tnt:NavigationListGroup text="Tech Stack and Articles I Maintain">
-				<tnt:NavigationListItem text="Business Analytics" icon="sap-icon://bar-chart" />
-				<tnt:NavigationListItem text="SAP Training Portal and Learning Management System" icon="sap-icon://course-book" href="https://sap.com" target="_blank" selectable="false" />
-				<tnt:NavigationListItem text="System Administration and Configuration Management" icon="sap-icon://manager-insight" >
-					<tnt:NavigationListItem text="User Management and Access Control Administration" />
-					<tnt:NavigationListItem text="Audit Log and Security Monitoring Dashboard" />
-				</tnt:NavigationListItem>
-				<tnt:NavigationListItem text="Service Management and Customer Support Operations" icon="sap-icon://customer-and-supplier" expanded="false" selectable="false" >
-					<tnt:NavigationListItem text="Service Tickets and Customer Issue Resolution" />
-					<tnt:NavigationListItem text="Field Service" />
-					<tnt:NavigationListItem text="Service Contracts and Agreement Management" />
-				</tnt:NavigationListItem>
-				<tnt:NavigationListItem text="Financial Reports" icon="sap-icon://money-bills" expanded="false" selectable="false" >
-					<tnt:NavigationListItem text="Sales Reports" />
-					<tnt:NavigationListItem text="Customer Analysis Reports and Behavioral Insights" />
-				</tnt:NavigationListItem>
-				<tnt:NavigationListItem text="Notifications and Alerts" icon="sap-icon://message-information" />
+			<tnt:NavigationListGroup text="Projects">
+				<tnt:NavigationListItem text="BTP Applications - CAP and UI5" key="btp-apps" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="LLMs and RAG" key="llms-rag" icon="sap-icon://artificial-intelligence" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="Data Analytics" key="data-analytics" icon="sap-icon://bar-chart" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="Low level Projects" key="low-level" icon="sap-icon://technical-object" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="Networking" key="networking" icon="sap-icon://connected" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="K8s, Docker. DevOps" key="devops" icon="sap-icon://deployment" press=".onNavigationItemSelect" />
 			</tnt:NavigationListGroup>
-			<tnt:NavigationListGroup text="Selected Projects">
-				<tnt:NavigationListItem text="CAP Application" icon="sap-icon://business-one" />
-				<tnt:NavigationListItem text="Sales Management and Revenue Operations" icon="sap-icon://crm-sales" />
-				<tnt:NavigationListItem text="Learning Journeys" icon="sap-icon://learning-assistant" selectable="false" >
-					<tnt:NavigationListItem text="Contact Information and Communication History" />
-					<tnt:NavigationListItem text="Business Partners" />
-					<tnt:NavigationListItem text="Strategic Relationships" />
+			<tnt:NavigationListGroup text="Other articles">
+				<tnt:NavigationListItem text="Articles" selectable="false">
+					<tnt:NavigationListItem text="Cloud Native" key="cloud-native" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
+					<tnt:NavigationListItem text="LLMOps" key="llmops" icon="sap-icon://artificial-intelligence" press=".onNavigationItemSelect" />
+					<tnt:NavigationListItem text="Studying at 42 Prague" key="42-prague" icon="sap-icon://education" press=".onNavigationItemSelect" />
 				</tnt:NavigationListItem>
 			</tnt:NavigationListGroup>
 		</tnt:NavigationList>
@@ -46,5 +31,3 @@
 		</tnt:fixedItem>
 	</tnt:SideNavigation>
 </core:FragmentDefinition>
-
-

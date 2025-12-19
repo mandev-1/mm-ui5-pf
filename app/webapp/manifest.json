@@ -79,24 +79,49 @@
           "target": ["TargetHome"]
         },
         {
-          "name": "RouteProjects",
-          "pattern": "projects",
-          "target": ["TargetProjects"]
+          "name": "RouteBTPApps",
+          "pattern": "btp-apps",
+          "target": ["TargetBTPApps"]
         },
         {
-          "name": "RouteTechStack",
-          "pattern": "techstack",
-          "target": ["TargetTechStack"]
+          "name": "RouteLLMsRAG",
+          "pattern": "llms-rag",
+          "target": ["TargetLLMsRAG"]
         },
         {
-          "name": "RouteArticles",
-          "pattern": "articles",
-          "target": ["TargetArticles"]
+          "name": "RouteDataAnalytics",
+          "pattern": "data-analytics",
+          "target": ["TargetDataAnalytics"]
         },
         {
-          "name": "RouteDemo",
-          "pattern": "demo",
-          "target": ["TargetDemo"]
+          "name": "RouteLowLevel",
+          "pattern": "low-level",
+          "target": ["TargetLowLevel"]
+        },
+        {
+          "name": "RouteNetworking",
+          "pattern": "networking",
+          "target": ["TargetNetworking"]
+        },
+        {
+          "name": "RouteDevOps",
+          "pattern": "devops",
+          "target": ["TargetDevOps"]
+        },
+        {
+          "name": "RouteCloudNative",
+          "pattern": "cloud-native",
+          "target": ["TargetCloudNative"]
+        },
+        {
+          "name": "RouteLLMOps",
+          "pattern": "llmops",
+          "target": ["TargetLLMOps"]
+        },
+        {
+          "name": "RouteStudying42",
+          "pattern": "42-prague",
+          "target": ["TargetStudying42"]
         }
       ],
       "targets": {
@@ -104,21 +129,41 @@
           "viewId": "home",
           "viewName": "Home"
         },
-        "TargetProjects": {
-          "viewId": "projects",
-          "viewName": "Projects"
+        "TargetBTPApps": {
+          "viewId": "btp-apps",
+          "viewName": "BTPApps"
         },
-        "TargetTechStack": {
-          "viewId": "techstack",
-          "viewName": "TechStack"
+        "TargetLLMsRAG": {
+          "viewId": "llms-rag",
+          "viewName": "LLMsRAG"
         },
-        "TargetArticles": {
-          "viewId": "articles",
-          "viewName": "Articles"
+        "TargetDataAnalytics": {
+          "viewId": "data-analytics",
+          "viewName": "DataAnalytics"
         },
-        "TargetDemo": {
-          "viewId": "demo",
-          "viewName": "Demo"
+        "TargetLowLevel": {
+          "viewId": "low-level",
+          "viewName": "LowLevel"
+        },
+        "TargetNetworking": {
+          "viewId": "networking",
+          "viewName": "Networking"
+        },
+        "TargetDevOps": {
+          "viewId": "devops",
+          "viewName": "DevOps"
+        },
+        "TargetCloudNative": {
+          "viewId": "cloud-native",
+          "viewName": "CloudNative"
+        },
+        "TargetLLMOps": {
+          "viewId": "llmops",
+          "viewName": "LLMOps"
+        },
+        "TargetStudying42": {
+          "viewId": "42-prague",
+          "viewName": "Studying42"
         }
       }
     }

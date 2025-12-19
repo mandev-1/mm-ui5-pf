@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="com.mmd.controller.CloudNative"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Cloud Native" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="Cloud Native"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="Cloud native architecture and development articles."
+							class="sapUiMediumMarginBottom" />
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+
