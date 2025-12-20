@@ -4,22 +4,45 @@
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
 	xmlns:layout="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.f"
 	height="100%">
-	<Page title="Demo" showNavButton="false">
+	<Page title="AI Chat Demo" showNavButton="false" class="chatPage">
 		<content>
-			<ScrollContainer horizontal="false" vertical="true" height="100%">
-				<l:VerticalLayout class="sapUiContentPadding" width="100%">
-					<l:content>
-						<Title 
-							text="Demo"
-							level="H1" 
-							class="sapUiSmallMarginBottom" />
-						<Text 
-							text="Demo content and examples."
-							class="sapUiMediumMarginBottom" />
-						<!-- Demo content will go here -->
-					</l:content>
-				</l:VerticalLayout>
+			<ScrollContainer 
+				id="chatScrollContainer"
+				horizontal="false" 
+				vertical="true" 
+				height="100%"
+				class="chatContainer">
+				<List 
+					id="chatMessageList"
+					class="chatMessageList"
+					showSeparators="None"
+					mode="None">
+					<items>
+						<!-- Messages will be added dynamically -->
+					</items>
+				</List>
+				<!-- Typing indicator -->
+				<HBox 
+					id="typingIndicator"
+					class="typingIndicator chatMessageContent chatMessageAI"
+					visible="false">
+					<Avatar 
+						initials="AI"
+						displaySize="S"
+						displayShape="Circle"
+						backgroundColor="Accent6"
+						class="chatAvatar" />
+					<VBox class="chatMessageBubble typingBubble">
+						<HBox class="typingDots">
+							<core:HTML content="&lt;span class='dot'&gt;&lt;/span&gt;" />
+							<core:HTML content="&lt;span class='dot'&gt;&lt;/span&gt;" />
+							<core:HTML content="&lt;span class='dot'&gt;&lt;/span&gt;" />
+						</HBox>
+					</VBox>
+				</HBox>
 			</ScrollContainer>
 		</content>
 		<footer class="customFooter">
@@ -32,13 +55,12 @@
                                 <layoutData>
 									<layout:GridData span="L8 M8 S12" />
                                 </layoutData>
-                                <TextArea
-									class="noticeMe desktopTextArea"
-                                    growing="true"
+                                <Input
+									class="noticeMe desktopTextArea chatInput"
                                     id="queryTextArea"
                                     liveChange=".onQueryTextAreaLiveChange"
-                                    placeholder="Enter your query here please"
-                                    rows="3"
+                                    placeholder="Type your message..."
+                                    submit=".onGenerateQuery"
                                     width="100%" />
                             </VBox>
 							<VBox class="footerButtonContainer">
@@ -48,10 +70,10 @@
 								<FlexBox alignItems="Center" justifyContent="End" class="footerButtonFlex">
                                     <Button
 										class="aiChatButton"
-										icon="sap-icon://chat"
+										icon="sap-icon://paper-plane"
                                     press=".onGenerateQuery"
-										text="Chat with my AI ✨"
-										type="Emphasized" />
+										type="Emphasized"
+										tooltip="Send message" />
                                 </FlexBox>
                             </VBox>
                         </layout:content>
@@ -59,20 +81,19 @@
 					<!-- Phone Layout -->
 					<layout:VerticalLayout class="sapUiVisibleOnlyOnPhone phoneFooterLayout">
 						<layout:content>
-							<TextArea
-								class="noticeMe phoneTextArea"
-								growing="true"
+							<Input
+								class="noticeMe phoneTextArea chatInput"
 								id="queryTextAreaPhone"
 								liveChange=".onQueryTextAreaLiveChange"
-								placeholder="Enter your query here please"
-								rows="2"
+								placeholder="Type your message..."
+								submit=".onGenerateQuery"
 								width="100%" />
 							<Button
 								class="aiChatButton phoneAiButton"
-								icon="sap-icon://chat"
+								icon="sap-icon://paper-plane"
 								press=".onGenerateQuery"
-								text="Chat with my AI ✨"
 								type="Emphasized"
+								tooltip="Send message"
 								width="100%" />
 						</layout:content>
 					</layout:VerticalLayout>

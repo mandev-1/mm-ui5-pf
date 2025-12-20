@@ -170,22 +170,23 @@ body {
         width: 100% !important;
     }
     
-    /* Home content group - centered on mobile with small left margin */
-    .homeContentGroup {
+    /* Center home page sections on mobile */
+    .homeMobileSection {
         display: flex !important;
         justify-content: center !important;
         width: 100% !important;
-        margin-left: 0.5rem !important;
+        margin-left: 0 !important;
         margin-right: 0 !important;
     }
     
-    .homeContentGroup .sapUiVerticalLayoutContent {
+    .homeMobileSection .sapUiHorizontalLayoutContent,
+    .homeMobileSection .sapUiVerticalLayoutContent {
         display: flex !important;
         justify-content: center !important;
         width: 100% !important;
     }
     
-    .homeContentGroup .sapFGridContainer {
+    .homeMobileSection .sapFGridContainer {
         margin: 0 auto !important;
         width: 100% !important;
     }
@@ -586,5 +587,239 @@ body {
     
     .questionStem {
         font-size: 0.95rem;
+    }
+}
+
+/* Chat Interface Styling - Joule Style */
+.chatPage .sapMPageContent {
+    padding: 0 !important;
+    background-color: var(--sapBackgroundColor, #f7f7f7);
+}
+
+.chatContainer {
+    height: 100% !important;
+    padding: 1.5rem 1rem;
+    background-color: var(--sapBackgroundColor, #f7f7f7);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chatMessageList {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.chatMessageList .sapMCLI {
+    margin-bottom: 1.5rem;
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+/* Chat message content container */
+.chatMessageContent {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+}
+
+.chatMessageContent.chatMessageAI {
+    justify-content: flex-start !important;
+}
+
+.chatMessageContent.chatMessageUser {
+    justify-content: flex-end !important;
+}
+
+/* Avatar styling */
+.chatAvatar {
+    flex-shrink: 0 !important;
+    margin-top: 0.25rem !important;
+}
+
+.chatAvatar .sapMAvatar {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+}
+
+/* Message bubble container */
+.chatMessageBubble {
+    max-width: 70% !important;
+    min-width: 0 !important;
+}
+
+/* User message styling */
+.chatMessageUser .chatMessageBubble .chatMessageText {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    padding: 0.875rem 1.125rem !important;
+    border-radius: 1.125rem 1.125rem 0.25rem 1.125rem !important;
+    margin: 0 !important;
+    display: block !important;
+    word-wrap: break-word !important;
+    box-shadow: 0 2px 12px rgba(102, 126, 234, 0.25) !important;
+    white-space: pre-wrap !important;
+    line-height: 1.5 !important;
+    font-size: 0.9375rem !important;
+}
+
+/* AI message styling */
+.chatMessageAI .chatMessageBubble .chatMessageText {
+    background-color: var(--sapNeutralBackground, #ffffff) !important;
+    color: var(--sapTextColor, #32363a) !important;
+    padding: 0.875rem 1.125rem !important;
+    border-radius: 1.125rem 1.125rem 1.125rem 0.25rem !important;
+    margin: 0 !important;
+    display: block !important;
+    word-wrap: break-word !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    white-space: pre-wrap !important;
+    line-height: 1.5 !important;
+    font-size: 0.9375rem !important;
+}
+
+/* Typing indicator */
+.typingIndicator {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+    justify-content: flex-start !important;
+}
+
+.typingBubble {
+    background-color: var(--sapNeutralBackground, #ffffff) !important;
+    padding: 1rem 1.25rem !important;
+    border-radius: 1.125rem 1.125rem 1.125rem 0.25rem !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 60px !important;
+}
+
+.typingDots {
+    display: flex;
+    gap: 0.375rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.typingDots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--sapNeutralTextColor, #6a6d70);
+    animation: typingDot 1.4s infinite ease-in-out;
+}
+
+.typingDots .dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typingDots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typingDots .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingDot {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+    30% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+/* Chat input styling */
+.chatInput.sapMInput {
+    border-radius: 1.5rem !important;
+    border: 1px solid var(--sapList_BorderColor, #e5e5e5) !important;
+    background-color: var(--sapNeutralBackground, #ffffff) !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.9375rem !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.chatInput.sapMInput:focus {
+    border-color: var(--sapButton_Emphasized_Background, #0070f2) !important;
+    box-shadow: 0 0 0 3px rgba(0, 112, 242, 0.1) !important;
+}
+
+.aiChatButton.sapMBtn {
+    border-radius: 50% !important;
+    min-width: 3rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    padding: 0 !important;
+}
+
+.aiChatButton.sapMBtn .sapMBtnInner {
+    border-radius: 50% !important;
+    min-width: 3rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 112, 242, 0.3) !important;
+}
+
+.aiChatButton.sapMBtn .sapMBtnContent {
+    display: none !important;
+}
+
+.aiChatButton.sapMBtn .sapMBtnIcon {
+    margin: 0 !important;
+    font-size: 1.125rem !important;
+}
+
+/* Responsive chat styling */
+@media screen and (max-width: 600px) {
+    .chatContainer {
+        padding: 1rem 0.75rem;
+    }
+    
+    .chatMessageBubble {
+        max-width: 80% !important;
+    }
+    
+    .chatAvatar .sapMAvatar {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+    
+    .chatMessageUser .chatMessageBubble .chatMessageText,
+    .chatMessageAI .chatMessageBubble .chatMessageText {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.875rem !important;
+    }
+    
+    .aiChatButton.sapMBtn {
+        width: 100% !important;
+        height: 2.75rem !important;
+        border-radius: 0.5rem !important;
+    }
+    
+    .aiChatButton.sapMBtn .sapMBtnInner {
+        width: 100% !important;
+        height: 2.75rem !important;
+        border-radius: 0.5rem !important;
+    }
+    
+    .aiChatButton.sapMBtn .sapMBtnContent {
+        display: block !important;
+    }
+    
+    .aiChatButton.sapMBtn .sapMBtnContent::after {
+        content: "Send";
     }
 }

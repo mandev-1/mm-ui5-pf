@@ -24,7 +24,7 @@
 							
 							<!-- Description Text -->
 							<Text 
-								text="{= ${language>/mode} === 'work' ? ${i18n>home.description.corporate} : ${i18n>home.description.weekend}}"
+								text="I'm the Man. I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
 								class="sapUiMediumMarginTop " />
 						</VBox>
 						<VBox>
@@ -37,7 +37,7 @@
 							<!-- Who am I Section -->
 							<Panel 
 								width="90%"
-								headerText="{= ${language>/mode} === 'work' ? ${i18n>home.whoAmI.title.corporate} : ${i18n>home.whoAmI.title.weekend}}"
+								headerText="Who am I"
 								class="sapUiMediumMarginTop sapUiContentPadding whoAmIPanel"
 								expandable="true"
 								expanded="true">
@@ -46,7 +46,8 @@
 										<l:content
 										>
 											<Text 
-												text="{= ${language>/mode} === 'work' ? ${i18n>home.whoAmI.content.corporate} : ${i18n>home.whoAmI.content.weekend}}" 
+												
+												text="I'm currently studying at 42, where I'm developing my skills in software engineering and system design. As a young professional, I'm passionate about building modern applications that leverage SAP Business Technology Platform (BTP) to create scalable, cloud-native solutions." 
 												class="sapUiSmallMarginBottom" />
 											<Text 
 												text="My focus areas include:" 
@@ -66,37 +67,34 @@
 									</l:VerticalLayout>
 								</content>
 							</Panel>
-					</l:content>
-				</l:VerticalLayout>
-				
-				<!-- Grouped Content Section -->
-				<l:VerticalLayout class="homeContentGroup">
-					<l:content>
-						<!-- Spacer to push buttons to bottom -->
-						<l:VerticalLayout>
-							<l:content>
-								<core:HTML 
-									content="&lt;div style=&quot;flex: 1; min-height: 100px;&quot;&gt;&lt;/div&gt;" />
-							</l:content>
-						</l:VerticalLayout>
-						
-						<!-- Action Buttons -->
-						<l:HorizontalLayout class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth">
-							<l:content>
-								<Button 
-									text="View projects"
-									type="Emphasized"
-									press="onViewProjects"
-									class="homeProjectButton" />
-								<Link 
-									text="Connect professionally"
-									press="onConnectProfessionally"
-									class="sapUiMediumMarginBegin homeConnectLink" />
-							</l:content>
-						</l:HorizontalLayout>
+						</l:content>
+					</l:VerticalLayout>
+					
+					<!-- Spacer to push buttons to bottom -->
+					<l:VerticalLayout class="homeMobileSection">
+						<l:content>
+							<core:HTML 
+								content="&lt;div style=&quot;flex: 1; min-height: 100px;&quot;&gt;&lt;/div&gt;" />
+						</l:content>
+					</l:VerticalLayout>
+					
+					<!-- Action Buttons -->
+					<l:HorizontalLayout class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth homeMobileSection">
+						<l:content>
+							<Button 
+								text="View projects"
+								type="Emphasized"
+								press="onViewProjects"
+								class="homeProjectButton" />
+							<Link 
+								text="Connect professionally"
+								press="onConnectProfessionally"
+								class="sapUiMediumMarginBegin homeConnectLink" />
+						</l:content>
+					</l:HorizontalLayout>
 
-						<!-- Slide Tiles -->
-						<f:GridContainer id="topTilesGrid" class="sapUiLargeMarginBottom homeContentMarginBegin sapUiNoContentPadding sapUiTinyMarginBegin">
+					<!-- Slide Tiles -->
+					<f:GridContainer id="topTilesGrid" class="sapUiLargeMarginBottom homeContentMarginBegin sapUiNoContentPadding sapUiTinyMarginBegin homeMobileSection">
 						<SlideTile>
 							<layoutData>
 								<f:GridContainerItemLayoutData columns="4" rows="2" />
@@ -156,18 +154,19 @@
 								<f:GridContainerItemLayoutData minRows="4" columns="3" />
 							</w:layoutData>
 						</w:Card>
-						</f:GridContainer>
+					</f:GridContainer>
 
-						<!-- Scrollable Grid Containers Section -->
-						<ScrollContainer
-							height="100%"
-							width="100%"
-							vertical="true">
-							<ToggleButton
-								id="revealGrid"
-								text="Make coding shitty again"
-								press=".onRevealGrid"
-								class="sapUiSmallMargin" />
+					<!-- Scrollable Grid Containers Section -->
+					<ScrollContainer
+						height="100%"
+						width="100%"
+						vertical="true"
+						class="homeMobileSection">
+						<ToggleButton
+							id="revealGrid"
+							text="Make coding shitty again"
+							press=".onRevealGrid"
+							class="sapUiSmallMargin" />
 						<!-- <HBox width="100%">
 							<Panel headerText="Group 1" height="100%" width="100%">
 								<layoutData>
@@ -282,11 +281,9 @@
 								</f:GridContainer>
 							</Panel>
 						</HBox> -->
-						</ScrollContainer>
-					</l:content>
-				</l:VerticalLayout>
-			</l:content>
-		</l:VerticalLayout>
+					</ScrollContainer>
+				</l:content>
+			</l:VerticalLayout>
 		</content>
 	</Page>
 </mvc:View>
