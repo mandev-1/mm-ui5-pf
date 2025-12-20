@@ -32,7 +32,7 @@
 							class="sapUiSmallMarginBottom" />
 						
 						<!-- Toolbar -->
-						<l:HorizontalLayout class="sapUiMediumMarginTop sapUiMediumMarginBottom" width="100%">
+						<l:HorizontalLayout class="sapUiMediumMarginTop sapUiMediumMarginBottom">
 							<l:content>
 								<Button 
 									text="Check Answers" 
@@ -81,7 +81,7 @@
 							<CustomListItem class="quizCardItem">
 								<f:Card class="quizCard">
 									<f:header>
-										<core:Title text="{title}" level="H3" />
+										<f:cards.Header title="{title}" />
 									</f:header>
 									<f:content>
 										<l:VerticalLayout class="sapUiSmallMargin">
