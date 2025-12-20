@@ -25,7 +25,7 @@
 							<!-- Description Text -->
 							<Text 
 								text="I'm the Man. I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
-								class="sapUiMediumMarginTop homeDescription" />
+								class="sapUiMediumMarginTop " />
 						</VBox>
 						<VBox>
 							<core:HTML 
@@ -38,13 +38,15 @@
 							<Panel 
 								width="90%"
 								headerText="Who am I"
-								class="sapUiMediumMarginTop sapUiContentPadding"
+								class="sapUiMediumMarginTop sapUiContentPadding whoAmIPanel"
 								expandable="true"
 								expanded="true">
 								<content>
-									<l:VerticalLayout class="sapUiSmallMargin">
-										<l:content>
+									<l:VerticalLayout class="sapUiSmallMargin" width="90%">
+										<l:content
+										>
 											<Text 
+												
 												text="I'm currently studying at 42, where I'm developing my skills in software engineering and system design. As a young professional, I'm passionate about building modern applications that leverage SAP Business Technology Platform (BTP) to create scalable, cloud-native solutions." 
 												class="sapUiSmallMarginBottom" />
 											<Text 
@@ -97,6 +99,16 @@
 							<layoutData>
 								<f:GridContainerItemLayoutData columns="4" rows="2" />
 							</layoutData>
+														<GenericTile
+								backgroundImage="webapp/md_progress.png"
+								frameType="TwoByOne"
+								press="pressOnTileTwo">
+								<TileContent footer="December 20, 2025">
+									<NewsContent
+										contentText="Set up a meeting with me"
+										subheader="Today, SAP News" />
+								</TileContent>
+							</GenericTile>
 							<GenericTile
 								backgroundImage="webapp/study_mmd.png"
 								frameType="TwoByOne"
@@ -107,16 +119,7 @@
 										subheader="Today, SAP News" />
 								</TileContent>
 							</GenericTile>
-							<GenericTile
-								backgroundImage="webapp/md_progress.png"
-								frameType="TwoByOne"
-								press="pressOnTileTwo">
-								<TileContent footer="December 20, 2025">
-									<NewsContent
-										contentText="Set up a meeting with me"
-										subheader="Today, SAP News" />
-								</TileContent>
-							</GenericTile>
+
 						</SlideTile>
 
 						<GenericTile header="AI Demo" subheader="This thing uses LLM and MCP and all that stuff haha">
@@ -137,7 +140,7 @@
 							</TileContent>
 						</GenericTile>
 
-						<GenericTile header="Profit Margin">
+						<GenericTile header="Profit Margin" class="sapUiHideOnPhone">
 							<layoutData>
 								<f:GridContainerItemLayoutData minRows="2" columns="2" />
 							</layoutData>

@@ -4,12 +4,13 @@ sap.ui.define([
 	"sap/m/MessageBox",
 	"sap/ui/core/Element",
 	"sap/ui/core/Fragment",
+	"sap/ui/Device",
 	"sap/m/Dialog",
 	"sap/m/Button",
 	"sap/m/Input",
 	"sap/m/TextArea",
 	"sap/m/Label"
-], function (Controller, MessageToast, MessageBox, Element, Fragment, Dialog, Button, Input, TextArea, Label) {
+], function (Controller, MessageToast, MessageBox, Element, Fragment, Device, Dialog, Button, Input, TextArea, Label) {
 	"use strict";
 
 	return Controller.extend("com.mmd.controller.App", {
@@ -153,6 +154,12 @@ sap.ui.define([
 			
 			if (sRouteName) {
 				oRouter.navTo(sRouteName);
+				
+				// Collapse side navigation on phone after navigation
+				var oToolPage = this.byId("toolPage");
+				if (oToolPage && Device.system.phone) {
+					oToolPage.setSideExpanded(false);
+				}
 			}
 		},
 

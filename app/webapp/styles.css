@@ -114,6 +114,63 @@ body {
     }
 }
 
+/* Who am I Panel - responsive overflow handling */
+.whoAmIPanel {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.whoAmIPanel .sapMPanelContent {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.whoAmIPanel .sapMText {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+@media screen and (max-width: 600px) {
+    .whoAmIPanel {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .whoAmIPanel .sapMPanelContent {
+        padding: 0.5rem;
+    }
+    
+    .whoAmIPanel .sapMList {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/* ABAP Development page - responsive layout */
+.abapContentLayout {
+    width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .abapContentLayout {
+        margin: 0 !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+    .abapContentLayout .sapUiVerticalLayoutContent {
+        width: 100% !important;
+    }
+}
+
 
 /* Dark mode background */
 @media (prefers-color-scheme: dark) {
