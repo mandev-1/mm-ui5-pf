@@ -19,9 +19,9 @@
 				<l:VerticalLayout class="sapUiLargeMargin abapContentLayout" width="100%">
 					<l:content>
 						<Title 
-							text="Get Ready for ABAP Development"
+							text="Get Ready for ABAP Development "
 							level="H1" 
-							class="sapUiSmallMarginBottom" />
+							class="sapUiSmallMarginTopBottom " />
 						
 						<Text 
 							text="This app helps you prepare for the ABAP developer certification offered at SAP Learning."
@@ -32,14 +32,19 @@
 							class="sapUiSmallMarginBottom" />
 						
 						<!-- Toolbar -->
-						<l:HorizontalLayout class="sapUiMediumMarginTop sapUiMediumMarginBottom">
+						<l:HorizontalLayout 
+							class="sapUiMediumMarginTop sapUiMediumMarginBottom"
+							justifyContent="SpaceBetween"
+							wrap="Wrap">
 							<l:content>
 								<Button 
+                                    class="sapUiTinyMarginEnd"
 									text="Check Answers" 
 									type="Emphasized"
 									icon="sap-icon://accept"
 									press=".onCheckAnswers" />
 								<Button 
+									class=""
 									text="Reset" 
 									type="Default"
 									icon="sap-icon://reset"
