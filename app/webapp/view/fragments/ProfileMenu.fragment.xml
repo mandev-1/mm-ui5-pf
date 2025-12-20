@@ -14,8 +14,8 @@
 			<!-- Language Mode Toggle -->
 			<StandardListItem
 				id="languageModeListItem"
-				icon="{= ${language>/mode} === 'corporate' ? 'sap-icon://weekend' : ${language>/mode} === 'weekend' ? 'sap-icon://business-objects-experience' : 'sap-icon://employee'}"
-				title="{= ${language>/mode} === 'corporate' ? 'Switch to Weekend Mode' : ${language>/mode} === 'weekend' ? 'Switch to Corporate Mode' : 'Switch to Corporate Mode'}"
+				icon="{= ${language>/mode} === 'work' ? 'sap-icon://weekend' : 'sap-icon://business-objects-experience'}"
+				title="{= ${language>/mode} === 'work' ? 'Switch to Fun Mode' : 'Switch to Work Mode'}"
 				type="Active"
 				press=".onLanguageModePress" />
 		</items>

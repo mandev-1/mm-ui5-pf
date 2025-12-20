@@ -12,7 +12,7 @@ sap.ui.define([
 			// Initialize navigation
 			// Initialize language model with dark mode
 			var oLanguageModel = new sap.ui.model.json.JSONModel({
-				mode: "corporate", // "corporate" (default) or "weekend"
+				mode: "work", // "work" (corporate speak) or "fun" (direct language)
 				darkMode: false
 			});
 			this.getView().setModel(oLanguageModel, "language");
@@ -86,6 +86,15 @@ sap.ui.define([
 				case "RouteStudying42":
 					sPageId = "42-prague";
 					break;
+				case "RouteABAPDevelopment":
+					sPageId = "abap-development";
+					break;
+				case "RouteFIORIApp":
+					sPageId = "42-fiori-app";
+					break;
+				case "RouteCAPBackend":
+					sPageId = "cap-backend-certification";
+					break;
 				default:
 					sPageId = "home";
 			}
@@ -111,27 +120,55 @@ sap.ui.define([
 		onNavigationItemSelect: function (oEvent) {
 			var sKey = oEvent.getParameter("item").getKey();
 			var oRouter = this.getOwnerComponent().getRouter();
+			var sRouteName;
 			
 			// Map navigation keys to route names
-			var sRouteName = "Route" + sKey.charAt(0).toUpperCase() + sKey.slice(1).replace(/-([a-z])/g, function(g) { return g[1].toUpperCase(); });
-			
-			// Handle special cases
-			if (sKey === "42-prague") {
-				sRouteName = "RouteStudying42";
-			} else if (sKey === "btp-apps") {
-				sRouteName = "RouteBTPApps";
-			} else if (sKey === "llms-rag") {
-				sRouteName = "RouteLLMsRAG";
-			} else if (sKey === "data-analytics") {
-				sRouteName = "RouteDataAnalytics";
-			} else if (sKey === "low-level") {
-				sRouteName = "RouteLowLevel";
-			} else if (sKey === "cloud-native") {
-				sRouteName = "RouteCloudNative";
-			} else if (sKey === "llmops") {
-				sRouteName = "RouteLLMOps";
-			} else if (sKey === "home") {
-				sRouteName = "RouteHome";
+			switch (sKey) {
+				case "home":
+					sRouteName = "RouteHome";
+					break;
+				case "demo":
+					sRouteName = "RouteDemo";
+					break;
+				case "btp-apps":
+					sRouteName = "RouteBTPApps";
+					break;
+				case "llms-rag":
+					sRouteName = "RouteLLMsRAG";
+					break;
+				case "data-analytics":
+					sRouteName = "RouteDataAnalytics";
+					break;
+				case "low-level":
+					sRouteName = "RouteLowLevel";
+					break;
+				case "networking":
+					sRouteName = "RouteNetworking";
+					break;
+				case "devops":
+					sRouteName = "RouteDevOps";
+					break;
+				case "cloud-native":
+					sRouteName = "RouteCloudNative";
+					break;
+				case "llmops":
+					sRouteName = "RouteLLMOps";
+					break;
+				case "42-prague":
+					sRouteName = "RouteStudying42";
+					break;
+				case "abap-development":
+					sRouteName = "RouteABAPDevelopment";
+					break;
+				case "42-fiori-app":
+					sRouteName = "RouteFIORIApp";
+					break;
+				case "cap-backend-certification":
+					sRouteName = "RouteCAPBackend";
+					break;
+				default:
+					// Try to construct route name from key
+					sRouteName = "Route" + sKey.charAt(0).toUpperCase() + sKey.slice(1).replace(/-([a-z])/g, function(g) { return g[1].toUpperCase(); });
 			}
 			
 			if (sRouteName) {
@@ -301,23 +338,19 @@ sap.ui.define([
 			
 			var oLanguageModel = this.getView().getModel("language");
 			var bDarkMode = oLanguageModel ? oLanguageModel.getProperty("/darkMode") : false;
-			var sMode = oLanguageModel ? oLanguageModel.getProperty("/mode") : "corporate";
+			var sMode = oLanguageModel ? oLanguageModel.getProperty("/mode") : "work";
 			
 			// Update dark mode list item
 			oDarkModeItem.setIcon(bDarkMode ? "sap-icon://light-mode" : "sap-icon://dark-mode");
 			oDarkModeItem.setTitle(bDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode");
 			
 			// Update language mode list item
-			var sLanguageIcon = sMode === "corporate" 
+			var sLanguageIcon = sMode === "work" 
 				? "sap-icon://weekend" 
-				: sMode === "weekend"
-				? "sap-icon://business-objects-experience"
-				: "sap-icon://employee";
-			var sLanguageTitle = sMode === "corporate" 
-				? "Switch to Weekend Mode" 
-				: sMode === "weekend"
-				? "Switch to Corporate Mode"
-				: "Switch to Corporate Mode";
+				: "sap-icon://business-objects-experience";
+			var sLanguageTitle = sMode === "work" 
+				? "Switch to Fun Mode" 
+				: "Switch to Work Mode";
 			
 			oLanguageModeItem.setIcon(sLanguageIcon);
 			oLanguageModeItem.setTitle(sLanguageTitle);
@@ -351,8 +384,8 @@ sap.ui.define([
 			var oLanguageModel = this.getView().getModel("language");
 			var sCurrentMode = oLanguageModel.getProperty("/mode");
 			
-			// Toggle between corporate (default) and weekend
-			var sNewMode = sCurrentMode === "corporate" ? "weekend" : "corporate";
+			// Toggle between work (corporate speak) and fun (direct language)
+			var sNewMode = sCurrentMode === "work" ? "fun" : "work";
 			
 			oLanguageModel.setProperty("/mode", sNewMode);
 			
@@ -367,9 +400,9 @@ sap.ui.define([
 				this._oPopover.close();
 			}
 			
-			var sMessage = sNewMode === "corporate" 
-				? "Switched to corporate mode" 
-				: "Switched to weekend mode";
+			var sMessage = sNewMode === "work" 
+				? "Switched to work mode (corporate speak)" 
+				: "Switched to fun mode (direct language)";
 			MessageToast.show(sMessage);
 		}
 	});

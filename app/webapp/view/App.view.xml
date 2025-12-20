@@ -57,6 +57,9 @@
 					<mvc:XMLView viewName="com.mmd.view.CloudNative" id="cloud-native" />
 					<mvc:XMLView viewName="com.mmd.view.LLMOps" id="llmops" />
 					<mvc:XMLView viewName="com.mmd.view.Studying42" id="42-prague" />
+					<mvc:XMLView viewName="com.mmd.view.ABAPDevelopment" id="abap-development" />
+					<mvc:XMLView viewName="com.mmd.view.FIORIApp" id="42-fiori-app" />
+					<mvc:XMLView viewName="com.mmd.view.CAPBackend" id="cap-backend-certification" />
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>

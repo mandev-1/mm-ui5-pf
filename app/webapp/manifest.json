@@ -122,6 +122,21 @@
           "name": "RouteStudying42",
           "pattern": "42-prague",
           "target": ["TargetStudying42"]
+        },
+        {
+          "name": "RouteABAPDevelopment",
+          "pattern": "abap-development",
+          "target": ["TargetABAPDevelopment"]
+        },
+        {
+          "name": "RouteFIORIApp",
+          "pattern": "42-fiori-app",
+          "target": ["TargetFIORIApp"]
+        },
+        {
+          "name": "RouteCAPBackend",
+          "pattern": "cap-backend-certification",
+          "target": ["TargetCAPBackend"]
         }
       ],
       "targets": {
@@ -164,6 +179,18 @@
         "TargetStudying42": {
           "viewId": "42-prague",
           "viewName": "Studying42"
+        },
+        "TargetABAPDevelopment": {
+          "viewId": "abap-development",
+          "viewName": "ABAPDevelopment"
+        },
+        "TargetFIORIApp": {
+          "viewId": "42-fiori-app",
+          "viewName": "FIORIApp"
+        },
+        "TargetCAPBackend": {
+          "viewId": "cap-backend-certification",
+          "viewName": "CAPBackend"
         }
       }
     }

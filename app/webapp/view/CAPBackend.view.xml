@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="com.mmd.controller.CAPBackend"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Get Ready CAP Backend Certification" showNavButton="false">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+					<l:content>
+						<Title 
+							text="Get Ready CAP Backend Certification"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						<Text 
+							text="This page is not available right now, due to a scheduled maintenance, lol"
+							class="sapUiMediumMarginBottom" />
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

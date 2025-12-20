@@ -1,0 +1,39 @@
+<mvc:View
+	controllerName="com.mmd.controller.ABAPDevelopment"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page title="Get Ready for ABAP Development" showNavButton="false" class="sapUiNoContentPadding">
+		<headerContent>
+			<Breadcrumbs currentLocationText="Get ready for ABAP development">
+				<Link text="Home" press=".onHomePress" />
+				<Link text="Other (articles, etc.)" press=".onOtherArticlesPress" />
+				<Link text="Study focused applications" />
+			</Breadcrumbs>
+		</headerContent>
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiLargeMargin" width="100%">
+					<l:content>
+						<Title 
+							text="Get Ready for ABAP Development"
+							level="H1" 
+							class="sapUiSmallMarginBottom" />
+						
+						<Text 
+							text="This is app aiming to get you ready to pass the ABAP developer certification offered at SAP Learning."
+							class="sapUiMediumMarginTop sapUiMediumMarginBottom" />
+						
+						<Text 
+							text="With ABAP (allegedly) coming to VSCode in 2026, this quiz should help you get on top of all the pesky probing tricks and quirks you need to be aware of in order to successfully pass the exam."
+							class="sapUiSmallMarginBottom" />
+						
+						<!-- Content will go here -->
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>
+

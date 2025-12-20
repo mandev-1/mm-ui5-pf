@@ -11,26 +11,15 @@
 		<!-- Left Content Area (2/3 width) -->
 		<l:VerticalLayout class="homeLeftContent sapUiNoContentPadding">
 			<l:content>
-					<!-- Toggle Switch -->
-					<l:HorizontalLayout class="sapUiMediumMarginTop sapUiMediumMarginBegin">
-						<l:content>
-							<Switch 
-								state="{= ${language>/mode} === 'human'}"
-								customTextOn="Corporate"
-								customTextOff="Real"
-								change="onLanguageToggle" />
-						</l:content>
-					</l:HorizontalLayout>
-					
 					<!-- Main Heading -->
 					<l:VerticalLayout class="sapUiLargeMarginTop sapUiLargeMarginBegin homeContentWidth">
 						<l:content>
 							<core:HTML 
-								content="&lt;h1 class=&quot;homeHeading&quot;&gt;I design digital products that &lt;em&gt;make a difference&lt;/em&gt;&lt;/h1&gt;" />
+								content="&lt;h1 class=&quot;homeHeading&quot;&gt;I built this portfolio with UI5 and CAP because why not&lt;/h1&gt;" />
 							
 							<!-- Description Text -->
 				<Text 
-								text="I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
+								text="I'm the Man. I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
 								class="sapUiMediumMarginTop homeDescription" />
 							
 							<!-- Who am I Section -->
