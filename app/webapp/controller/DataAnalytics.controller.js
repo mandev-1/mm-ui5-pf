@@ -6,6 +6,16 @@ sap.ui.define([
 	return Controller.extend("com.mmd.controller.DataAnalytics", {
 		onInit: function () {
 			// Controller initialization
+		},
+		
+		onHomePress: function () {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteHome");
+		},
+		
+		onProjectsPress: function () {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteHome");
 		}
 	});
 });

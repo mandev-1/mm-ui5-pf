@@ -3,19 +3,237 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
 	height="100%">
-	<Page title="Data Analytics" showNavButton="false">
+	<Page title="Data Analytics Notes" showNavButton="false" class="sapUiNoContentPadding">
+		<headerContent>
+			<Breadcrumbs currentLocationText="Data Analytics">
+				<Link text="Home" press=".onHomePress" />
+				<Link text="Projects" press=".onProjectsPress" />
+			</Breadcrumbs>
+		</headerContent>
 		<content>
 			<ScrollContainer horizontal="false" vertical="true" height="100%">
-				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:VerticalLayout class="sapUiLargeMargin" width="85%">
 					<l:content>
-						<Title 
-							text="Data Analytics"
-							level="H1" 
-							class="sapUiSmallMarginBottom" />
-						<Text 
-							text="Data analytics and visualization projects."
-							class="sapUiMediumMarginBottom" />
+						<!-- Header -->
+						<l:VerticalLayout class="sapUiSmallMarginBottom">
+							<l:content>
+								<Text 
+									text="BERLIN JUNE 2025, 8:16 AM"
+                                    class="sapUiSmallMarginTop sapUiSmallMarginBottom"
+									style="font-size: 0.875rem; color: var(--sapNeutralTextColor, #6a6d70);" />
+								<Title 
+									text="DATA SCIENCE FINAL MOTTO"
+									level="H1" 
+									class="sapUiSmallMarginTop" />
+							</l:content>
+						</l:VerticalLayout>
+						
+						<!-- Preface -->
+						<Panel 
+							class="sapUiSmallMarginBottom"
+							style="background-color: var(--sapGroup_ContentBackground, #f7f7f7); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1.5rem;">
+							<content>
+								<l:VerticalLayout>
+									<l:content>
+										<Title text="Preface" level="H3" class="sapUiSmallMarginBottom" />
+                                        <Text 
+											text="The role of the data scientist is to predict &quot;the future&quot; with automatic learning models on past data, he must be a force of proposal to explain the possible interest to the implementation of his models, create tools to help decision making."
+											class="sapUiSmallMarginTop" />
+										<Text 
+											text="It is up to you to find the tools that suit you. You are free to use any language of your choice for this module."
+											class="sapUiSmallMarginBottom" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- Day 1 -->
+						<Panel 
+							expandable="true"
+							expanded="true"
+							headerText="DAY 1 - Basic Dataset Engineering"
+							class="sapUiMediumMarginBottom">
+							<content>
+								<l:VerticalLayout class="sapUiSmallMargin">
+									<l:content>
+										<Text text="Focus on basic dataset engineering." class="sapUiSmallMarginBottom" />
+										<Text text="Work with SQL - dockerized PSQL environment for local engineering." />
+										<Text text="Visualize the table via PGAdmin, wrangle tables, create tables manually, other 101s." class="sapUiSmallMarginTop" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- Day 2 -->
+						<Panel 
+							expandable="true"
+							expanded="true"
+							headerText="DAY 2 - E-shop Log Analysis (Activity)"
+							class="sapUiMediumMarginBottom">
+							<content>
+								<l:VerticalLayout class="sapUiSmallMargin">
+									<l:content>
+										<Text text="Set-up of dockerized PSQL server" class="sapUiSmallMarginBottom" />
+										<Text text="ETL - extract, transform, load." class="sapUiSmallMarginBottom" />
+										<Text 
+											text="Due to the size of datasets, there were many issues. In the end, this was quite a time consuming challenge. The dataset had cca. 20m+ product records for various actions, such as 'view', 'put_to_cart' or 'purchase'. The data spanned a period of 5 months from Oct 2022 - Feb 2023."
+											class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+										<Text 
+											text="Key takeaways: import, fusion, transformation, advanced PSQL engineering."
+											style="font-weight: 600;" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- Day 3 -->
+						<Panel 
+							expandable="true"
+							expanded="true"
+							headerText="DAY 3 - Data Analysis: Understanding Customer Groups"
+							class="sapUiMediumMarginBottom">
+							<content>
+								<l:VerticalLayout class="sapUiSmallMargin">
+									<l:content>
+										<Text text="Graphs, Charts, presentation of data." class="sapUiSmallMarginBottom" />
+										<Text text="Pandas, Seaborn, mp." class="sapUiSmallMarginBottom" />
+										<Text 
+											text="More PSQL engineering, data presentation and pattern identification - the clustering."
+											class="sapUiSmallMarginTop" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- Day 4 -->
+						<Panel 
+							expandable="true"
+							expanded="true"
+							headerText="DAY 4 - Data Science: Predicting Good vs. Evil in Starwars Space"
+							class="sapUiMediumMarginBottom">
+							<content>
+								<l:VerticalLayout class="sapUiSmallMargin">
+									<l:content>
+										<Text text="Dataset exploration (visual) - seaborn, polars (pandas)" class="sapUiSmallMarginBottom" />
+										<Text text="Finding correlating trends using visual tools - charts (seaborn), plots, histograms." class="sapUiSmallMarginBottom" />
+										<Title text="Related activities:" level="H4" class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+										<Text text="• Standardization = Scaling" class="sapUiTinyMarginBottom" />
+										<Text text="• Preparation for training of models" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- Day 5 -->
+						<Panel 
+							expandable="true"
+							expanded="true"
+							headerText="DAY 5 - Modern Tools"
+							class="sapUiMediumMarginBottom">
+							<content>
+								<l:VerticalLayout class="sapUiSmallMargin">
+									<l:content>
+										<Title text="PCA (Principal Component Analysis)" level="H4" class="sapUiSmallMarginBottom" />
+										<Text text="• Analysing existing model's competence using Confusion Matrix" class="sapUiTinyMarginBottom" />
+										<Text text="• Multicollinearity reduction (Dimension reduction) of a set and its features - understanding where is the inflation through VIF score" class="sapUiTinyMarginBottom" />
+										<Text text="• Relation between multicollinearity and correlation coefficiant" class="sapUiTinyMarginBottom" />
+										<Text text="• Evaluating and working with regression / classification models" class="sapUiTinyMarginBottom" />
+										<Text text="• Identifying Convergence issues" class="sapUiTinyMarginBottom" />
+										<Text text="• Working with Voting Classifier" />
+										<Text 
+											text="Note: although denoted as days, these projects were spread out over 7 days."
+											class="sapUiSmallMarginTop"
+											style="font-style: italic; color: var(--sapNeutralTextColor, #6a6d70);" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- Being a Data Engineer -->
+						<Panel 
+                            visible="false"
+							expandable="true"
+							expanded="false"
+							headerText="BEING A DATA ENGINEER (wrangle and cleanse)"
+							class="sapUiMediumMarginBottom">
+							<content>
+								<l:VerticalLayout class="sapUiSmallMargin">
+									<l:content>
+										<Text 
+											text="For this exercise, you can use PostgreSQL directly if it is installed on your campus machine or on a VM. Otherwise, you must use Docker Compose."
+											class="sapUiSmallMarginBottom" />
+										<Text text="• The username must be your student login." class="sapUiTinyMarginBottom" />
+										<Text text="• The name of the database must be piscineds." class="sapUiTinyMarginBottom" />
+										<Text text="• The password must be mysecretpassword." class="sapUiTinyMarginBottom" />
+										<Text 
+											text="We must be able to connect to your PostgreSQL database with the following command:"
+											class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+										<Text 
+											text="psql -U your_login -d piscineds -h localhost -W mysecretpassword"
+											style="font-family: monospace; background-color: var(--sapField_Background, #fff); padding: 0.5rem; border-radius: 0.25rem; border: 1px solid var(--sapField_BorderColor, #89919a);"
+											class="sapUiSmallMarginBottom" />
+										
+										<Title text="INCEPTION PROJECT STANDARDS:" level="H4" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+										<Text text="• Each Docker image must have the same name as its corresponding service." class="sapUiTinyMarginBottom" />
+										<Text text="• Each service has to run in a dedicated container." class="sapUiTinyMarginBottom" />
+										<Text text="• For performance reasons, the containers must be built from either the penultimate stable version of Alpine or Debian." class="sapUiTinyMarginBottom" />
+										<Text text="• You also have to write your own Dockerfiles, one per service." class="sapUiTinyMarginBottom" />
+										<Text text="• The Dockerfiles must be called in your docker-compose.yml by your Makefile." class="sapUiTinyMarginBottom" />
+										<Text text="• This means you must build the Docker images for your project yourself." class="sapUiTinyMarginBottom" />
+										<Text text="• It is then forbidden to pull ready-made Docker images or use services such as DockerHub (Alpine/Debian being excluded from this rule)." class="sapUiTinyMarginBottom" />
+										<Text text="• This project must be completed on a Virtual Machine." class="sapUiTinyMarginBottom" />
+										<Text text="• All the files required for the configuration of your project must be placed in a srcs folder." class="sapUiTinyMarginBottom" />
+										<Text text="• A Makefile is also required and must be located at the root of your directory. It must set up your entire application (i.e., it has to build the Docker images using docker-compose.yml)." />
+										
+										<Title text="RUNNING LOCAL TESTS ON MACOS" level="H4" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+										<Text text="1. Start the app with: brew services start postgresql" class="sapUiTinyMarginBottom" />
+										<Text text="2. Access it with: psql postgres" class="sapUiTinyMarginBottom" />
+										<Text text="3. Create the DB named piscineds: CREATE DATABASE piscineds;" class="sapUiTinyMarginBottom" />
+										<Text text="4. Setup user (create and give privileges): GRANT ALL PRIVILEGES ON DATABASE piscineds TO mman;" class="sapUiTinyMarginBottom" />
+										<Text text="5. Login to the db: psql -U mman -d piscineds -h localhost -W mysecretpassword" />
+										
+										<Title text="VISUALIZATION ON MACOS / WINDOWS / LINUX" level="H4" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+										<Text 
+											text="To visualize the data, I chose DBeaver software, available at:"
+											class="sapUiSmallMarginBottom" />
+										<Link 
+											text="https://dbeaver.com/docs/dbeaver/Basic-operations/#database-navigator"
+											href="https://dbeaver.com/docs/dbeaver/Basic-operations/#database-navigator"
+											target="_blank"
+											class="sapUiSmallMarginBottom" />
+										
+										<Title text="SQL Table Structure" level="H4" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+										<Text 
+											text="-- Table: public.customers&#10;&#10;-- DROP TABLE IF EXISTS public.customers;&#10;&#10;CREATE TABLE IF NOT EXISTS public.customers&#10;(&#10;    event_type character varying(50) COLLATE pg_catalog.&quot;default&quot;,&#10;    product_id integer,&#10;    price numeric(10,2),&#10;    user_id bigint,&#10;    user_session uuid,&#10;    event_time timestamp without time zone,&#10;    category_id bigint,&#10;    category_code character varying(255) COLLATE pg_catalog.&quot;default&quot;,&#10;    brand character varying(255) COLLATE pg_catalog.&quot;default&quot;&#10;)&#10;&#10;TABLESPACE pg_default;&#10;&#10;ALTER TABLE IF EXISTS public.customers&#10;    OWNER to mman;"
+											style="font-family: monospace; font-size: 0.875rem; background-color: var(--sapField_Background, #fff); padding: 1rem; border-radius: 0.25rem; border: 1px solid var(--sapField_BorderColor, #89919a); white-space: pre-wrap;"
+											class="sapUiSmallMarginTop" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
+						
+						<!-- GitHub Repository Link -->
+						<Panel 
+							class="sapUiNoContentPadding"
+							style="background-color: var(--sapGroup_ContentBackground, #f7f7f7); border-radius: 0.5rem; padding: 1.5rem; margin-top: 1.5rem;">
+							<content>
+								<l:VerticalLayout>
+									<l:content>
+										<Title text="Repository" level="H3" class="sapUiSmallMarginBottom" />
+										<Text 
+											text="Based on content from:"
+											class="sapUiSmallMarginBottom" />
+										<Link 
+											text="https://github.com/mandev-1/berlinds"
+											href="https://github.com/mandev-1/berlinds"
+											target="_blank"
+											icon="sap-icon://attachment" />
+									</l:content>
+								</l:VerticalLayout>
+							</content>
+						</Panel>
 					</l:content>
 				</l:VerticalLayout>
 			</ScrollContainer>

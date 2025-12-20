@@ -60,6 +60,205 @@ body {
     width: 100%;
 }
 
+.homePage {
+    background-image: url('bg3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark mode background */
+@media (prefers-color-scheme: dark) {
+    .homePage {
+        background-image: url('bg1.png');
+    }
+}
+
+/* Profile Picture Styling */
+.profilePictureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profilePicture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profilePicture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive profile picture */
+@media screen and (max-width: 600px) {
+    .profilePicture {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Animated Sparkle Heading */
+.sparkleText {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0.5rem 0;
+}
+
+.headingText {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.67s ease;
+}
+
+.sparkleText:hover .headingText {
+    /* transform: scale(1.02);
+    text-shadow: 0 0 20px rgba(102, 126, 234, 0.5); */
+}
+
+/* Built word styling */
+.builtWord {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Animated Underline - only for "built" word */
+.builtWord .underline {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+    background-size: 200% 100%;
+    width: 0;
+    transition: width 0.9s ease;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
+    animation: shimmer 2s infinite;
+}
+
+.sparkleText:hover .builtWord .underline {
+    width: 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Sparkle particles */
+.sparkleText::before,
+.sparkleText::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sparkleText:hover::before,
+.sparkleText:hover::after {
+    opacity: 1;
+}
+
+/* Create sparkle particles on hover */
+.sparkleText:hover {
+    animation: sparkle 0.6s ease-out;
+}
+
+@keyframes sparkle {
+    /* 0% {
+        filter: drop-shadow(0 0 0 rgba(102, 126, 234, 0));
+    }
+    50% {
+        filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.8))
+                drop-shadow(0 0 20px rgba(118, 75, 162, 0.6));
+    }
+    100% {
+        filter: drop-shadow(0 0 0 rgba(102, 126, 234, 0));
+    } */
+}
+
+/* Sparkle particles flying off - from built word only */
+.builtWord::before {
+    content: '✨';
+    position: absolute;
+    font-size: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sparkleText:hover .builtWord::before {
+    animation: sparkleFly1 1s ease-out forwards;
+}
+
+.builtWord::after {
+    content: '⭐';
+    position: absolute;
+    font-size: 0.8rem;
+    opacity: 0;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sparkleText:hover .builtWord::after {
+    animation: sparkleFly2 1.2s ease-out 0.8s forwards;
+}
+
+@keyframes sparkleFly1 {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(30px, -40px) rotate(180deg) scale(0.5);
+    }
+}
+
+@keyframes sparkleFly2 {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-35px, -50px) rotate(-180deg) scale(0.5);
+    }
+}
+
+/* Add more sparkle elements via JavaScript will be handled in controller */
+
 /* AI Chat Button Styling */
 .aiChatButton.sapMBtn {
     min-width: 200px !important;
