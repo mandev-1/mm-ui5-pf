@@ -1,0 +1,6739 @@
+[
+  {
+    "id": "Q1",
+    "title": "RAP Semantic Key Uniqueness",
+    "stem": "What RESTful Application Programming feature is used to ensure the uniqueness of a semantic key?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Validation",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Action",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Determination",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q2",
+    "title": "BTP Benefit for S/4HANA Cloud",
+    "stem": "Which of the following is a benefit of using SAP BTP for extending S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Direct access to modify core SAP code",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Reduced need for system upgrades",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Ability to build and run custom applications",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Elimination of the need for testing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q3",
+    "title": "Debugger Continue (F8) Stops",
+    "stem": "When you press F8 (Continue) in the debugger, where could the program processing next stop? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "At the end of the program",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "At a subsequent breakpoint",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "In the next line",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "At the next ENDMETHOD statement.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q4",
+    "title": "CDS Modeling: Sales Orders and Items",
+    "stem": "Scenario: A developer is designing a data model to represent sales orders and their line items. Which approach should be used in ABAP CDS for optimal design? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Create a CDS view for sales orders and another for line items",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Use associations to link sales orders and line items",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Implement all logic in a single CDS view",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Avoid using parameters in CDS views",
+        "correct": false
+      },
+      {
+        "key": "E",
+        "text": "Utilize input parameters to filter data dynamically",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q5",
+    "title": "Scalar UDF Purpose",
+    "stem": "In ABAP for SAP HANA, what is the purpose of using 'Scalar User-Defined Functions'?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To perform complex calculations on the application server",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To define custom functions that return a single value, executed in the database",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To create new data types for database tables",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To manage user access and permissions in the database",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q6",
+    "title": "Singleton Pattern",
+    "stem": "Which of the following is an example of the 'Singleton' design pattern in ABAP OO?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A class that has multiple instances with shared properties",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A class that ensures only one instance exists at any time",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "A class that is used to create complex database queries",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A class that groups several related methods",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q7",
+    "title": "Analyze SQL Performance",
+    "stem": "Which of the following tools can be used to analyze the performance of individual SQL statements? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SQL Trace",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "ABAP test cockpit as part of ABAP development tools for Eclipse",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SQL Monitor",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "ABAP call monitor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q8",
+    "title": "ABAP Cloud Essentials",
+    "stem": "Which of the following are essential aspects of ABAP Cloud? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "ABAP Cloud language",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "ABAP development tools for Eclipse",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "ABAP RESTful application programming model",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": ".NET & SOAP",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q9",
+    "title": "REST Principles",
+    "stem": "Which of the following are principles of REST architecture? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Virtualization",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Stateless",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Layered system",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Cacheable",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "title": "Public Released Interfaces",
+    "stem": "Which of the following are \"public released interfaces\" under the SAP S/4HANA Cloud extensibility model? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Remote APIs",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Local APIs",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Classical user exits",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Extension Points",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "title": "ABAP SQL Arithmetic Restrictions",
+    "stem": "Which restrictions exist for ABAP SQL arithmetic expressions? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Floating point types and integer types can NOT be used in the same expression.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "The operator / is allowed only in floating point expressions.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Decimal types and integer types can NOT be used in the same expression.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The operator ** is allowed only in floating point expressions.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "title": "Core Data Services Features",
+    "stem": "Which of the following are features of Core Data Services? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Inheritance",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Associations",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Annotations",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Delegation",
+        "correct": false
+      },
+      {
+        "key": "E",
+        "text": "Structured Query Language (SQL)",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "title": "Redefinition in Subclass",
+    "stem": "In a subclass subl you want to redefine a component of a superclass superl. How do you achieve this? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "You add the clause REDEFINITION to the component in subl.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "You implement the redefined component for a second time in superl.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "You implement the redefined component in subl.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "You add the clause REDEFINITION to the component in superl.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "title": "Local Platform APIs Context",
+    "stem": "The term \"Local Platform APIs\" is directly associated with which of the following? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP HANA",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SAP BTP, ABAP environment",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SAP S/4HANA Cloud, ABAP environment",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "SAP HANA Cloud",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "title": "Exceptions Facts",
+    "stem": "Which of the following statements about exceptions are true? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "A TRY...ENDTRY block must contain at least two CATCH statements.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "All uncaught exceptions lead to runtime errors.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "All execptions are catchable.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Some exceptions are catchable, others are uncatchable.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "title": "Enqueue/Dequeue Purpose",
+    "stem": "What is the purpose of the 'ENQUEUE' and 'DEQUEUE' functions in ABAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To manage memory allocation",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To handle file operations",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To control access to shared resources",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To perform asynchronous processing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q17",
+    "title": "Combine Result Sets Without Duplicates",
+    "stem": "You want to read data from two database tables so that the SELECT statement returns a single result set that contains no duplicate entries. Which technique would you use?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "UNION ALL",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "LEFT OUTER JOIN",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "UNION",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "INNER JOIN",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "title": "Interfaces in ABAP",
+    "stem": "What considerations are important when implementing interfaces in ABAP? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Static methods, instance methods, static events, and instance events are possible interface components.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Implementing classes may declare the interface in any visibility section.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Static methods can be implemented in an interface.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Instance methods are not implemented in an interface.",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "Implementing classes must declare the interface in their public section.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "title": "ALV IDA Significance",
+    "stem": "What is the significance of 'ALV IDA' (ALV with Integrated Data Access) in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is a tool for database administration",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It provides a framework for building web applications",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It is used for legacy system migration",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It enables efficient data display by leveraging the power of the HANA database",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "title": "Where ABAP Cloud Dev Model Applies",
+    "stem": "In which products must you use the ABAP Cloud Development Model? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP S/4HANA Cloud, private edition",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SAP BTP, ABAP environment",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SAP S/4HANA on premise",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "SAP S/4HANA Cloud, public edition",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q21",
+    "title": "RAP Managed Scenario Advantage",
+    "stem": "What is the main advantage of using Managed Scenarios in the ABAP RESTful Application Programming Model?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They provide direct access to the database.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They automatically handle CRUD operations.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "They are used for unstructured data.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "They offer enhanced user interface controls.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q22",
+    "title": "RAP Main Goal",
+    "stem": "What is the main goal of the ABAP RESTful Application Programming Model (RAP)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To provide a framework for building scalable web applications",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To facilitate communication between different SAP systems",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To enable the creation of RESTful services in ABAP",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To manage user sessions and authentication",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q23",
+    "title": "Spatial Data Processing Benefit",
+    "stem": "How does 'Spatial Data Processing' enhance ABAP applications in SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By providing capabilities for storing and querying geographical and spatial data",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "By optimizing the graphical rendering of data in applications",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By managing the physical storage of data in different locations",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By automating the distribution of data across multiple servers",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q24",
+    "title": "RAP Layers",
+    "stem": "Which of the following are ABAP RESTful application programming model layers? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Domain Model and Implementation",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Data Access",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Business Service Exposure",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "CDS Annotations",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q25",
+    "title": "ALV Grid Control Purpose",
+    "stem": "In ABAP, what does the ALV Grid Control provide?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A tool for user authentication",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A method for data encryption",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "An interactive and customizable table display",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "A framework for mobile applications",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q26",
+    "title": "Constructor Purpose",
+    "stem": "In ABAP OO, what is the purpose of a Constructor method?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To initialize an object when it is created",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "To clean up resources when an object is deleted",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To perform database updates",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To handle exceptions in object methods",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q27",
+    "title": "Model for Complex Business Logic",
+    "stem": "A developer needs to implement complex business logic involving multiple database tables and calculations. Which ABAP programming model should be used?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Procedural programming with Open SQL",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Object-oriented programming with classes and methods",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Functional programming with AMDP",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Event-driven programming with control frameworks",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q28",
+    "title": "Observer Pattern",
+    "stem": "How does the 'Observer' pattern function in ABAP OO?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By ensuring that objects are always in a valid state",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By allowing objects to publish changes to their state to interested subscribers",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "By managing the lifecycle of objects",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By providing a mechanism for automatic garbage collection",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q29",
+    "title": "ABAP Cloud Multitenancy",
+    "stem": "In ABAP Cloud, how is the concept of 'Multitenancy' handled for custom developments?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By allowing each tenant to have its own custom code",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By sharing custom code across all tenants",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By restricting custom development to specific tenants",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "By isolating custom code in a separate database",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q30",
+    "title": "RAP Business Object Parts",
+    "stem": "In RESTful Application Programming, a business object contains which parts? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "CDS view",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Behavior definition",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Authentication rules",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Process definition",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q31",
+    "title": "Service Extensions Purpose",
+    "stem": "What is the significance of 'Service Extensions' in the context of SAP S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To modify core SAP services directly",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To extend existing SAP services or create new ones without impacting the core",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To replace standard SAP services with custom ones",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To integrate third-party services into the SAP core",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q32",
+    "title": "Keyword for Overriding",
+    "stem": "In ABAP OO, which keyword is used to define a method that can be overridden in a subclass?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "FINAL",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "STATIC",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "ABSTRACT",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "REDEFINITION",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q33",
+    "title": "Expression-Based Indexes",
+    "stem": "How do 'Expression-Based Indexes' enhance performance in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By automatically updating indexes based on data changes",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By creating indexes based on calculated expressions",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "By reducing the size of indexes",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By indexing every column in a table",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q34",
+    "title": "Open SQL in HANA",
+    "stem": "How does the use of 'Open SQL' change with ABAP development for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Open SQL is no longer supported in SAP HANA",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Open SQL is replaced entirely by CDS views",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Open SQL is enhanced to leverage SAP HANA’s capabilities",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Open SQL usage remains unchanged in SAP HANA",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q35",
+    "title": "Clean Core Workstreams",
+    "stem": "Which of the following are recommended clean core workstreams? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Review of copies",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Simplification item checks",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Custom code adaptation",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Custom code evaluation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q36",
+    "title": "Field-Symbols Purpose",
+    "stem": "In ABAP, what is the purpose of the 'Field-Symbols' keyword?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To declare a constant",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To create a reference to a memory area",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To define a new data structure",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To initialize a global variable",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q37",
+    "title": "Bind CDS for Value Help",
+    "stem": "In a RESTful Application Programming application, in which objects do you bind a CDS view to create a value help? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Data model view",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Behavior definition",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Metadata Extension",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Service Definition",
+        "correct": false
+      },
+      {
+        "key": "E",
+        "text": "Projection View",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q38",
+    "title": "Parallel Processing Benefit",
+    "stem": "In ABAP for SAP HANA, how does 'Parallel Processing' improve application performance?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By dividing tasks into smaller sub-tasks that are executed simultaneously",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "By processing all tasks in a single thread for consistency",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By delaying non-critical tasks until the system is idle",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By allocating all system resources to a single task at a time",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q39",
+    "title": "S/4HANA Adoption Paths",
+    "stem": "Which of the following are the three possibilities for a customer to implement SAP S/4HANA? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "System landscape transformation",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Third-party cloud",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "System conversion",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "New implementation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q40",
+    "title": "ABAP CDS Views Feature",
+    "stem": "Which of the following is a feature of ABAP CDS Views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They can only be used in SAP GUI.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They are primarily used for updating data.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "They support complex calculations and logic.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "They are independent of the underlying database.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q41",
+    "title": "Transport Request",
+    "stem": "In ABAP, what is a \"Transport Request\"?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A method to request system resources",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A package for transporting changes across systems",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "A request for data from the database",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A user request for program execution",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q42",
+    "title": "GROUP BY Purpose",
+    "stem": "In ABAP, what is the purpose of the 'GROUP BY' clause in an Open SQL SELECT statement?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To sort the result set",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To combine rows that have the same values in specified columns",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To limit the number of rows returned",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To specify the columns to be returned",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q43",
+    "title": "Protocol in RAP",
+    "stem": "Which protocol is primarily used for data exchange in the ABAP RESTful Application Programming Model?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "HTTP",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SOAP",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "OData",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "MQTT",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q44",
+    "title": "What is a Class",
+    "stem": "In ABAP Object-Oriented programming, what is a Class?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A template for creating objects",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "A specific instance of an object",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A collection of related functions",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A database table",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q45",
+    "title": "CDS @ClientDependent",
+    "stem": "In ABAP CDS, what does the annotation '@ClientDependent' indicate?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The view is independent of the client.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The view will include client field in the result set.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "The view is used for client-side scripting.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The view can only be accessed by specific clients.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q46",
+    "title": "Strategy Pattern",
+    "stem": "What is the significance of the 'Strategy' design pattern in ABAP OO?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is used to create a single instance of a class",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It defines a family of algorithms and makes them interchangeable",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "It is used for error handling and logging",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It optimizes the performance of database queries",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q47",
+    "title": "AUTHORITY-CHECK Behavior",
+    "stem": "In a program you find this source code: AUTHORITY-CHECK OBJECT '/DWO/TRVL ( ID 'CNTRY' FIELD 'DE' ID ACTVT FIELD '03'. Which of the following apply? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "If the user is authorized for 'CNTRY = 'DE' then the return code is always 0.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "If the user is NOT authorized for 'CNTRY' = 'DE' OR for 'ACTVT' = '03' then the program will terminate.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "If the user is authorized for 'CNTRY = 'DE' AND for 'ACTVT = '03' then the return code is 0.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "AUTHORITY-CHECK verifies whether a user is authorized for /DMO/TRVL with the listed field values.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q48",
+    "title": "CDS Views Advantage",
+    "stem": "What is the advantage of using Core Data Services (CDS) views in ABAP for HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They provide a graphical interface for database design",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They enable complex calculations and logic to be executed in the database",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "They are used to create web-based applications",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "They replace the need for SQL in ABAP",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q49",
+    "title": "CDS Path Expressions",
+    "stem": "What is the significance of using Path Expressions in ABAP CDS Views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define the execution path of the view",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To navigate relationships between associated views",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To encrypt sensitive data paths",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To specify backup paths for data recovery",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q50",
+    "title": "Polymorphism Definition",
+    "stem": "Which of the following best describes 'Polymorphism' in Object-Oriented Programming?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The ability of different classes to be treated as instances of the same class through inheritance",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The concept of hiding the internal state of an object and requiring all interaction to be performed through an object's methods",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The practice of designing objects to share behaviors and to be able to override shared behaviors with specific ones",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "The process of breaking down a system into smaller, manageable parts",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q51",
+    "title": "Expose Associated Field in CDS",
+    "stem": "Given the CDS view with an association _spfli, which statement exposes the associated field connid in the element list?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "demo_ods_assoc_spfli.connid,",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "demo_ods_assoc_spfli-connid/",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "spfli-connid,",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "_spfli.connid/",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q52",
+    "title": "HANA Table Settings for Rare Access",
+    "stem": "You have a large SPFLI table accessed only by a rarely run program. Which general settings should you set for the table? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Storage Type to Column Store",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Load Unit to Column Loadable",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Storage Type to Row Store",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Load Unit to Page Loadable",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q53",
+    "title": "ABAP Cloud Integration Frameworks",
+    "stem": "Which of the following integration frameworks have been released for ABAP cloud development? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "SOAP consumption",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "CDS Views",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Business Add-ins (BAdIs)",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Business Events",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "OData services",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q54",
+    "title": "Define Local Class",
+    "stem": "Which ABAP statement is used to define a local class within a program?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "CLASS...ENDCLASS",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "DEFINE...ENDDEFINE",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "IMPLEMENTATION...ENDIMPLEMENTATION",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "LOCAL CLASS...ENDLOCAL",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q55",
+    "title": "In-App Extensibility Purpose",
+    "stem": "What is the purpose of the 'In-App Extensibility' framework in SAP S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To allow modifications to the SAP core",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enable users to extend and personalize applications within the SAP system",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To create standalone applications separate from the SAP system",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To manage the integration of third-party applications",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q56",
+    "title": "Improve Performance Approaches",
+    "stem": "An ABAP developer must enhance the performance of a data‑intensive application. Which approaches should be considered? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Implementing parallel processing",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Enhancing SQL queries for efficiency",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Applying appropriate buffering techniques",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Minimizing the use of internal tables",
+        "correct": false
+      },
+      {
+        "key": "E",
+        "text": "Code pushdown to the database layer",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q57",
+    "title": "Organize Field Display",
+    "stem": "Which RESTful Application Programming object can be used to organize the display of fields in an app?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Data model view",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Metadata extension",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Service definition",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Projection view",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q58",
+    "title": "ATC Purpose",
+    "stem": "How does the 'ABAP Test Cockpit' (ATC) enhance code quality in ABAP development?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By providing a runtime environment for testing",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By automatically correcting syntax errors",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By performing static code checks and analysis",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "By managing version control of ABAP programs",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q59",
+    "title": "Friend Classes",
+    "stem": "In ABAP OO, what is the significance of the 'Friend' relationship between classes?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It allows classes to share all methods and attributes",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It restricts access to methods and attributes to a specific class",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It enables classes to access each other's private components",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "It is used to define inheritance relationships",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q60",
+    "title": "Side-by-Side Extension Choice",
+    "stem": "A company wants to extend their S/4HANA Cloud system without disrupting the core. They need a robust solution for complex business processes. Which approach should they take?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Modify the standard SAP code in the core",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Use SAP BTP for Side-by-Side extensions",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Implement user exits in the S/4HANA system",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Avoid any form of customization or extension",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q61",
+    "title": "SAP Clean Core Goal",
+    "stem": "What is the primary goal of SAP Clean Core in S/4HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To integrate third-party applications",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To simplify the core by removing obsolete code",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To enhance the performance of the core system",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To provide a separate layer for custom development",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q62",
+    "title": "Citizen Developer Feature in SAP Build",
+    "stem": "Which of the following features of SAP Build is oriented towards a citizen developer?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Integrated debugger",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Utilization of a particular language and/or programming model",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Advanced testing capabilities",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Intuitive graphical tools utilizing code generation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q63",
+    "title": "Database Hints Role",
+    "stem": "What is the role of 'Database Hints' in ABAP SQL statements for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To translate ABAP code to SQL",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To optimize query execution plans",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To enforce database security policies",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To manage database connections",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q64",
+    "title": "Benefits of ABAP CDS Views",
+    "stem": "Which of the following are benefits of using ABAP CDS views? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Integrated authorization checks",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Automatic generation of OData services",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Rich data modeling capabilities",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Enhanced performance with code pushdown",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "Direct access to database tables",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q65",
+    "title": "Role of SAP BTP in ABAP Cloud",
+    "stem": "In the context of ABAP Cloud, what is the role of SAP Business Technology Platform (BTP)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To manage SAP system upgrades and patches",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To provide a platform for building, extending, and integrating SAP applications",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To serve as the primary database for SAP applications",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To replace the need for an on-premise SAP system",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q66",
+    "title": "RAP Projections Purpose",
+    "stem": "What is the purpose of 'Projections' in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To visualize data in graphical formats",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To manage database replication",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To handle error logging and monitoring",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create subsets of data for specific use cases",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q67",
+    "title": "Result Type of 1/8",
+    "stem": "In the assignment, data (gv_result) = 1/8. what will be the data type of gv_result?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "OTYPE I",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "TYPE P DECIMALS 2",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "TYPE P DECIMALS 3",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "TYPE DEFLOAT 16",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q68",
+    "title": "Recommended Extensibility for Fiori UI",
+    "stem": "Which extensibility type does SAP recommend you use to enhance the existing UI for an SAP Fiori app?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Key user",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Classic",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Side-by-side",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Developer",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q69",
+    "title": "Optimistic Locking in RAP",
+    "stem": "How does the 'Optimistic Locking' mechanism work in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By preventing any access to data during updates",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By using timestamps to order transactions",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By locking the entire database during transactions",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By allowing concurrent access and resolving conflicts during save",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q70",
+    "title": "ABAP Cloud Development Rules",
+    "stem": "Which of the following are ABAP Cloud Development Model rules? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Build ABAP reports with either ABAP List Viewer (ALV) or SAP Fiori.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Build ABAP RESTful application programming model-based services.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Reverse modifications when a suitable public SAP API becomes available.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Use public SAP APIs and SAP extension points.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q71",
+    "title": "Clean Core Key Parts",
+    "stem": "Which of the following are key parts of the clean core concept? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Usage of released APIs",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Elimination of modifications",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Strict separation between extensions and the underlying application",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Copying (that is, cloning) of standard code in lieu of modifications",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q72",
+    "title": "Factory Method Benefit",
+    "stem": "How does the 'Factory Method' design pattern benefit ABAP OO programming?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By directly exposing the constructors of a class",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By automatically generating code for class methods",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By centralizing object creation to ensure consistency",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "By reducing the memory usage of objects",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q73",
+    "title": "Side-by-Side Extension Use Cases",
+    "stem": "Which of the following are use cases for side-by-side extensions? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "A custom solution needing to be developed by a partner",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Creating custom fields in an SAP S/4HANA Cloud table",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Adding additional business logic to an SAP S/4HANA Cloud Business Object",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Creating custom applications integrating data from SAP S/4HANA Cloud and SAP Ariba",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q74",
+    "title": "Primary Benefit of Code Pushdown",
+    "stem": "What is the primary benefit of code pushdown in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To increase the size of the codebase",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enhance the user interface experience",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To improve performance by executing data-intensive operations in the database",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To simplify the syntax of ABAP code",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q75",
+    "title": "ABAP Comment Syntax",
+    "stem": "Which of the following can you use to denote a comment in ABAP? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "* at the beginning of a line",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "// at the beginning of a line",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "-- anywhere in the line",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "\" anywhere in the line",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q76",
+    "title": "Key User Extensibility Tools",
+    "stem": "Which of the following are key user extensibility tools? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Custom Fields",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Custom Database Tables",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Custom CDS Views",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Custom Business Objects",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q77",
+    "title": "Value Help in CDS Views",
+    "stem": "In the ABAP RAP, what is the role of 'Value Help' in CDS Views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To provide default values for fields",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To optimize query execution plans",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To offer input assistance and value suggestions",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To assist with data encryption",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q78",
+    "title": "Custom Code Usage Data Tools",
+    "stem": "Which of the following are tools that can be used for custom code usage data? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Custom Code Migration app",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "ABAP call monitor",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Usage and procedure logging (UPL)",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "ABAP development tools for Eclipse Quick Fix",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q79",
+    "title": "EML Read Entity",
+    "stem": "In RESTful Application Programming, which EML statement retrieves an object?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Select entity",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Read entity",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Find entity",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Get entity",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q80",
+    "title": "ABAP Environment in Cloud",
+    "stem": "What distinguishes the ABAP Environment in SAP Cloud Platform for developers?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is designed for heavyweight, on-premise applications",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It supports only non-ABAP programming languages",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It eliminates the need for SAP S/4HANA",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It enables the development of ABAP applications in the cloud",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q81",
+    "title": "Suppress ATC Finding",
+    "stem": "Your ATC check finds a variable text that is not used statically. Suppress this finding using a pseudo-comment or a pragma. Which options are syntactically correct? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "DATA text TYPE string \"#EC NEEDED .",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "DATA text TYPE string ##needed .",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "DATA text TYPE string. \"#EC NEEDED",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "DATA text TYPE string. ##needed",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q82",
+    "title": "SQL Expression to Produce 'JOE'",
+    "stem": "What is the correct expression to change the string value 'mr joe doe' into 'JOE' in an ABAP SQL field list?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "SELECT FROM TABLE dbtabl FIELDS Of1, substring(upper('mr joe doe'), 4, 3) AS f2_sub_up, f3,...",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "SELECT FROM TABLE dbtabl FIELDS Of1, substring(lower(upper( 'mr joe doe' ) ), 4, 3) AS f2_sub_lo_up, f3,",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SELECT FROM TABLE dbtabl FIELDS Of1, left(lower(substring( 'mr joe doe', 4, 3)), 3) AS f2_left_lo_sub, f3,",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "SELECT FROM TABLE dbtabl FIELDS Of1, upper(left( 'mr joe doe', 6)) AS f2_up_left, f3,",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q83",
+    "title": "Primary Use of ABAP CDS",
+    "stem": "What is the primary use of ABAP Core Data Services (CDS)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Network configuration",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Data modeling and definition",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "User authentication",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Front-end application development",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q84",
+    "title": "Composite Pattern in ABAP OO",
+    "stem": "How does the 'Composite' design pattern apply in ABAP OO?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is used for creating recursive tree structures",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It allows the creation of complex objects by combining simpler ones",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "It defines a one-to-one relationship between objects",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It is used to create a hierarchy of classes with single inheritance",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q85",
+    "title": "Restrict Changes to Attribute",
+    "stem": "Your class contains a public instance attribute attr. How could you ensure that its value can only be changed within the class? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Make it a private attribute.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Convert it into a constant.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Move it to a different local class.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Leave it in the public section but use the READ-ONLY addition.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q86",
+    "title": "Classical Extensibility Challenges",
+    "stem": "Which of the following are challenges with trying to use classical extensibility in SAP S/4HANA Cloud? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "In SAP S/4HANA Cloud, all software updates run simultaneously",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Classical extensibility does not enable customers to have competitive advantage",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Classical extensibility does not enable customers to have flexible processes",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "In SAP S/4HANA Cloud, there are no customer-specific customer update projects",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q87",
+    "title": "Extend View Statement Purpose",
+    "stem": "In ABAP CDS, what is the purpose of the 'Extend View' statement?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To include additional logic in an existing CDS view",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "To add fields to an existing database table",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To optimize the performance of a CDS view",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create a backup of a CDS view",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q88",
+    "title": "Fiori Design Building Blocks",
+    "stem": "Which of the following are building blocks of the SAP Fiori design approach? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP Business Application Studio",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Python",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SAPUI5",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "SAP Fiori elements",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q89",
+    "title": "AMDP Proxy Purpose",
+    "stem": "How does the 'ABAP Managed Database Procedure Proxy' (AMDP Proxy) facilitate database programming?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By providing a backup mechanism for database procedures",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By managing database connections and transactions",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By automatically converting ABAP code to database procedures",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By allowing ABAP programs to call database procedures as if they were ABAP methods",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q90",
+    "title": "Define View in ABAP CDS",
+    "stem": "In ABAP CDS, what is the role of the 'Define View' statement?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To create a new database table",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To declare a new data type",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To initialize a global variable",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To define a CDS view",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q91",
+    "title": "Transactional Consistency in RAP",
+    "stem": "How does the ABAP RESTful Application Programming Model support transactional consistency?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Through client-side transaction management",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By using database triggers",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Through managed transactional processing",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "By implementing stateful services",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q92",
+    "title": "S/4HANA Cloud Extensibility Rules",
+    "stem": "Which of the following are essential rules of the SAP S/4HANA Cloud extensibility model? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Usage of released objects only",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Clear separation of extensions and SAP code",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "No modifications of SAP objects",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Customer upgrade projects are to be done once per year",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q93",
+    "title": "Where to Implement Non-Standard Ops",
+    "stem": "In the RESTful Application Programming model where do you implement non-standard operations for customized business-logic behavior?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "In a determination",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "In a validation",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "In a response",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "In an action",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q94",
+    "title": "Key Components of RAP",
+    "stem": "Which of the following are key components of the ABAP RESTful Application Programming Model? Please select all the correct answers that apply.",
+    "select": 4,
+    "options": [
+      {
+        "key": "A",
+        "text": "Unmanaged Transactional Processing",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "OData V2 protocol",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Service Definition",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Behavior Definition",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "Managed Transactional Processing",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q95",
+    "title": "Access Controls with CDS Views",
+    "stem": "Why would you use Access Controls with CDS Views? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Only the data corresponding to the user's authorization is transferred from the database to the application layer.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "The system field sy-subrc is set, giving you the result of the authorization check",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "You do not have to remember to implement AUTHORITY CHECK statements.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "All of the data from the data sources is loaded into your application automatically and filtered there according to the user's authorization.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q96",
+    "title": "Incomplete ABAP Types",
+    "stem": "Which of the following are incomplete ABAP types? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "String",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "T",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "C",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "P",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q97",
+    "title": "When to Use Hashed/Sorted Tables",
+    "stem": "When does SAP recommend to use a sorted or a hashed table respectively? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "A hashed table, when you read a single record and specify the complete key.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "A hashed table, when you read a subset in a loop and specify a part of the key from the left without gaps.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "A sorted table, when you read a subset in a loop and specify a part of the key from the left ^ without gaps.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A sorted table, when you read a single record and specify non key fields.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q98",
+    "title": "CDS View Entity Data Sources",
+    "stem": "Which of the following are valid data sources for a CDS view entity? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Another CDS view entity",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "An internal table",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A database table",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "A structure",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q99",
+    "title": "Encapsulation in ABAP OO",
+    "stem": "In ABAP OO, how is 'Encapsulation' achieved?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By declaring all methods and attributes as public",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By using global classes only",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By bundling data with the methods that operate on that data",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "By implementing all methods in a single class",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q100",
+    "title": "Call Static Method b",
+    "stem": "With the given class definition where CLASS-METHODS b. What is the correct syntax for calling method b? (lo_a is a reference to ZCL_A.)",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "zcl_a=>b( ).",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "lo_a=>b( ).",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "lo_a->b( ).",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "zcl_a->b( ).",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q101",
+    "title": "Exceptions: True Statements",
+    "stem": "Which of the following statements about exceptions are true? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "A TRY...ENDTRY block must contain at least two CATCH statements.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "All uncaught exceptions lead to runtime errors.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "All execptions are catchable.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Some exceptions are catchable, others are uncatchable.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q102",
+    "title": "Not an OOP Principle",
+    "stem": "Which of the following principles is NOT a part of the four basic principles of Object-Oriented Programming?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Encapsulation",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Inheritance",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Polymorphism",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Recursion",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q103",
+    "title": "Principles of Cloud Native",
+    "stem": "Which of the following are principles of cloud native? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Infrastructure Independent",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "REST and CRUD",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Microservices",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Application Programming Interfaces (APIs)",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q104",
+    "title": "Service Binding Role",
+    "stem": "What role does the 'Service Binding' play in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It manages user authentication and authorization",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It binds UI elements to backend data",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It links a CDS view to a specific database",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It exposes a business object as a service",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q105",
+    "title": "AMDP Characteristics",
+    "stem": "Which of the following is a characteristic of ABAP Managed Database Procedures (AMDP)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They are written in Java",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They do not support table buffering",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "They are stored in the SAP HANA database",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "They can only be used in SAP ECC systems",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q106",
+    "title": "Hierarchical CDS Views Role",
+    "stem": "What is the role of 'Hierarchical CDS Views' in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To optimize the performance of recursive queries",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To manage user roles and hierarchies in the database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To define the inheritance relationships between classes",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create views that represent hierarchical data structures",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q107",
+    "title": "ABAP Cloud Integration Frameworks",
+    "stem": "Which of the following integration frameworks have been released for ABAP cloud development? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "CDS Views",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "OData services",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SOAP consumption",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Business Add-ins (BAdls)",
+        "correct": false
+      },
+      {
+        "key": "E",
+        "text": "Business Events",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q108",
+    "title": "S/4HANA Implementation Paths",
+    "stem": "Which of the following are the three possibilities for a customer to implement SAP S/4HANA? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Third-party cloud",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "System landscape transformation",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "New implementation",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "System conversion",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q109",
+    "title": "Interface Role in ABAP OO",
+    "stem": "What is the role of an Interface in ABAP OO?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To provide a default implementation of methods",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To define a set of methods that implementing classes must provide",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To manage database connections",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To store data shared across multiple classes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q110",
+    "title": "RAP and BTP Relationship",
+    "stem": "How do ABAP RESTful Application Programming Model (RAP) and SAP BTP complement each other in the context of extensibility?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "RAP and BTP operate independently without any interaction",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "RAP provides a framework for building OData services, which can be consumed in BTP",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "RAP is used for backend development, while BTP is for frontend only",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "BTP replaces the need for RAP in modern SAP development",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q111",
+    "title": "Annotations in CDS",
+    "stem": "What is the purpose of Annotations in ABAP CDS?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To debug CDS views",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enhance the view with metadata",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To define the user interface",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To optimize query performance",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q112",
+    "title": "Aliases in ABAP SQL",
+    "stem": "In ABAP SQL, which of the following can be assigned an alias? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "database table",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "field (from field list)",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "order criterion (from order by clause)",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "group criterion (from group by clause)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q113",
+    "title": "@VDM.viewType Meaning",
+    "stem": "In ABAP CDS, what does the annotation '@VDM.viewType' specify?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The type of view, such as Basic, Composite, or Consumption",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "The database on which the view will be deployed",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The version of the Data Modeling tool used",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The visualization options for the view in SAP Fiori",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q114",
+    "title": "Retrieve Association Field",
+    "stem": "In ABAP SQL, which of the following retrieves the association field _Airline-Name of a CDS view?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "@_Airline-Name",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "\"_Airline Name",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "/_Airline Name",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "\\_Airline-Name",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q115",
+    "title": "Logical Expression Priority",
+    "stem": "What is the sequence priority when evaluating a logical expression? A) NOT 1  B) OR 3  C) AND 2",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A B C",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "C A B",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A C B",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "B A C",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q116",
+    "title": "Predicate for CAST to Work",
+    "stem": "With which predicate condition can you ensure that the CAST will work?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "IS NOT INITIAL",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "IS SUPPLIED",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "IS BOUND",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "IS INSTANCE OF",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q117",
+    "title": "Correct ON Condition",
+    "stem": "Which of the following ON conditions must you insert in place of \"???\"?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "ON $projection.Carrier = _Source2.carrier_id",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "ON Z_Sourcel.camer_id = 7_Source2 carrier_id",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "ON Sprojection. Carrier Source2.carrier",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "ON Sprojection Camer=Source2 carrier_id",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q118",
+    "title": "Permitted Types for Line #4",
+    "stem": "Which of the following types are permitted to be used for on line #4? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "A database view from the ABAP Dictionary",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "An external view from the ABAP Dictionary",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A database table from the ABAP Dictionary",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "A CDS DDIC-based view",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q119",
+    "title": "Union Activation Result",
+    "stem": "When you attempt to activate the definition, what will be the response?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Activation error because the key fields of the union do not match",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Activation error because the field types of the union do not match",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Activation error because the field names of the union do not match",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Activation successful",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q120",
+    "title": "Calling Std FM from ABAP Cloud",
+    "stem": "In ABAP Cloud vs. Standard ABAP cross-component calls, which statements are valid for calling a Standard ABAP function module from ABAP Cloud? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "'ZF1' can be called if a wrapper is created for it and the wrapper itself is released for cloud development.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "\"ZF1\" can be called whether it is released or not for cloud development",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "ZF1 can be called if a wrapper is created for it but the wrapper itself is not released for cloud development.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "'ZF1' can be called only if it is released for cloud development.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q121",
+    "title": "Full-Text Search Significance",
+    "stem": "What is the significance of 'Full-Text Search' capabilities in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To translate text data into multiple languages",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enable complex mathematical operations on text data",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To encrypt sensitive text data in the database",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To allow efficient searching of large text datasets using SQL",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q122",
+    "title": "RAP Advantage for Fiori",
+    "stem": "What is the primary advantage of using the ABAP RESTful Application Programming Model (RAP) for developing Fiori apps?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It eliminates the need for any backend development",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It supports only traditional database models",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It provides a simplified model for handling OData services",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "It requires extensive client-side scripting",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q123",
+    "title": "SAP LCNC Toolset",
+    "stem": "Which of the following are part of SAP’s LCNC toolset? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP HANA Cloud",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SAP Build Work Zone",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SAP Build Apps",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "SAP Build Process Automation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q124",
+    "title": "ABAP Shared Objects Truth",
+    "stem": "Which statement about ABAP Shared Objects is true?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They are used to store user-specific data.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They are only accessible within a single program.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "They are used for database storage.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "They are memory areas shared by all users of an ABAP instance.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q125",
+    "title": "Table Type with Unique and Non-Unique Keys",
+    "stem": "Which internal table type allows unique and non-unique keys?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hashed",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Standard",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Sorted",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q126",
+    "title": "CDS View Entity",
+    "stem": "In the context of ABAP CDS, what is a 'View Entity'?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A graphical representation of data models",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A tool for managing database views",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A database table that stores view definitions",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A reusable data model element",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q127",
+    "title": "Predicate String Functions",
+    "stem": "Which of the following string functions are predicate functions? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "find_any_not_of()",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "contains_any_of()",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "count_any_of()",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "matchesQ",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q128",
+    "title": "Function Call Returning 0",
+    "stem": "Which function call returns 0?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "count_any_of(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "count(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "find_any_not_of(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "find_any_of(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q129",
+    "title": "Inline Declarations in ABAP SQL",
+    "stem": "Which ABAP SQL clause allows the use of inline declarations?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "FROM",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "INTO CORRESPONDING FIELDS OF",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "FIELDS",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "INTO",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q130",
+    "title": "Decision Tables Use",
+    "stem": "In ABAP for SAP HANA, how are 'Decision Tables' used?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To store user decisions for audit purposes",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To manage database access control",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To optimize the layout of database tables",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To define business rules in a tabular format for easy maintenance",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q131",
+    "title": "FOR ALL ENTRIES Benefit",
+    "stem": "How does the 'SELECT FOR ALL ENTRIES' statement in ABAP improve performance when retrieving data from multiple tables?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By parallelizing the query execution",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By reducing the number of database accesses",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "By automatically creating indexes on the tables",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By caching the results in the application server",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q132",
+    "title": "EXACT Operator Exceptions",
+    "stem": "Which of the following patterns raise an exception when using the EXACT operator? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "DATA: gv_target TYPE string. CONSTANTS: gco_string TYPE string VALUE '0123456789ABCDEF'. gv_target = EXACT #( gco_string+5(5) ).",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "DATA: gv_target TYPE c LENGTH 5. CONSTANTS: gco_string TYPE string VALUE '0123456789ABCDEF'. gv_target = EXACT #( gco_string+5(6) ).",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "DATA: gv_target TYPE d. CONSTANTS: gco_date TYPE d VALUE '20331233'. gv_target = EXACT #( gco_date ).",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "DATA: ev_target TYPE p DECIMALS 3. CONSTANTS: gco_int1 TYPE i VALUE 2. ev_target = EXACT #( 2 / gco_int1 ).",
+        "correct": false
+      },
+      {
+        "key": "E",
+        "text": "DATA: gv_target TYPE p DECIMALS 2. CONSTANTS: gco_int1 TYPE i VALUE 3. gv_target = EXACT #( 2 * gco_int1 ).",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q133",
+    "title": "ABAP Shared Objects True Statements",
+    "stem": "Which of the following are true about ABAP Shared Objects? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "They offer a way to cache data in application memory",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "They are used for inter-process communication",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "They are stored in the database layer",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "They can be accessed by multiple users simultaneously",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "They provide a mechanism for memory management",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q134",
+    "title": "Client-Side Caching Purpose",
+    "stem": "What is the purpose of 'Client-Side Caching' in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To store frequently accessed data on the client side to improve performance",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "To cache data on the database server",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To back up data on client devices",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To encrypt data before sending it to the client",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q135",
+    "title": "ABAP Language Feature",
+    "stem": "Which of the following is a feature of the ABAP programming language?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Direct file system access",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Pointer arithmetic",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Garbage collection",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Integrated exception handling",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q136",
+    "title": "Valid ABAP SQL Statements",
+    "stem": "Which of the following ABAP SQL statements are valid? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom, MAX(distance) AS dist_max, MIN(distance) AS dist_min INTO TABLE @DATA(it_hits)",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SELECT FROM /dmo/connection FIELDS MAX(distance) AS dist_max, MIN(distance) AS dist_min INTO TABLE @DATA(it_hits).",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom, MAX(distance) AS dist_max, MIN(distance) AS dist_min GROUP BY carrid, airpfrom INTO TABLE @DATA(it_hits)",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom GROUP BY carrid, connid INTO TABLE @DATA(it_hits).",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q137",
+    "title": "Valid ABAP SQL (Aggregate Only)",
+    "stem": "Which of the following ABAP SQL statements are valid? (aggregate only)",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom, MIN(distance) INTO TABLE @DATA(it_hits)",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SELECT FROM /dmo/connection FIELDS MAX(distance) AS dist_max, MIN(distance) AS dist_min INTO TABLE @DATA(it_hits).",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid INTO TABLE @DATA(it_hits)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q138",
+    "title": "Tools for SQL Performance",
+    "stem": "Which of the following tools can be used to analyze the performance of individual SQL statements? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SQL Trace",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "ABAP test cockpit as part of ABAP development tools for Eclipse",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SQL Monitor",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "ABAP call monitor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q139",
+    "title": "Clean Core Key Parts",
+    "stem": "Which of the following are key parts of the clean core concept? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Usage of released APIs",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Elimination of modifications",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Strict separation between extensions and the underlying application",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Copying (that is, cloning) of standard code in lieu of modifications",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q140",
+    "title": "Primary Use of ABAP CDS",
+    "stem": "What is the primary use of ABAP Core Data Services (CDS)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "User authentication",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Data modeling and definition",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Front-end application development",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Network configuration",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q141",
+    "title": "Protocol Used by RAP",
+    "stem": "Which protocol is primarily used for data exchange in the ABAP RESTful Application Programming Model?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "HTTP",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SOAP",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "OData",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "MQTT",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q142",
+    "title": "What Is a Class",
+    "stem": "In ABAP Object-Oriented programming, what is a Class?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A database table",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A template for creating objects",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "A specific instance of an object",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A collection of related functions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q143",
+    "title": "@ClientDependent Meaning",
+    "stem": "In ABAP CDS, what does the annotation '@ClientDependent' indicate?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The view is independent of the client.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The view will include client field in the result set.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "The view can only be accessed by specific clients.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The view is used for client-side scripting.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q144",
+    "title": "Service Binding Role",
+    "stem": "What role does the 'Service Binding' play in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It manages user authentication and authorization",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It links a CDS view to a specific database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It binds UI elements to backend data",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It exposes a business object as a service",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q145",
+    "title": "Service Definition Purpose",
+    "stem": "In RAP, what is the purpose of a 'Service Definition'?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define the UI components",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To specify the business logic",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To expose a business object as a service",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To manage database connections",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q146",
+    "title": "Annotations Purpose",
+    "stem": "What is the purpose of Annotations in ABAP CDS?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To debug CDS views",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enhance the view with metadata",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To define the user interface",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To optimize query performance",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q147",
+    "title": "Association Role in CDS",
+    "stem": "In ABAP CDS, what is the role of an Association?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define a connection to external systems",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To optimize database storage",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To manage user roles and permissions",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To link CDS views for data retrieval",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q148",
+    "title": "@VDM.viewType",
+    "stem": "In ABAP CDS, what does the annotation '@VDM.viewType' specify?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The database on which the view will be deployed",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The version of the Data Modeling tool used",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The visualization options for the view in SAP Fiori",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The type of view, such as Basic, Composite, or Consumption",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q149",
+    "title": "Retrieve Association Field",
+    "stem": "In ABAP SQL, which of the following retrieves the association field _Airline-Name of a CDS view?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "@_Airline-Name",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "\"_Airline Name",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "/_Airline Name",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "\\_Airline-Name",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q150",
+    "title": "RAP Layers",
+    "stem": "Which of the following are ABAP RESTful application programming model layers? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Business Service Exposure",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Domain Model and Implementation",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Data Access",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "CDS Annotations",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q151",
+    "title": "Read Single Row Statement",
+    "stem": "Which statement reads a single row from a database table?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "READ TABLE <tablename> ...",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "READ TABLE <tablename> WITH TABLE KEY ...",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SELECT <tablename> ...",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "SELECT SINGLE <tablename> ...",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q152",
+    "title": "Change Row in Internal Table",
+    "stem": "Which statement can you use to change the contents of a row of data in an internal table?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Update table",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Insert table",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Append table",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Modify table",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q153",
+    "title": "ATC Purpose",
+    "stem": "What is the purpose of the ABAP Test Cockpit (ATC)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To manage database transactions",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To monitor system performance",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To deploy applications to the SAP Cloud Platform",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To perform static code checks and unit tests",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q154",
+    "title": "assert_equals Outcome",
+    "stem": "In a test method you call cl_abap_unit_assert=>assert_equals(...). What will happen if act and exp are not equal?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The test will be aborted.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The tested unit cannot be transported.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The tested unit will automatically be appended to a default ABAP Test Cockpit Variant.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "There will be a message in the test log.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q155",
+    "title": "Incomplete ABAP Types",
+    "stem": "Which of the following are incomplete ABAP types? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "String",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "T",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "C",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "P",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q156",
+    "title": "Define Local Class",
+    "stem": "Which ABAP statement is used to define a local class within a program?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "IMPLEMENTATION...ENDIMPLEMENTATION",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "DEFINE...ENDDEFINE",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "LOCAL CLASS...ENDLOCAL",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "CLASS...ENDCLASS",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q157",
+    "title": "Where ABAP Cloud Dev Model Applies",
+    "stem": "In which products must you use the ABAP Cloud Development Model? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP S/4HANA on premise",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SAP S/4HANA Cloud, public edition",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SAP S/4HANA Cloud, private edition",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "SAP BTP, ABAP environment",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q158",
+    "title": "Recommended Fiori UI Extensibility",
+    "stem": "Which extensibility type does SAP recommend you use to enhance the existing UI for an SAP Fiori app?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Classic",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Side-by-side",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Developer",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Key user",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q159",
+    "title": "What Is Side-by-Side Extension",
+    "stem": "In the context of SAP S/4HANA Cloud, what is a Side-by-Side Extension?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "An extension using only frontend technologies",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A direct modification to the standard SAP code",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "An extension built within the S/4HANA core",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "An extension built on a separate platform, like SAP BTP",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q160",
+    "title": "Why Prefer Side-by-Side",
+    "stem": "Why are Side-by-Side Extensions preferred over In-App Extensions in S/4HANA Cloud for complex integrations?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Simpler development process",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "No need for external systems or platforms",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Direct access to modify core SAP code",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Greater flexibility and reduced impact on core upgrades",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q161",
+    "title": "ABAP Cloud Integration Frameworks",
+    "stem": "Which of the following integration frameworks have been released for ABAP cloud development? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "SOAP consumption",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "CDS Views",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Business Add-ins (BAdIs)",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Business Events",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "OData services",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q162",
+    "title": "Database Hints Role",
+    "stem": "What is the role of 'Database Hints' in ABAP SQL statements for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To enforce database security policies",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To translate ABAP code to SQL",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To optimize query execution plans",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To manage database connections",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q163",
+    "title": "CDS View Entity Data Sources",
+    "stem": "Which of the following are valid data sources for a CDS view entity? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "An internal table",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Another CDS view entity",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "A structure",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A database table",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q164",
+    "title": "Clean Core Workstreams",
+    "stem": "Which of the following are recommended clean core workstreams? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Review of copies",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Simplification item checks",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Custom code adaptation",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Custom code evaluation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q165",
+    "title": "Key User Extensibility Tools",
+    "stem": "Which of the following are key user extensibility tools? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Custom Business Objects",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Custom CDS Views",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Custom Database Tables",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Custom Fields",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q166",
+    "title": "RAP and BTP Complementarity",
+    "stem": "How do ABAP RESTful Application Programming Model (RAP) and SAP BTP complement each other in the context of extensibility?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "RAP is used for backend development, while BTP is for frontend only",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "RAP provides a framework for building OData services, which can be consumed in BTP",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "RAP and BTP operate independently without any interaction",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "BTP replaces the need for RAP in modern SAP development",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q167",
+    "title": "Transport Request Definition",
+    "stem": "In ABAP, what is a \"Transport Request\"?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A method to request system resources",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A request for data from the database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A user request for program execution",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A package for transporting changes across systems",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q168",
+    "title": "ALV Purpose",
+    "stem": "What is the purpose of the ABAP List Viewer (ALV)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To manage database transactions",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To write application-specific log files",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To create graphical user interfaces",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To display data in a structured, customizable format",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q169",
+    "title": "REST Principles",
+    "stem": "Which of the following are principles of REST architecture? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Virtualization",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Stateless",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Layered system",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Cacheable",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q170",
+    "title": "ABAP Cloud Essentials",
+    "stem": "Which of the following are essential aspects of ABAP Cloud? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": ".NET & SOAP",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "ABAP RESTful application programming model",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "ABAP Cloud language",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "ABAP development tools for Eclipse",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q171",
+    "title": "Clean Core Principle",
+    "stem": "What is the key principle behind SAP's 'Clean Core' philosophy in S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To use only traditional ABAP for extensions",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To perform all customizations at the database level",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To keep the core system free of modifications and custom code",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To centralize all customizations in the core system",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q172",
+    "title": "Classical Extensibility Stack Layers",
+    "stem": "Which of the following are the stack layers that classical extensibility refers to? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Data",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Middle",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Visual",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Key User",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q173",
+    "title": "ABAP Cloud Dev Model Rules",
+    "stem": "Which of the following are ABAP Cloud Development Model rules? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Build ABAP reports with either ABAP List Viewer (ALV) or SAP Fiori.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Use public SAP APIs and SAP extension points.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Build ABAP RESTful application programming model-based services.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Reverse modifications when a suitable public SAP API becomes available.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q174",
+    "title": "Main Goal of RAP",
+    "stem": "What is the main goal of the ABAP RESTful Application Programming Model (RAP)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To provide a framework for building scalable web applications",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To facilitate communication between different SAP systems",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To enable the creation of RESTful services in ABAP",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To manage user sessions and authentication",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q175",
+    "title": "Spatial Data Processing Benefit",
+    "stem": "How does 'Spatial Data Processing' enhance ABAP applications in SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "By automating the distribution of data across multiple servers",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "By managing the physical storage of data in different locations",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "By optimizing the graphical rendering of data in applications",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "By providing capabilities for storing and querying geographical and spatial data",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q176",
+    "title": "Hierarchical CDS Views Role",
+    "stem": "What is the role of 'Hierarchical CDS Views' in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define the inheritance relationships between classes",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To manage user roles and hierarchies in the database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To optimize the performance of recursive queries",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create views that represent hierarchical data structures",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q177",
+    "title": "RAP Projections Purpose",
+    "stem": "What is the purpose of 'Projections' in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To visualize data in graphical formats",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To handle error logging and monitoring",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To manage database replication",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create subsets of data for specific use cases",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q178",
+    "title": "Define View Role",
+    "stem": "In ABAP CDS, what is the role of the 'Define View' statement?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To create a new database table",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To declare a new data type",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To initialize a global variable",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To define a CDS view",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q179",
+    "title": "Tool for In-App Extensions",
+    "stem": "Which tool is primarily used for building In-App Extensions in S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP Cloud Platform Business Rules",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "ABAP Workbench",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SAP Fiori",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "SAP Web IDE",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q180",
+    "title": "Logical Expression Priority",
+    "stem": "What is the sequence priority when evaluating a logical expression? A) NOT 1  B) OR 3  C) AND 2",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A B C",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "C A B",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A C B",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "B A C",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q181",
+    "title": "Primary Benefit of Code Pushdown",
+    "stem": "What is the primary benefit of using Code Pushdown in ABAP development for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To reduce the network traffic between the application server and the database",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "To enhance the security of the database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To simplify the ABAP code syntax",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To increase the code execution time",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q182",
+    "title": "Interface/Class Calls and NEW",
+    "stem": "Given interface if1 with method m1 and class cl1 implementing if1 plus class method m2; which statements are valid? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "go_if1 may call method m2 with go_if1->m2(...).",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "go_cl1 may call method m1 with go_cl1->if1~m1().",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Instead of go_cl1 = NEW #(...) you could use go_if1 = NEW #(...).",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "go_if1 may call method m1 with go_if1->m1().",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "Instead of go_cl1 = NEW #(...) you could use go_if1 = NEW cl1(...).",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q183",
+    "title": "Unmanaged vs Managed RAP",
+    "stem": "How does the 'Unmanaged Scenario' in the ABAP RAP differ from the 'Managed Scenario'?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It requires manual implementation of business logic",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "It provides automatic handling of CRUD operations",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It supports only synchronous processing",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It is used only for non-relational databases",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q184",
+    "title": "DO...ENDDO Counter",
+    "stem": "When processing a loop with the statement DO... ENDDO, what system variable contains the implicit loop counter?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "sy-subrc",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "sy-linno",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "sy-labix",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "sy-index",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q185",
+    "title": "LOOP AT Current Row Number",
+    "stem": "When processing an internal table with LOOP AT itab... ENDLOOP, what system variable contains the current row number?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "sy-index",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "sy-subrc",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "sy-tabix",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "sy-linno",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q186",
+    "title": "CAP Purpose",
+    "stem": "What is the purpose of the SAP Cloud Application Programming Model?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To manage cloud infrastructure services",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To provide a framework for building cloud-native applications",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To optimize on-premise application performance",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To handle cloud security and compliance",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q187",
+    "title": "HAVING in CDS",
+    "stem": "What is the role of the 'HAVING' clause in ABAP CDS Views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To filter aggregated data based on a condition",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "To limit the number of rows returned",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To specify join conditions between tables",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To define the order of data retrieval",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q188",
+    "title": "Managed Extensibility Advantage",
+    "stem": "What is the advantage of using 'Managed Extensibility' in SAP S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It allows unrestricted modifications to the SAP core",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It provides a direct connection to non-SAP systems",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It ensures that extensions are compatible with future SAP updates",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "It eliminates the need for testing extensions",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q189",
+    "title": "MESH Paths in CDS",
+    "stem": "What is the significance of using 'MESH' paths in ABAP CDS views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define multi-dimensional data models",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enable deep nesting of views",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To create recursive data structures",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To optimize performance for large datasets",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q190",
+    "title": "RAP Object with App Fields Only",
+    "stem": "What RESTful Application Programming object contains only the fields required for a particular app?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Data model view",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Database view",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Projection View",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Metadata extension",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q191",
+    "title": "Optimal Performance Approach",
+    "stem": "An ABAP application on SAP HANA needs to perform complex calculations on large datasets. Which approach should be used to achieve optimal performance?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Use classical ABAP processing techniques",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Implement calculations in the application layer",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Leverage SAP HANA's in-memory capabilities using CDS views or AMDPs",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Store data in temporary tables for processing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q192",
+    "title": "Predicate String Functions",
+    "stem": "Which of the following string functions are predicate functions? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "find_any_not_of()",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "contains_any_of()",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "count_any_of()",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "matchesQ",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q193",
+    "title": "Function Call Returning 0",
+    "stem": "Which function call returns 0?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "count_any_of(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "count(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "find_any_not_of(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "find_any_of(val = 'ABAP ABAP abap' sub = 'AB')",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q194",
+    "title": "Polymorphism Advantage",
+    "stem": "In ABAP OO, what is the advantage of using Polymorphism?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To restrict the visibility of methods in subclasses",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To allow objects to change their class at runtime",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To enable objects to be treated as instances of their parent class",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To increase the efficiency of database operations",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q195",
+    "title": "Subclass Constructor Rules",
+    "stem": "Class super has subclass sub. Which rules are valid for the sub constructor? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "The method signature can be changed.",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Import parameters can only be evaluated after calling the constructor of super",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The constructor of super must be called before using any components of your own instance.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Events of your own instance cannot be raised before the registration of a handler in super.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q196",
+    "title": "Public Released Interfaces",
+    "stem": "Which of the following are \"public released interfaces\" under the SAP S/4HANA Cloud extensibility model? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Remote APIs",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Extension Points",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Local APIs",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Classical user exits",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q197",
+    "title": "Where ABAP Cloud Dev Model Applies",
+    "stem": "In which products must you use the ABAP Cloud Development Model? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SAP S/4HANA on premise",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SAP S/4HANA Cloud, public edition",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SAP S/4HANA Cloud, private edition",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "SAP BTP, ABAP environment",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q198",
+    "title": "AT SELECTION-SCREEN Event",
+    "stem": "In ABAP, which statement about the 'AT SELECTION-SCREEN' event is true?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is triggered after the user executes a report",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It is used to validate user input on the selection screen",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "It occurs only once during the program execution",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It is used to modify the selection screen dynamically",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q199",
+    "title": "REST Principles",
+    "stem": "Which of the following are principles of REST architecture? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Virtualization",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Stateless",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Layered system",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Cacheable",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q200",
+    "title": "Clean Core Key Parts",
+    "stem": "Which of the following are key parts of the clean core concept? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Usage of released APIs",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Elimination of modifications",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Strict separation between extensions and the underlying application",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Copying (that is, cloning) of standard code in lieu of modifications",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q201",
+    "title": "Clean Core Workstreams",
+    "stem": "Which of the following are recommended clean core workstreams? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Custom code adaptation",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Simplification item checks",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Review of copies",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Custom code evaluation",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q202",
+    "title": "Valid ABAP SQL (Aggregate Only)",
+    "stem": "Which of the following ABAP SQL statements are valid? (Aggregate only)",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom, MIN(distance) INTO TABLE @DATA(it_hits)",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SELECT FROM /dmo/connection FIELDS MAX(distance) AS dist_max, MIN(distance) AS dist_min INTO TABLE @DATA(it_hits).",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid INTO TABLE @DATA(it_hits)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q203",
+    "title": "Valid ABAP SQL Statements",
+    "stem": "Which of the following ABAP SQL statements are valid? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom, MAX(distance) AS dist_max, MIN(distance) AS dist_min INTO TABLE @DATA(it_hits)",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SELECT FROM /dmo/connection FIELDS MAX(distance) AS dist_max, MIN(distance) AS dist_min INTO TABLE @DATA(it_hits).",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom, MAX(distance) AS dist_max, MIN(distance) AS dist_min GROUP BY carrid, airpfrom INTO TABLE @DATA(it_hits)",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "SELECT FROM /dmo/connection FIELDS carrid, airpfrom GROUP BY carrid, connid INTO TABLE @DATA(it_hits).",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q204",
+    "title": "ABAP Comment Syntax",
+    "stem": "Which of the following can you use to denote a comment in ABAP? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "* at the beginning of a line",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "// at the beginning of a line",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "-- anywhere in the line",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "\" anywhere in the line",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q205",
+    "title": "Database Hints Role",
+    "stem": "What is the role of 'Database Hints' in ABAP SQL statements for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To translate ABAP code to SQL",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To optimize query execution plans",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To enforce database security policies",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To manage database connections",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q206",
+    "title": "ABAP Cloud Integration Frameworks",
+    "stem": "Which of the following integration frameworks have been released for ABAP cloud development? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "SOAP consumption",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Business Events",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Business Add-ins (BAdIs)",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "OData services",
+        "correct": true
+      },
+      {
+        "key": "E",
+        "text": "CDS Views",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q207",
+    "title": "Tools for SQL Performance",
+    "stem": "Which of the following tools can be used to analyze the performance of individual SQL statements? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "SQL Trace",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "ABAP test cockpit as part of ABAP development tools for Eclipse",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "SQL Monitor",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "ABAP call monitor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q208",
+    "title": "CDS View Entity Data Sources",
+    "stem": "Which of the following are valid data sources for a CDS view entity? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Another CDS view entity",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "An internal table",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A database table",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "A structure",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q209",
+    "title": "Classical Extensibility Stack Layers",
+    "stem": "Which of the following are the stack layers that classical extensibility refers to? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": "Data",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "Middle",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Visual",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Key User",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q210",
+    "title": "Clean Core Principle",
+    "stem": "What is the key principle behind SAP's 'Clean Core' philosophy in S/4HANA Cloud?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To use only traditional ABAP for extensions",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To perform all customizations at the database level",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To keep the core system free of modifications and custom code",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To centralize all customizations in the core system",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q211",
+    "title": "ABAP Cloud Essentials",
+    "stem": "Which of the following are essential aspects of ABAP Cloud? There are 3 correct answers to this question.",
+    "select": 3,
+    "options": [
+      {
+        "key": "A",
+        "text": ".NET & SOAP",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "ABAP RESTful application programming model",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "ABAP Cloud language",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "ABAP development tools for Eclipse",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q212",
+    "title": "ABAP Cloud Dev Model Rules",
+    "stem": "Which of the following are ABAP Cloud Development Model rules? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "Build ABAP reports with either ABAP List Viewer (ALV) or SAP Fiori.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Use public SAP APIs and SAP extension points.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "Build ABAP RESTful application programming model-based services.",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "Reverse modifications when a suitable public SAP API becomes available.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q213",
+    "title": "Why Prefer Side-by-Side",
+    "stem": "Why are Side-by-Side Extensions preferred over In-App Extensions in S/4HANA Cloud for complex integrations?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Simpler development process",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "No need for external systems or platforms",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Direct access to modify core SAP code",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Greater flexibility and reduced impact on core upgrades",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q214",
+    "title": "Hierarchical CDS Views Role",
+    "stem": "What is the role of 'Hierarchical CDS Views' in ABAP for SAP HANA?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define the inheritance relationships between classes",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To manage user roles and hierarchies in the database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To optimize the performance of recursive queries",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create views that represent hierarchical data structures",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q215",
+    "title": "RAP Projections Purpose",
+    "stem": "What is the purpose of 'Projections' in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To visualize data in graphical formats",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To handle error logging and monitoring",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To manage database replication",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To create subsets of data for specific use cases",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q216",
+    "title": "Annotations Purpose",
+    "stem": "What is the purpose of Annotations in ABAP CDS?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To debug CDS views",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To enhance the view with metadata",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "To define the user interface",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To optimize query performance",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q217",
+    "title": "@VDM.viewType Meaning",
+    "stem": "In ABAP CDS, what does the annotation '@VDM.viewType' specify?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The version of the Data Modeling tool used",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The database on which the view will be deployed",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The visualization options for the view in SAP Fiori",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The type of view, such as Basic, Composite, or Consumption",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q218",
+    "title": "Retrieve Association Field",
+    "stem": "In ABAP SQL, which of the following retrieves the association field _Airline-Name of a CDS view?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "@_Airline-Name",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "\"_Airline Name",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "/_Airline Name",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "\\_Airline-Name",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q219",
+    "title": "Value Help Role",
+    "stem": "In the ABAP RAP, what is the role of 'Value Help' in CDS Views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To provide default values for fields",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To assist with data encryption",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To optimize query execution plans",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To offer input assistance and value suggestions",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q220",
+    "title": "Where to Implement Non-Standard Ops",
+    "stem": "In the RESTful Application Programming model where do you implement non-standard operations for customized business-logic behavior?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "In a determination",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "In a validation",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "In a response",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "In an action",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q221",
+    "title": "RAP and BTP Relationship",
+    "stem": "How do ABAP RESTful Application Programming Model (RAP) and SAP BTP complement each other in the context of extensibility?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "RAP and BTP operate independently without any interaction",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "RAP provides a framework for building OData services, which can be consumed in BTP",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "RAP is used for backend development, while BTP is for frontend only",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "BTP replaces the need for RAP in modern SAP development",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q222",
+    "title": "Transport Request Definition",
+    "stem": "In ABAP, what is a \"Transport Request\"?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A method to request system resources",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A request for data from the database",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A user request for program execution",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A package for transporting changes across systems",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q223",
+    "title": "ALV Purpose",
+    "stem": "What is the purpose of the ABAP List Viewer (ALV)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To manage database transactions",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To write application-specific log files",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To create graphical user interfaces",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To display data in a structured, customizable format",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q224",
+    "title": "ABAP CDS Views Feature",
+    "stem": "Which of the following is a feature of ABAP CDS Views?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They are independent of the underlying database.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They support complex calculations and logic.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "They are primarily used for updating data.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "They can only be used in SAP GUI.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q225",
+    "title": "AMDP Characteristic",
+    "stem": "Which of the following is a characteristic of ABAP Managed Database Procedures (AMDP)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "They can only be used in SAP ECC systems",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "They do not support table buffering",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "They are written in Java",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "They are stored in the SAP HANA database",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q226",
+    "title": "Primary Use of ABAP CDS",
+    "stem": "What is the primary use of ABAP Core Data Services (CDS)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Front-end application development",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "User authentication",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Network configuration",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Data modeling and definition",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q227",
+    "title": "CDS View Entity",
+    "stem": "In the context of ABAP CDS, what is a 'View Entity'?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A database table that stores view definitions",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A graphical representation of data models",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "A tool for managing database views",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A reusable data model element",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q228",
+    "title": "Table Type with Unique and Non-Unique Keys",
+    "stem": "Which internal table type allows unique and non-unique keys?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Hashed",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Standard",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Sorted",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q229",
+    "title": "Incomplete ABAP Types",
+    "stem": "Which of the following are incomplete ABAP types? There are 2 correct answers to this question.",
+    "select": 2,
+    "options": [
+      {
+        "key": "A",
+        "text": "String",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "T",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "C",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "P",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q230",
+    "title": "Read Single Row Statement",
+    "stem": "Which statement reads a single row from a database table?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "SELECT SINGLE <tablename> ...",
+        "correct": true
+      },
+      {
+        "key": "B",
+        "text": "SELECT <tablename> ...",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "READ TABLE <tablename> WITH TABLE KEY ...",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "READ TABLE <tablename> ...",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q231",
+    "title": "Change Row in Internal Table",
+    "stem": "Which statement can you use to change the contents of a row of data in an internal table?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "Update table",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "Insert table",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "Append table",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "Modify table",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q232",
+    "title": "ATC Purpose",
+    "stem": "What is the purpose of the ABAP Test Cockpit (ATC)?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To monitor system performance",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To manage database transactions",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To deploy applications to the SAP Cloud Platform",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "To perform static code checks and unit tests",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q233",
+    "title": "assert_equals Outcome",
+    "stem": "In a test method you call method cl_abap_unit_assert=>assert_equals( ..). What will happen if act and exp are not equal?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The tested unit will automatically be appended to a default ABAP Test Cockpit Variant.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The tested unit cannot be transported.",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "The test will be aborted.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "There will be a message in the test log.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q234",
+    "title": "Protocol Used by RAP",
+    "stem": "Which protocol is primarily used for data exchange in the ABAP RESTful Application Programming Model?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "HTTP",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "SOAP",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "OData",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "MQTT",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q235",
+    "title": "What Is a Class",
+    "stem": "In ABAP Object-Oriented programming, what is a Class?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "A specific instance of an object",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "A template for creating objects",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "A collection of related functions",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "A database table",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q236",
+    "title": "CDS @ClientDependent",
+    "stem": "In ABAP CDS, what does the annotation '@ClientDependent' indicate?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "The view can only be accessed by specific clients.",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "The view will include client field in the result set.",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "The view is independent of the client.",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "The view is used for client-side scripting.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q237",
+    "title": "Service Binding Role",
+    "stem": "What role does the 'Service Binding' play in the ABAP RAP?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It links a CDS view to a specific database",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It binds UI elements to backend data",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "It manages user authentication and authorization",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It exposes a business object as a service",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "Q238",
+    "title": "Service Definition Purpose",
+    "stem": "In RAP, what is the purpose of a 'Service Definition'?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "To define the UI components",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "To specify the business logic",
+        "correct": false
+      },
+      {
+        "key": "C",
+        "text": "To expose a business object as a service",
+        "correct": true
+      },
+      {
+        "key": "D",
+        "text": "To manage database connections",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "Q239",
+    "title": "Strategy Pattern",
+    "stem": "What is the significance of the 'Strategy' design pattern in ABAP OO?",
+    "select": 1,
+    "options": [
+      {
+        "key": "A",
+        "text": "It is used to create a single instance of a class",
+        "correct": false
+      },
+      {
+        "key": "B",
+        "text": "It defines a family of algorithms and makes them interchangeable",
+        "correct": true
+      },
+      {
+        "key": "C",
+        "text": "It is used for error handling and logging",
+        "correct": false
+      },
+      {
+        "key": "D",
+        "text": "It optimizes the performance of database queries",
+        "correct": false
+      }
+    ]
+  }
+]

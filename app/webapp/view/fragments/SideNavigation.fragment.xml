@@ -18,18 +18,18 @@
 				<tnt:NavigationListItem text="K8s, Docker. DevOps" key="devops" icon="sap-icon://deployment" press=".onNavigationItemSelect" /> -->
 			</tnt:NavigationListGroup>
 			
-			<!-- Other Articles Group -->
-			<tnt:NavigationListGroup text="Other (articles, etc.)" expanded="true">
-				<tnt:NavigationListItem text="Articles"  expanded="false" selectable="false">
-					<tnt:NavigationListItem text="Cloud Native" key="cloud-native" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
-					<tnt:NavigationListItem text="LLMOps" key="llmops" icon="sap-icon://e-learning" press=".onNavigationItemSelect" />
-					<tnt:NavigationListItem text="Studying at 42 Prague" key="42-prague" icon="sap-icon://study-leave" press=".onNavigationItemSelect" />
-				</tnt:NavigationListItem>
-                <tnt:NavigationListItem text="Study focused applications" expanded="false" selectable="false">
-					<tnt:NavigationListItem text="Get ready for ABAP development" key="abap-development" icon="sap-icon://education" press=".onNavigationItemSelect" />
-					<tnt:NavigationListItem text="Get ready for FIORI app development" key="42-fiori-app" icon="sap-icon://it-instance" press=".onNavigationItemSelect" />
-                    <tnt:NavigationListItem text="Get ready CAP backend certification" key="cap-backend-certification" icon="sap-icon://laptop" press=".onNavigationItemSelect" />
-				</tnt:NavigationListItem>
+			<!-- Articles Group -->
+			<tnt:NavigationListGroup text="Articles" expanded="false">
+				<tnt:NavigationListItem text="Cloud Native" key="cloud-native" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="LLMOps" key="llmops" icon="sap-icon://e-learning" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="Studying at 42 Prague" key="42-prague" icon="sap-icon://study-leave" press=".onNavigationItemSelect" />
+			</tnt:NavigationListGroup>
+			
+			<!-- Study Applications Group -->
+			<tnt:NavigationListGroup text="Study Applications" expanded="false">
+				<tnt:NavigationListItem text="ABAP Development" key="abap-development" icon="sap-icon://education" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="FIORI App Development" key="42-fiori-app" icon="sap-icon://it-instance" press=".onNavigationItemSelect" />
+				<tnt:NavigationListItem text="CAP Backend Certification" key="cap-backend-certification" icon="sap-icon://laptop" press=".onNavigationItemSelect" />
 			</tnt:NavigationListGroup>
 		</tnt:NavigationList>
 		

@@ -3,6 +3,8 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.f"
+	xmlns:core="sap.ui.core"
 	height="100%">
 	<Page title="Get Ready for ABAP Development" showNavButton="false" class="sapUiNoContentPadding">
 		<headerContent>
@@ -22,14 +24,106 @@
 							class="sapUiSmallMarginBottom" />
 						
 						<Text 
-							text="This is app aiming to get you ready to pass the ABAP developer certification offered at SAP Learning."
+							text="This app helps you prepare for the ABAP developer certification offered at SAP Learning."
 							class="sapUiMediumMarginTop sapUiMediumMarginBottom" />
 						
 						<Text 
-							text="With ABAP (allegedly) coming to VSCode in 2026, this quiz should help you get on top of all the pesky probing tricks and quirks you need to be aware of in order to successfully pass the exam."
+							text="With ABAP (allegedly) coming to VSCode in 2026, this quiz covers the key concepts and tricky questions you need to know to pass the exam."
 							class="sapUiSmallMarginBottom" />
 						
-						<!-- Content will go here -->
+						<!-- Toolbar -->
+						<l:HorizontalLayout class="sapUiMediumMarginTop sapUiMediumMarginBottom" width="100%">
+							<l:content>
+								<Button 
+									text="Check Answers" 
+									type="Emphasized"
+									icon="sap-icon://accept"
+									press=".onCheckAnswers" />
+								<Button 
+									text="Reset" 
+									type="Default"
+									icon="sap-icon://reset"
+									press=".onReset" />
+								<Button 
+									text="Reveal Correct" 
+									type="Transparent"
+									icon="sap-icon://show"
+									press=".onRevealCorrect" />
+							</l:content>
+						</l:HorizontalLayout>
+						
+						<!-- Summary -->
+						<Panel 
+							id="summaryPanel"
+							headerText="Quiz Summary"
+							class="sapUiMediumMarginBottom quizSummaryPanel"
+							expandable="true"
+							expanded="false">
+							<content>
+								<Text id="summaryText" text="Ready. Select answers and click 'Check Answers'." />
+							</content>
+						</Panel>
+						
+						<!-- Loading Indicator -->
+						<BusyIndicator 
+							id="loadingIndicator"
+							visible="{= !${/questions}}"
+							class="sapUiMediumMargin" />
+						
+						<!-- Questions List -->
+						<List 
+							id="questionsList"
+							items="{/questions}"
+							class="quizQuestionsList"
+							mode="None"
+							showSeparators="Inner"
+							visible="{= !!${/questions}}">
+							<CustomListItem class="quizCardItem">
+								<f:Card class="quizCard">
+									<f:header>
+										<core:Title text="{title}" level="H3" />
+									</f:header>
+									<f:content>
+										<l:VerticalLayout class="sapUiSmallMargin">
+											<l:content>
+												<Text 
+													text="{stem}" 
+													class="sapUiSmallMarginBottom questionStem" />
+												<Text 
+													text="Select {select} correct answer(s)."
+													class="sapUiTinyMarginBottom questionHint" />
+												<!-- Single Select (Radio Buttons) -->
+												<RadioButtonGroup 
+													visible="{= ${select} === 1}"
+													class="sapUiSmallMarginTop"
+													buttons="{path: 'options', templateShareable: true}">
+													<RadioButton 
+														text="{parts: ['key', 'text'], formatter: '.formatOption'}"
+														selected="{selected}"
+														enabled="{= !${../../checked}}"
+														select=".onOptionSelect" />
+												</RadioButtonGroup>
+												<!-- Multiple Select (Checkboxes) -->
+												<VBox 
+													visible="{= ${select} > 1}"
+													class="sapUiSmallMarginTop"
+													items="{path: 'options', templateShareable: true}">
+													<CheckBox 
+														text="{parts: ['key', 'text'], formatter: '.formatOption'}"
+														selected="{selected}"
+														enabled="{= !${../../checked}}"
+														select=".onOptionSelect" />
+												</VBox>
+												<Text 
+													text="{feedback}"
+													visible="{= ${checked} === true}"
+													class="sapUiSmallMarginTop questionFeedback {feedbackClass}" />
+											</l:content>
+										</l:VerticalLayout>
+									</f:content>
+								</f:Card>
+							</CustomListItem>
+						</List>
 					</l:content>
 				</l:VerticalLayout>
 			</ScrollContainer>

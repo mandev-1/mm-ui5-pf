@@ -3,8 +3,13 @@ sap.ui.define([
 	"sap/m/MessageToast",
 	"sap/m/MessageBox",
 	"sap/ui/core/Element",
-	"sap/ui/core/Fragment"
-], function (Controller, MessageToast, MessageBox, Element, Fragment) {
+	"sap/ui/core/Fragment",
+	"sap/m/Dialog",
+	"sap/m/Button",
+	"sap/m/Input",
+	"sap/m/TextArea",
+	"sap/m/Label"
+], function (Controller, MessageToast, MessageBox, Element, Fragment, Dialog, Button, Input, TextArea, Label) {
 	"use strict";
 
 	return Controller.extend("com.mmd.controller.App", {
@@ -36,14 +41,9 @@ sap.ui.define([
 				return oPopover;
 			});
 			
-			// Ensure home page is shown by default
+			// Router will handle navigation automatically
 			var oRouter = this.getOwnerComponent().getRouter();
 			oRouter.attachRouteMatched(this._onRouteMatched, this);
-			
-			// Navigate to home if no hash is present
-			if (!window.location.hash || window.location.hash === "#" || window.location.hash === "") {
-				this._navigateToPage("home");
-			}
 		},
 		
 		_applyTheme: function (bDark) {
@@ -52,58 +52,34 @@ sap.ui.define([
 		},
 		
 		_onRouteMatched: function (oEvent) {
+			// Update selected navigation item based on route
 			var sRouteName = oEvent.getParameter("name");
-			var sPageId;
+			var sKey;
 			
-			switch (sRouteName) {
-				case "RouteHome":
-					sPageId = "home";
-					break;
-				case "RouteDemo":
-					sPageId = "demo";
-					break;
-				case "RouteBTPApps":
-					sPageId = "btp-apps";
-					break;
-				case "RouteLLMsRAG":
-					sPageId = "llms-rag";
-					break;
-				case "RouteDataAnalytics":
-					sPageId = "data-analytics";
-					break;
-				case "RouteLowLevel":
-					sPageId = "low-level";
-					break;
-				case "RouteNetworking":
-					sPageId = "networking";
-					break;
-				case "RouteDevOps":
-					sPageId = "devops";
-					break;
-				case "RouteCloudNative":
-					sPageId = "cloud-native";
-					break;
-				case "RouteLLMOps":
-					sPageId = "llmops";
-					break;
-				case "RouteStudying42":
-					sPageId = "42-prague";
-					break;
-				case "RouteABAPDevelopment":
-					sPageId = "abap-development";
-					break;
-				case "RouteFIORIApp":
-					sPageId = "42-fiori-app";
-					break;
-				case "RouteCAPBackend":
-					sPageId = "cap-backend-certification";
-					break;
-				default:
-					sPageId = "home";
-			}
+			// Map route names to navigation keys
+			var mRouteToKey = {
+				"RouteHome": "home",
+				"RouteDemo": "demo",
+				"RouteBTPApps": "btp-apps",
+				"RouteLLMsRAG": "llms-rag",
+				"RouteDataAnalytics": "data-analytics",
+				"RouteLowLevel": "low-level",
+				"RouteNetworking": "networking",
+				"RouteDevOps": "devops",
+				"RouteCloudNative": "cloud-native",
+				"RouteLLMOps": "llmops",
+				"RouteStudying42": "42-prague",
+				"RouteABAPDevelopment": "abap-development",
+				"RouteFIORIApp": "42-fiori-app",
+				"RouteCAPBackend": "cap-backend-certification"
+			};
 			
-			if (sPageId) {
-				this._navigateToPage(sPageId);
+			sKey = mRouteToKey[sRouteName] || "home";
+			
+			// Update selected item in navigation
+			var oSideNavigation = this.byId("sideNavigation");
+			if (oSideNavigation) {
+				oSideNavigation.setSelectedKey(sKey);
 			}
 		},
 
@@ -113,7 +89,8 @@ sap.ui.define([
 		},
 
 		onHomeIconPress: function () {
-			this._navigateToPage("home");
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteHome");
 		},
 
 		onAboutPress: function () {
@@ -179,20 +156,6 @@ sap.ui.define([
 			}
 		},
 
-		_navigateToPage: function (sPageId) {
-			var oNavContainer = this.byId("pageContainer");
-			var oPage = this.byId(sPageId);
-			
-			if (oPage && oNavContainer) {
-				oNavContainer.to(oPage);
-			}
-			
-			// Update selected item in navigation
-			var oSideNavigation = this.byId("sideNavigation");
-			if (oSideNavigation) {
-				oSideNavigation.setSelectedKey(sPageId);
-			}
-		},
 
 		quickContactPress: function () {
 			if (!this.oContactDialog) {
@@ -202,29 +165,32 @@ sap.ui.define([
 					content: [
 						new Label({
 							text: "Name:",
-							labelFor: "contactName",
+							labelFor: this.getView().getId() + "--contactName",
 							required: true
 						}),
-						new Input("contactName", {
+						new Input({
+							id: this.getView().getId() + "--contactName",
 							width: "100%",
 							placeholder: "Enter your name",
 							value: ""
 						}),
 						new Label({
 							text: "LinkedIn:",
-							labelFor: "contactLinkedIn"
+							labelFor: this.getView().getId() + "--contactLinkedIn"
 						}),
-						new Input("contactLinkedIn", {
+						new Input({
+							id: this.getView().getId() + "--contactLinkedIn",
 							width: "100%",
 							placeholder: "Enter your LinkedIn profile URL",
 							value: ""
 						}),
 						new Label({
 							text: "Message:",
-							labelFor: "contactMessage",
+							labelFor: this.getView().getId() + "--contactMessage",
 							required: true
 						}),
-						new TextArea("contactMessage", {
+						new TextArea({
+							id: this.getView().getId() + "--contactMessage",
 							width: "100%",
 							rows: 5,
 							placeholder: "Enter your message",
@@ -238,9 +204,14 @@ sap.ui.define([
 						text: "Send Email",
 						icon: "sap-icon://email",
 						press: function () {
-							var sName = Element.getElementById("contactName").getValue(),
-								sLinkedIn = Element.getElementById("contactLinkedIn").getValue(),
-								sMessage = Element.getElementById("contactMessage").getValue();
+							var sViewId = this.getView().getId();
+							var oNameInput = this.byId("contactName") || Element.getElementById(sViewId + "--contactName");
+							var oLinkedInInput = this.byId("contactLinkedIn") || Element.getElementById(sViewId + "--contactLinkedIn");
+							var oMessageTextArea = this.byId("contactMessage") || Element.getElementById(sViewId + "--contactMessage");
+							
+							var sName = oNameInput ? oNameInput.getValue() : "";
+							var sLinkedIn = oLinkedInInput ? oLinkedInInput.getValue() : "";
+							var sMessage = oMessageTextArea ? oMessageTextArea.getValue() : "";
 							
 							// Validate required fields
 							if (!sName || sName.trim() === "") {
@@ -273,9 +244,9 @@ sap.ui.define([
 							this.oContactDialog.close();
 							
 							// Clear form
-							Element.getElementById("contactName").setValue("");
-							Element.getElementById("contactLinkedIn").setValue("");
-							Element.getElementById("contactMessage").setValue("");
+							if (oNameInput) oNameInput.setValue("");
+							if (oLinkedInInput) oLinkedInInput.setValue("");
+							if (oMessageTextArea) oMessageTextArea.setValue("");
 						}.bind(this)
 					}),
 					endButton: new Button({

@@ -24,21 +24,16 @@
 		</content>
 		<footer class="customFooter">
 			<OverflowToolbar class="customFooterToolbar">
-				<layout:VerticalLayout width="95%">
-					<layout:Grid defaultSpan="L6 M6 S10" hSpacing="2" width="100%">
+				<layout:VerticalLayout width="100%" class="footerContentLayout">
+					<!-- Desktop/Tablet Layout -->
+					<layout:Grid defaultSpan="L12 M12 S12" hSpacing="1" vSpacing="1" width="100%" class="sapUiHideOnPhone footerGrid">
 						<layout:content>
-							<VBox>
+							<VBox class="footerTextAreaContainer">
 								<layoutData>
-									<layout:GridData span="L3 M1 S12" />
-								</layoutData>
-								<ToolbarSpacer />
-							</VBox>
-							<VBox>
-								<layoutData>
-									<layout:GridData span="L6 M6 S12" />
+									<layout:GridData span="L8 M8 S12" />
 								</layoutData>
 								<TextArea
-									class="noticeMe"
+									class="noticeMe desktopTextArea"
 									growing="true"
 									id="queryTextArea"
 									liveChange=".onQueryTextAreaLiveChange"
@@ -46,36 +41,41 @@
 									rows="3"
 									width="100%" />
 							</VBox>
-							<VBox>
+							<VBox class="footerButtonContainer">
 								<layoutData>
-									<layout:GridData span="L3 M5 S12" />
+									<layout:GridData span="L4 M4 S12" />
 								</layoutData>
-								<ToolbarSpacer />
-								<FlexBox alignItems="Start" direction="Column">
+								<FlexBox alignItems="Center" justifyContent="End" class="footerButtonFlex">
 									<Button
-										ariaHasPopup="Dialog"
-										icon="sap-icon://action-settings"
-										press=".onOpenPopoverQuerySettings"
-										text="Open Settings" />
-									<!-- Long text for Tablet/Desktop -->
-									<Button
-									class="sapUiVisibleOnlyOnDesktop"
-									icon="ai"
-									press=".onGenerateQuery"
-									text="ASK AI TO GENERATE SELECT ... QUERY ✨"
-									type="Ghost" />
-
-									<!-- Short text for Phone -->
-									<Button
-									class="sapUiVisibleOnlyOnTablet"
-									icon="ai"
-									press=".onGenerateQuery"
-									text="GO ✨"
-									type="Ghost" />
+										class="aiChatButton"
+										icon="sap-icon://chat"
+										press=".onGenerateQuery"
+										text="Chat with my AI ✨"
+										type="Emphasized" />
 								</FlexBox>
 							</VBox>
 						</layout:content>
 					</layout:Grid>
+					<!-- Phone Layout -->
+					<layout:VerticalLayout class="sapUiVisibleOnlyOnPhone phoneFooterLayout">
+						<layout:content>
+							<TextArea
+								class="noticeMe phoneTextArea"
+								growing="true"
+								id="queryTextAreaPhone"
+								liveChange=".onQueryTextAreaLiveChange"
+								placeholder="Enter your query here please"
+								rows="2"
+								width="100%" />
+							<Button
+								class="aiChatButton phoneAiButton"
+								icon="sap-icon://chat"
+								press=".onGenerateQuery"
+								text="Chat with my AI ✨"
+								type="Emphasized"
+								width="100%" />
+						</layout:content>
+					</layout:VerticalLayout>
 				</layout:VerticalLayout>
 			</OverflowToolbar>
 		</footer>

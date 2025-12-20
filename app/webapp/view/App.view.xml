@@ -45,24 +45,7 @@
 				type="XML" />
 		</tnt:sideContent>
 		<tnt:mainContents>
-			<NavContainer id="pageContainer" initialPage="home">
-				<pages>
-					<mvc:XMLView viewName="com.mmd.view.Home" id="home" />
-					<mvc:XMLView viewName="com.mmd.view.Demo" id="demo" />
-					<mvc:XMLView viewName="com.mmd.view.BTPApps" id="btp-apps" />
-					<mvc:XMLView viewName="com.mmd.view.LLMsRAG" id="llms-rag" />
-					<mvc:XMLView viewName="com.mmd.view.DataAnalytics" id="data-analytics" />
-					<mvc:XMLView viewName="com.mmd.view.LowLevel" id="low-level" />
-					<mvc:XMLView viewName="com.mmd.view.Networking" id="networking" />
-					<mvc:XMLView viewName="com.mmd.view.DevOps" id="devops" />
-					<mvc:XMLView viewName="com.mmd.view.CloudNative" id="cloud-native" />
-					<mvc:XMLView viewName="com.mmd.view.LLMOps" id="llmops" />
-					<mvc:XMLView viewName="com.mmd.view.Studying42" id="42-prague" />
-					<mvc:XMLView viewName="com.mmd.view.ABAPDevelopment" id="abap-development" />
-					<mvc:XMLView viewName="com.mmd.view.FIORIApp" id="42-fiori-app" />
-					<mvc:XMLView viewName="com.mmd.view.CAPBackend" id="cap-backend-certification" />
-				</pages>
-			</NavContainer>
+			<App id="app" />
 		</tnt:mainContents>
 	</tnt:ToolPage>
 </mvc:View>

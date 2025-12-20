@@ -76,8 +76,8 @@
         "async": true,
         "viewPath": "com.mmd.view",
         "controlAggregation": "pages",
-        "controlId": "pageContainer",
-        "clearControlAggregation": false
+        "controlId": "app",
+        "transition": "slide"
       },
       "routes": [
         {
