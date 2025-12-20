@@ -21,6 +21,39 @@ sap.ui.define([
 			this.getView().addDelegate({
 				onAfterRendering: this._setupProfilePicture.bind(this)
 			});
+			
+			// Force center content after render
+			this.getView().addDelegate({
+				onAfterRendering: this._forceCenterContent.bind(this)
+			});
+		},
+		
+		_forceCenterContent: function() {
+			// Find the Page content area and force flexbox centering
+			var oPage = this.byId("homePage") || this.getView().byId("homePage");
+			if (oPage) {
+				var oPageDom = oPage.getDomRef();
+				if (oPageDom) {
+					var oContentArea = oPageDom.querySelector(".sapMPageContent");
+					if (oContentArea) {
+						oContentArea.style.display = "flex";
+						oContentArea.style.justifyContent = "center";
+						oContentArea.style.alignItems = "flex-start";
+						oContentArea.style.width = "100%";
+						oContentArea.style.margin = "0";
+						oContentArea.style.padding = "0";
+					}
+					
+					// Find wrapper and center it
+					var oWrapper = oPageDom.querySelector(".homeContentWrapper");
+					if (oWrapper) {
+						oWrapper.style.maxWidth = "1080px";
+						oWrapper.style.width = "100%";
+						oWrapper.style.marginLeft = "auto";
+						oWrapper.style.marginRight = "auto";
+					}
+				}
+			}
 		},
 		
 		_setupProfilePicture: function() {

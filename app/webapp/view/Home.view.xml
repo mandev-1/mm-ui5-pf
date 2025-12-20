@@ -9,276 +9,278 @@
 	xmlns:core="sap.ui.core"
 	height="100%"
 	class="homeView">
-	<Page title="Home" showNavButton="false" showHeader="false" class="homePage">
-			<l:VerticalLayout width="100%" class="homeLeftContent ">
-			<l:content>
-				<!-- Main Heading -->
-				<l:VerticalLayout class="sapUiLargeMarginTop sapUiLargeMarginBegin homeContentWidth">
-					<l:content>
-					
-					<HBox>
-					<VBox>
-						<core:HTML 
-							content="&lt;h1 class=&quot;homeHeading sparkleText&quot; id=&quot;sparkleHeading&quot;&gt;&lt;span class=&quot;headingText&quot;&gt;I &lt;span class=&quot;builtWord&quot;&gt;built&lt;span class=&quot;underline&quot;&gt;&lt;/span&gt;&lt;/span&gt; this portfolio with UI5 and CAP because why not&lt;/span&gt;&lt;/h1&gt;" />
+	<Page id="homePage" title="Home" showNavButton="false" showHeader="false" class="homePage">
+		<content>
+			<l:VerticalLayout width="100%" class="homeContentWrapper">
+				<l:content>
+					<!-- Main Heading -->
+					<l:VerticalLayout class="sapUiLargeMarginTop sapUiLargeMarginBegin homeContentWidth">
+						<l:content>
 						
-						<!-- Description Text -->
-						<Text 
-							text="I'm the Man. I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
-							class="sapUiMediumMarginTop homeDescription" />
-					</VBox>
-					<VBox>
-						<core:HTML 
-							content="&lt;div class=&quot;profilePictureContainer&quot;&gt;&lt;img id=&quot;profilePictureImg&quot; alt=&quot;Profile Picture&quot; class=&quot;profilePicture&quot; /&gt;&lt;/div&gt;" />
-					</VBox>
-					</HBox>
+						<HBox>
+						<VBox>
+							<core:HTML 
+								content="&lt;h1 class=&quot;homeHeading sparkleText&quot; id=&quot;sparkleHeading&quot;&gt;&lt;span class=&quot;headingText&quot;&gt;I &lt;span class=&quot;builtWord&quot;&gt;built&lt;span class=&quot;underline&quot;&gt;&lt;/span&gt;&lt;/span&gt; this portfolio with UI5 and CAP because why not&lt;/span&gt;&lt;/h1&gt;" />
+							
+							<!-- Description Text -->
+							<Text 
+								text="I'm the Man. I'm a young professional studying at 42, focusing on building modern applications that leverage SAP Business Technology Platform."
+								class="sapUiMediumMarginTop homeDescription" />
+						</VBox>
+						<VBox>
+							<core:HTML 
+								content="&lt;div class=&quot;profilePictureContainer&quot;&gt;&lt;img id=&quot;profilePictureImg&quot; alt=&quot;Profile Picture&quot; class=&quot;profilePicture&quot; /&gt;&lt;/div&gt;" />
+						</VBox>
+						</HBox>
+						
+						
+							<!-- Who am I Section -->
+							<Panel 
+								width="94%"
+								headerText="Who am I"
+								class="sapUiMediumMarginTop sapUiContentPadding"
+								expandable="true"
+								expanded="true">
+								<content>
+									<l:VerticalLayout class="sapUiSmallMargin">
+										<l:content>
+											<Text 
+												text="I'm currently studying at 42, where I'm developing my skills in software engineering and system design. As a young professional, I'm passionate about building modern applications that leverage SAP Business Technology Platform (BTP) to create scalable, cloud-native solutions." 
+												class="sapUiSmallMarginBottom" />
+											<Text 
+												text="My focus areas include:" 
+												class="sapUiSmallMarginTop" />
+											<List class="sapUiSmallMarginTop">
+												<StandardListItem title="SAP Cloud Application Programming (CAP)" />
+												<StandardListItem title="SAP UI5 and Fiori development" />
+												<StandardListItem title="Business Technology Platform integration" />
+												<StandardListItem title="Cloud-native architecture and deployment" />
+											</List>
+											<Link 
+												text="View my GitHub →"
+												href="https://github.com/mandev-1"
+												target="_blank"
+												class="sapUiSmallMarginTop" />
+										</l:content>
+									</l:VerticalLayout>
+								</content>
+							</Panel>
+						</l:content>
+					</l:VerticalLayout>
 					
+					<!-- Spacer to push buttons to bottom -->
+					<l:VerticalLayout class="">
+						<l:content>
+							<core:HTML 
+								content="&lt;div style=&quot;flex: 1; min-height: 100px;&quot;&gt;&lt;/div&gt;" />
+						</l:content>
+					</l:VerticalLayout>
 					
-						<!-- Who am I Section -->
-						<Panel 
-							width="94%"
-							headerText="Who am I"
-							class="sapUiMediumMarginTop sapUiContentPadding"
-							expandable="true"
-							expanded="true">
-							<content>
-								<l:VerticalLayout class="sapUiSmallMargin">
-									<l:content>
-										<Text 
-											text="I'm currently studying at 42, where I'm developing my skills in software engineering and system design. As a young professional, I'm passionate about building modern applications that leverage SAP Business Technology Platform (BTP) to create scalable, cloud-native solutions." 
-											class="sapUiSmallMarginBottom" />
-										<Text 
-											text="My focus areas include:" 
-											class="sapUiSmallMarginTop" />
-										<List class="sapUiSmallMarginTop">
-											<StandardListItem title="SAP Cloud Application Programming (CAP)" />
-											<StandardListItem title="SAP UI5 and Fiori development" />
-											<StandardListItem title="Business Technology Platform integration" />
-											<StandardListItem title="Cloud-native architecture and deployment" />
-										</List>
-										<Link 
-											text="View my GitHub →"
-											href="https://github.com/mandev-1"
-											target="_blank"
-											class="sapUiSmallMarginTop" />
-									</l:content>
-								</l:VerticalLayout>
-							</content>
-						</Panel>
-					</l:content>
-				</l:VerticalLayout>
-				
-				<!-- Spacer to push buttons to bottom -->
-				<l:VerticalLayout class="">
-					<l:content>
-						<core:HTML 
-							content="&lt;div style=&quot;flex: 1; min-height: 100px;&quot;&gt;&lt;/div&gt;" />
-					</l:content>
-				</l:VerticalLayout>
-				
-				<!-- Action Buttons -->
-				<l:HorizontalLayout class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth">
-					<l:content>
-						<Button 
-							text="View projects"
-							type="Emphasized"
-							press="onViewProjects"
-							class="homeProjectButton" />
-						<Link 
-							text="Connect professionally"
-							press="onConnectProfessionally"
-							class="sapUiMediumMarginBegin homeConnectLink" />
-					</l:content>
-				</l:HorizontalLayout>
+					<!-- Action Buttons -->
+					<l:HorizontalLayout class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth">
+						<l:content>
+							<Button 
+								text="View projects"
+								type="Emphasized"
+								press="onViewProjects"
+								class="homeProjectButton" />
+							<Link 
+								text="Connect professionally"
+								press="onConnectProfessionally"
+								class="sapUiMediumMarginBegin homeConnectLink" />
+						</l:content>
+					</l:HorizontalLayout>
 
-				<!-- Slide Tiles -->
-				<f:GridContainer id="topTilesGrid" class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth">
-					<SlideTile>
-						<layoutData>
-							<f:GridContainerItemLayoutData columns="4" rows="2" />
-						</layoutData>
-						<GenericTile
-							backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
-							frameType="TwoByOne"
-							press="goToABAPDevelopment">
-							<TileContent footer="December 20, 2025">
-								<NewsContent
-									contentText="Get ready for SAP's ABAP certification exam with me"
-									subheader="Today, SAP News" />
+					<!-- Slide Tiles -->
+					<f:GridContainer id="topTilesGrid" class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth">
+						<SlideTile>
+							<layoutData>
+								<f:GridContainerItemLayoutData columns="4" rows="2" />
+							</layoutData>
+							<GenericTile
+								backgroundImage="webapp/study_mmd.png"
+								frameType="TwoByOne"
+								press="goToABAPDevelopment">
+								<TileContent footer="December 20, 2025">
+									<NewsContent
+										contentText="Get ready for SAP's ABAP certification exam with me"
+										subheader="Today, SAP News" />
+								</TileContent>
+							</GenericTile>
+							<GenericTile
+								backgroundImage="webapp/md_progress.png"
+								frameType="TwoByOne"
+								press="pressOnTileTwo">
+								<TileContent footer="December 20, 2025">
+									<NewsContent
+										contentText="Set up a meeting with me"
+										subheader="Today, SAP News" />
+								</TileContent>
+							</GenericTile>
+						</SlideTile>
+
+						<GenericTile header="AI Demo" subheader="This thing uses LLM and MCP and all that stuff haha">
+							<layoutData>
+								<f:GridContainerItemLayoutData rows="2" columns="2" />
+							</layoutData>
+							<TileContent>
+								<ImageContent src="sap-icon://account" />
 							</TileContent>
 						</GenericTile>
-						<GenericTile
-							backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png"
-							frameType="TwoByOne"
-							press="pressOnTileTwo">
-							<TileContent footer="December 20, 2025">
-								<NewsContent
-									contentText="Set up a meeting with me"
-									subheader="Today, SAP News" />
+
+						<GenericTile header="Wtf is 42 Prague" subheader="Shoutout to the 42 Prague team for making my time there so great">
+							<layoutData>
+								<f:GridContainerItemLayoutData rows="2" columns="2" />
+							</layoutData>
+							<TileContent>
+								<ImageContent src="sap-icon://account" />
 							</TileContent>
 						</GenericTile>
-					</SlideTile>
 
-					<GenericTile header="AI Demo" subheader="This thing uses LLM and MCP and all that stuff haha">
-						<layoutData>
-							<f:GridContainerItemLayoutData rows="2" columns="2" />
-						</layoutData>
-						<TileContent>
-							<ImageContent src="sap-icon://account" />
-						</TileContent>
-					</GenericTile>
-
-					<GenericTile header="Wtf is 42 Prague" subheader="Shoutout to the 42 Prague team for making my time there so great">
-						<layoutData>
-							<f:GridContainerItemLayoutData rows="2" columns="2" />
-						</layoutData>
-						<TileContent>
-							<ImageContent src="sap-icon://account" />
-						</TileContent>
-					</GenericTile>
-
-					<GenericTile header="Profit Margin">
-						<layoutData>
-							<f:GridContainerItemLayoutData minRows="2" columns="2" />
-						</layoutData>
-						<TileContent unit="Unit">
-							<NumericContent scale="%" value="67" valueColor="Critical" indicator="Up" />
-						</TileContent>
-					</GenericTile>
-
-					<w:Card manifest="{manifests>/listContent/contacts}">
-						<w:layoutData>
-							<f:GridContainerItemLayoutData minRows="4" columns="3" />
-						</w:layoutData>
-					</w:Card>
-				</f:GridContainer>
-
-				<!-- Scrollable Grid Containers Section -->
-				<ScrollContainer
-					height="100%"
-					width="100%"
-					vertical="true"
-					class="">
-					<ToggleButton
-						id="revealGrid"
-						text="Make coding shitty again"
-						press=".onRevealGrid"
-						class="sapUiSmallMargin" />
-					<!-- <HBox width="100%">
-						<Panel headerText="Group 1" height="100%" width="100%">
+						<GenericTile header="Profit Margin">
 							<layoutData>
-								<FlexItemData baseSize="50%" growFactor="1" />
+								<f:GridContainerItemLayoutData minRows="2" columns="2" />
 							</layoutData>
+							<TileContent unit="Unit">
+								<NumericContent scale="%" value="67" valueColor="Critical" indicator="Up" />
+							</TileContent>
+						</GenericTile>
 
-							<f:GridContainer id="grid1" borderReached=".onBorderReached" width="100%">
-											<GenericTile header="Cumulative Totals" subheader="Expenses">
-									<layoutData>
-										<f:GridContainerItemLayoutData minRows="2" columns="2" />
-									</layoutData>
-									<TileContent unit="Unit" footer="Footer Text">
-										<NumericContent value="1762" icon="sap-icon://line-charts" />
-									</TileContent>
-								</GenericTile>
+						<w:Card manifest="{manifests>/listContent/contacts}">
+							<w:layoutData>
+								<f:GridContainerItemLayoutData minRows="4" columns="3" />
+							</w:layoutData>
+						</w:Card>
+					</f:GridContainer>
 
-								<w:Card manifest="{manifests>/listContent/orders}">
-									<w:layoutData>
-										<f:GridContainerItemLayoutData columns="3" />
-									</w:layoutData>
-									<w:customData>
-										<card:CardBadgeCustomData value="New" />
-										<card:CardBadgeCustomData icon="sap-icon://pushpin-off" visibilityMode="Persist" />
-									</w:customData>
-								</w:Card>
+					<!-- Scrollable Grid Containers Section -->
+					<ScrollContainer
+						height="100%"
+						width="100%"
+						vertical="true"
+						class="">
+						<ToggleButton
+							id="revealGrid"
+							text="Make coding shitty again"
+							press=".onRevealGrid"
+							class="sapUiSmallMargin" />
+						<!-- <HBox width="100%">
+							<Panel headerText="Group 1" height="100%" width="100%">
+								<layoutData>
+									<FlexItemData baseSize="50%" growFactor="1" />
+								</layoutData>
 
-								<GenericTile header="Manage Activity Master Data Type" subheader="Subtitle">
-									<layoutData>
-										<f:GridContainerItemLayoutData minRows="2" columns="2" />
-									</layoutData>
-									<TileContent>
-										<ImageContent src="sap-icon://activities" />
-									</TileContent>
-								</GenericTile>
+								<f:GridContainer id="grid1" borderReached=".onBorderReached" width="100%">
+												<GenericTile header="Cumulative Totals" subheader="Expenses">
+										<layoutData>
+											<f:GridContainerItemLayoutData minRows="2" columns="2" />
+										</layoutData>
+										<TileContent unit="Unit" footer="Footer Text">
+											<NumericContent value="1762" icon="sap-icon://line-charts" />
+										</TileContent>
+									</GenericTile>
 
-								<w:Card manifest="{manifests>/tableContent/employees}">
-									<w:layoutData>
-										<f:GridContainerItemLayoutData minRows="3" columns="4" />
-									</w:layoutData>
-								</w:Card>
-							</f:GridContainer>
-						</Panel>
+									<w:Card manifest="{manifests>/listContent/orders}">
+										<w:layoutData>
+											<f:GridContainerItemLayoutData columns="3" />
+										</w:layoutData>
+										<w:customData>
+											<card:CardBadgeCustomData value="New" />
+											<card:CardBadgeCustomData icon="sap-icon://pushpin-off" visibilityMode="Persist" />
+										</w:customData>
+									</w:Card>
 
-						<Panel headerText="Group 3" height="100%" width="100%">
-							<layoutData>
-								<FlexItemData baseSize="50%" growFactor="1" />
-							</layoutData>
+									<GenericTile header="Manage Activity Master Data Type" subheader="Subtitle">
+										<layoutData>
+											<f:GridContainerItemLayoutData minRows="2" columns="2" />
+										</layoutData>
+										<TileContent>
+											<ImageContent src="sap-icon://activities" />
+										</TileContent>
+									</GenericTile>
 
-							<f:GridContainer id="grid3" borderReached=".onBorderReached" width="100%">
+									<w:Card manifest="{manifests>/tableContent/employees}">
+										<w:layoutData>
+											<f:GridContainerItemLayoutData minRows="3" columns="4" />
+										</w:layoutData>
+									</w:Card>
+								</f:GridContainer>
+							</Panel>
 
-								<w:Card manifest="{manifests>/objectContent/contact}">
-									<w:layoutData>
-										<f:GridContainerItemLayoutData minRows="4" columns="3" />
-									</w:layoutData>
-								</w:Card>
+							<Panel headerText="Group 3" height="100%" width="100%">
+								<layoutData>
+									<FlexItemData baseSize="50%" growFactor="1" />
+								</layoutData>
 
-								<GenericTile header="Appointments management">
-									<layoutData>
-										<f:GridContainerItemLayoutData rows="2" columns="2" />
-									</layoutData>
-									<TileContent unit="EUR" footer="Current Quarter">
-										<ImageContent src="sap-icon://appointment" />
-									</TileContent>
-								</GenericTile>
+								<f:GridContainer id="grid3" borderReached=".onBorderReached" width="100%">
 
-								<GenericTile header="Sales Fulfillment Application Title" subheader="Subtitle">
-									<layoutData>
-										<f:GridContainerItemLayoutData rows="2" columns="2" />
-									</layoutData>
-									<TileContent unit="EUR" footer="Current Quarter">
-										<ImageContent src="sap-icon://home-share" />
-									</TileContent>
-								</GenericTile>
-							</f:GridContainer>
-						</Panel>
-					</HBox>
+									<w:Card manifest="{manifests>/objectContent/contact}">
+										<w:layoutData>
+											<f:GridContainerItemLayoutData minRows="4" columns="3" />
+										</w:layoutData>
+									</w:Card>
 
-					<HBox width="100%">
-						<Panel headerText="Group 4" height="100%" width="100%">
-							<layoutData>
-								<FlexItemData baseSize="50%" growFactor="1" />
-							</layoutData>
+									<GenericTile header="Appointments management">
+										<layoutData>
+											<f:GridContainerItemLayoutData rows="2" columns="2" />
+										</layoutData>
+										<TileContent unit="EUR" footer="Current Quarter">
+											<ImageContent src="sap-icon://appointment" />
+										</TileContent>
+									</GenericTile>
 
-							<f:GridContainer id="grid4" borderReached=".onBorderReached" width="100%">
-								<GenericTile header="Sales Fulfillment Application Title">
-									<layoutData>
-										<f:GridContainerItemLayoutData minRows="1" columns="2" />
-									</layoutData>
-									<TileContent unit="EUR" footer="Current Quarter" />
-								</GenericTile>
+									<GenericTile header="Sales Fulfillment Application Title" subheader="Subtitle">
+										<layoutData>
+											<f:GridContainerItemLayoutData rows="2" columns="2" />
+										</layoutData>
+										<TileContent unit="EUR" footer="Current Quarter">
+											<ImageContent src="sap-icon://home-share" />
+										</TileContent>
+									</GenericTile>
+								</f:GridContainer>
+							</Panel>
+						</HBox>
 
-								<GenericTile header="Travel and Expenses" subheader="Access Concur">
-									<layoutData>
-										<f:GridContainerItemLayoutData minRows="2" columns="2" />
-									</layoutData>
-									<TileContent>
-										<ImageContent src="sap-icon://travel-expense" />
-									</TileContent>
-								</GenericTile>
+						<HBox width="100%">
+							<Panel headerText="Group 4" height="100%" width="100%">
+								<layoutData>
+									<FlexItemData baseSize="50%" growFactor="1" />
+								</layoutData>
 
-								<w:Card manifest="{manifests>/adaptiveContent/summary}">
-									<w:layoutData>
-										<f:GridContainerItemLayoutData columns="3" />
-									</w:layoutData>
-								</w:Card>
+								<f:GridContainer id="grid4" borderReached=".onBorderReached" width="100%">
+									<GenericTile header="Sales Fulfillment Application Title">
+										<layoutData>
+											<f:GridContainerItemLayoutData minRows="1" columns="2" />
+										</layoutData>
+										<TileContent unit="EUR" footer="Current Quarter" />
+									</GenericTile>
 
-								<w:Card manifest="{manifests>/listContent/withAction}">
-									<w:layoutData>
-										<f:GridContainerItemLayoutData minRows="3" columns="3" />
-									</w:layoutData>
-								</w:Card>
-							</f:GridContainer>
-						</Panel>
-					</HBox> -->
-				</ScrollContainer>
-			</l:content>
-		</l:VerticalLayout>
+									<GenericTile header="Travel and Expenses" subheader="Access Concur">
+										<layoutData>
+											<f:GridContainerItemLayoutData minRows="2" columns="2" />
+										</layoutData>
+										<TileContent>
+											<ImageContent src="sap-icon://travel-expense" />
+										</TileContent>
+									</GenericTile>
+
+									<w:Card manifest="{manifests>/adaptiveContent/summary}">
+										<w:layoutData>
+											<f:GridContainerItemLayoutData columns="3" />
+										</w:layoutData>
+									</w:Card>
+
+									<w:Card manifest="{manifests>/listContent/withAction}">
+										<w:layoutData>
+											<f:GridContainerItemLayoutData minRows="3" columns="3" />
+										</w:layoutData>
+									</w:Card>
+								</f:GridContainer>
+							</Panel>
+						</HBox> -->
+					</ScrollContainer>
+				</l:content>
+			</l:VerticalLayout>
+		</content>
 	</Page>
 </mvc:View>
