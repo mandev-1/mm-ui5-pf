@@ -28,6 +28,13 @@
   },
   "sap.ui5": {
     "flexEnabled": false,
+    "resources": {
+      "css": [
+        {
+          "uri": "styles.css"
+        }
+      ]
+    },
     "rootView": {
       "viewName": "com.mmd.view.App",
       "type": "XML",
