@@ -67,42 +67,23 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Force Page content to be flex container and center everything */
-.homePage .sapMPageContent,
-.homePage .sapMPageContent > div,
-.homePage .sapMPageContent > * {
+/* Outer container - flexbox centering */
+.homePage .sapMPageContent {
     display: flex !important;
     justify-content: center !important;
-    align-items: flex-start !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-/* Center content with max-width using flexbox */
+/* Inner container - max-width with auto margins */
 .homeContentWrapper {
     max-width: 1080px !important;
-    width: 100% !important;
+    width: 95% !important;
     margin: 0 auto !important;
+    box-sizing: border-box !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
-    box-sizing: border-box !important;
-    flex-shrink: 0 !important;
-}
-
-/* Force the VerticalLayout to be centered */
-.homeContentWrapper.sapUiLayoutVertical {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: block !important;
-}
-
-/* Target all possible UI5 wrapper structures */
-.homePage .sapMPageContent .homeContentWrapper,
-.homePage .sapMPageContent > div .homeContentWrapper,
-.homePage .sapMPageContent > * .homeContentWrapper {
-    margin-left: auto !important;
-    margin-right: auto !important;
 }
 
 @media screen and (max-width: 1080px) {
@@ -112,6 +93,16 @@ body {
         padding-right: 1rem;
     }
 }
+
+@media screen and (min-width: 1180px) {
+    #container-mmd---home--homePage-cont {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 
 /* Dark mode background */
 @media (prefers-color-scheme: dark) {

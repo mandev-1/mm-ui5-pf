@@ -29,28 +29,26 @@ sap.ui.define([
 		},
 		
 		_forceCenterContent: function() {
-			// Find the Page content area and force flexbox centering
-			var oPage = this.byId("homePage") || this.getView().byId("homePage");
+			// Force centering using the same pattern as other site
+			var oPage = this.byId("homePage");
 			if (oPage) {
 				var oPageDom = oPage.getDomRef();
 				if (oPageDom) {
+					// Outer container - flexbox centering
 					var oContentArea = oPageDom.querySelector(".sapMPageContent");
 					if (oContentArea) {
 						oContentArea.style.display = "flex";
 						oContentArea.style.justifyContent = "center";
-						oContentArea.style.alignItems = "flex-start";
 						oContentArea.style.width = "100%";
-						oContentArea.style.margin = "0";
-						oContentArea.style.padding = "0";
 					}
 					
-					// Find wrapper and center it
+					// Inner container - max-width with auto margins
 					var oWrapper = oPageDom.querySelector(".homeContentWrapper");
 					if (oWrapper) {
 						oWrapper.style.maxWidth = "1080px";
-						oWrapper.style.width = "100%";
-						oWrapper.style.marginLeft = "auto";
-						oWrapper.style.marginRight = "auto";
+						oWrapper.style.width = "95%";
+						oWrapper.style.margin = "0 auto";
+						oWrapper.style.boxSizing = "border-box";
 					}
 				}
 			}
