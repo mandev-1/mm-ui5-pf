@@ -23,39 +23,39 @@
 			</ScrollContainer>
 		</content>
 		<footer class="customFooter">
-			<OverflowToolbar class="customFooterToolbar">
+            <OverflowToolbar class="customFooterToolbar">
 				<layout:VerticalLayout width="100%" class="footerContentLayout">
 					<!-- Desktop/Tablet Layout -->
 					<layout:Grid defaultSpan="L12 M12 S12" hSpacing="1" vSpacing="1" width="100%" class="sapUiHideOnPhone footerGrid">
-						<layout:content>
+                        <layout:content>
 							<VBox class="footerTextAreaContainer">
-								<layoutData>
+                                <layoutData>
 									<layout:GridData span="L8 M8 S12" />
-								</layoutData>
-								<TextArea
+                                </layoutData>
+                                <TextArea
 									class="noticeMe desktopTextArea"
-									growing="true"
-									id="queryTextArea"
-									liveChange=".onQueryTextAreaLiveChange"
-									placeholder="Enter your query here please"
-									rows="3"
-									width="100%" />
-							</VBox>
+                                    growing="true"
+                                    id="queryTextArea"
+                                    liveChange=".onQueryTextAreaLiveChange"
+                                    placeholder="Enter your query here please"
+                                    rows="3"
+                                    width="100%" />
+                            </VBox>
 							<VBox class="footerButtonContainer">
-								<layoutData>
+                                <layoutData>
 									<layout:GridData span="L4 M4 S12" />
-								</layoutData>
+                                </layoutData>
 								<FlexBox alignItems="Center" justifyContent="End" class="footerButtonFlex">
-									<Button
+                                    <Button
 										class="aiChatButton"
 										icon="sap-icon://chat"
-										press=".onGenerateQuery"
+                                    press=".onGenerateQuery"
 										text="Chat with my AI ✨"
 										type="Emphasized" />
-								</FlexBox>
-							</VBox>
-						</layout:content>
-					</layout:Grid>
+                                </FlexBox>
+                            </VBox>
+                        </layout:content>
+                    </layout:Grid>
 					<!-- Phone Layout -->
 					<layout:VerticalLayout class="sapUiVisibleOnlyOnPhone phoneFooterLayout">
 						<layout:content>
@@ -76,9 +76,9 @@
 								width="100%" />
 						</layout:content>
 					</layout:VerticalLayout>
-				</layout:VerticalLayout>
-			</OverflowToolbar>
-		</footer>
+                </layout:VerticalLayout>
+            </OverflowToolbar>
+        </footer>
 	</Page>
 
 

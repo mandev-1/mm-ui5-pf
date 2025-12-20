@@ -15,7 +15,7 @@
 			<StandardListItem
 				id="languageModeListItem"
 				icon="{= ${language>/mode} === 'work' ? 'sap-icon://weekend' : 'sap-icon://business-objects-experience'}"
-				title="{= ${language>/mode} === 'work' ? 'Switch to Fun Mode' : 'Switch to Work Mode'}"
+				title="{= ${language>/mode} === 'work' ? 'Switch to Weekend Mode' : 'Switch to Work Mode'}"
 				type="Active"
 				press=".onLanguageModePress" />
 		</items>

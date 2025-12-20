@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/ui/model/json/JSONModel",
-	"sap/m/MessageToast"
-], function (Controller, JSONModel, MessageToast) {
+	"sap/m/MessageToast",
+	"sap/ui/core/Fragment"
+], function (Controller, JSONModel, MessageToast, Fragment) {
 	"use strict";
 
 	return Controller.extend("com.mmd.controller.Home", {
@@ -177,7 +178,41 @@ sap.ui.define([
 		},
 		
 		pressOnTileTwo: function () {
-			MessageToast.show("Tile 2 pressed");
+			this._openMeetingDialog();
+		},
+		
+		_openMeetingDialog: function () {
+			var that = this;
+			
+			// Check if dialog already exists
+			if (!this._oMeetingDialog) {
+				// Load the dialog fragment
+				Fragment.load({
+					id: this.getView().getId(),
+					name: "com.mmd.view.fragments.MeetingDialog",
+					controller: this
+				}).then(function (oDialog) {
+					that._oMeetingDialog = oDialog;
+					that.getView().addDependent(oDialog);
+					oDialog.open();
+				});
+			} else {
+				this._oMeetingDialog.open();
+			}
+		},
+		
+		onMeetingDialogClose: function () {
+			if (this._oMeetingDialog) {
+				this._oMeetingDialog.close();
+			}
+		},
+		
+		onSendEmailPress: function () {
+			// Open email client with mailto link
+			window.location.href = "mailto:mmanbusiness1@gmail.com?subject=Meeting Request";
+			if (this._oMeetingDialog) {
+				this._oMeetingDialog.close();
+			}
 		}
 	});
 });

@@ -169,6 +169,26 @@ body {
     .abapContentLayout .sapUiVerticalLayoutContent {
         width: 100% !important;
     }
+    
+    /* Home content group - centered on mobile with small left margin */
+    .homeContentGroup {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-left: 0.5rem !important;
+        margin-right: 0 !important;
+    }
+    
+    .homeContentGroup .sapUiVerticalLayoutContent {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    
+    .homeContentGroup .sapFGridContainer {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
 }
 
 

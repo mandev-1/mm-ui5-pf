@@ -18,7 +18,7 @@ sap.ui.define([
 			// Initialize navigation
 			// Initialize language model with dark mode
 			var oLanguageModel = new sap.ui.model.json.JSONModel({
-				mode: "work", // "work" (corporate speak) or "fun" (direct language)
+				mode: "work", // "work" (corporate speak) or "weekend" (direct language)
 				darkMode: false
 			});
 			this.getView().setModel(oLanguageModel, "language");
@@ -330,7 +330,7 @@ sap.ui.define([
 				? "sap-icon://weekend" 
 				: "sap-icon://business-objects-experience";
 			var sLanguageTitle = sMode === "work" 
-				? "Switch to Fun Mode" 
+				? "Switch to Weekend Mode" 
 				: "Switch to Work Mode";
 			
 			oLanguageModeItem.setIcon(sLanguageIcon);
@@ -365,8 +365,8 @@ sap.ui.define([
 			var oLanguageModel = this.getView().getModel("language");
 			var sCurrentMode = oLanguageModel.getProperty("/mode");
 			
-			// Toggle between work (corporate speak) and fun (direct language)
-			var sNewMode = sCurrentMode === "work" ? "fun" : "work";
+			// Toggle between work (corporate speak) and weekend (direct language)
+			var sNewMode = sCurrentMode === "work" ? "weekend" : "work";
 			
 			oLanguageModel.setProperty("/mode", sNewMode);
 			
@@ -383,7 +383,7 @@ sap.ui.define([
 			
 			var sMessage = sNewMode === "work" 
 				? "Switched to work mode (corporate speak)" 
-				: "Switched to fun mode (direct language)";
+				: "Switched to weekend mode (direct language)";
 			MessageToast.show(sMessage);
 		}
 	});

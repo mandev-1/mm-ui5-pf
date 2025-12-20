@@ -1,0 +1,35 @@
+<core:FragmentDefinition 
+	xmlns="sap.m" 
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.f"
+	xmlns:card="sap.f.cards">
+	<Dialog 
+		title="Book a Meeting" 
+		contentWidth="400px" 
+		verticalScrolling="false">
+		<content>
+			<f:Card width="100%" class="sapUiSmallMarginBegin sapUiSmallMarginTop">
+				<f:header>
+					<card:Header title="Upcoming Activities" subtitle="For Today" />
+				</f:header>
+				<f:content>
+					<IllustratedMessage 
+						illustrationType="sapIllus-NoActivities"
+						title="Book a Meeting"
+						description="To book a meeting with me, just send me email invite for a date lol, i dont have that MS 365 crap haha">
+						<additionalContent>
+							<Button 
+								text="Send Email Invite" 
+								type="Emphasized"
+								press=".onSendEmailPress" />
+						</additionalContent>
+					</IllustratedMessage>
+				</f:content>
+			</f:Card>
+		</content>
+		<buttons>
+			<Button text="Close" press=".onMeetingDialogClose" />
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>
+
