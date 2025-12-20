@@ -79,6 +79,11 @@
           "target": ["TargetHome"]
         },
         {
+          "name": "RouteDemo",
+          "pattern": "demo",
+          "target": ["TargetDemo"]
+        },
+        {
           "name": "RouteBTPApps",
           "pattern": "btp-apps",
           "target": ["TargetBTPApps"]
@@ -143,6 +148,10 @@
         "TargetHome": {
           "viewId": "home",
           "viewName": "Home"
+        },
+        "TargetDemo": {
+          "viewId": "demo",
+          "viewName": "Demo"
         },
         "TargetBTPApps": {
           "viewId": "btp-apps",

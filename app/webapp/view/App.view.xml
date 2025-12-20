@@ -48,6 +48,7 @@
 			<NavContainer id="pageContainer" initialPage="home">
 				<pages>
 					<mvc:XMLView viewName="com.mmd.view.Home" id="home" />
+					<mvc:XMLView viewName="com.mmd.view.Demo" id="demo" />
 					<mvc:XMLView viewName="com.mmd.view.BTPApps" id="btp-apps" />
 					<mvc:XMLView viewName="com.mmd.view.LLMsRAG" id="llms-rag" />
 					<mvc:XMLView viewName="com.mmd.view.DataAnalytics" id="data-analytics" />

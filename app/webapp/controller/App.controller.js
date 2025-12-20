@@ -59,6 +59,9 @@ sap.ui.define([
 				case "RouteHome":
 					sPageId = "home";
 					break;
+				case "RouteDemo":
+					sPageId = "demo";
+					break;
 				case "RouteBTPApps":
 					sPageId = "btp-apps";
 					break;

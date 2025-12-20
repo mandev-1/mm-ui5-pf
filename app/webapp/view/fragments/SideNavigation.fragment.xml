@@ -19,7 +19,7 @@
 			</tnt:NavigationListGroup>
 			
 			<!-- Other Articles Group -->
-			<tnt:NavigationListGroup text="Other (articles, etc.)" expanded="true" selectable="false">
+			<tnt:NavigationListGroup text="Other (articles, etc.)" expanded="true">
 				<tnt:NavigationListItem text="Articles"  expanded="false" selectable="false">
 					<tnt:NavigationListItem text="Cloud Native" key="cloud-native" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
 					<tnt:NavigationListItem text="LLMOps" key="llmops" icon="sap-icon://e-learning" press=".onNavigationItemSelect" />
