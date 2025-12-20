@@ -14,7 +14,7 @@
 			<l:VerticalLayout width="100%" class="homeContentWrapper">
 				<l:content>
 					<!-- Main Heading -->
-					<l:VerticalLayout class="sapUiLargeMarginTop sapUiLargeMarginBegin homeContentWidth">
+					<l:VerticalLayout class="sapUiLargeMarginTop homeContentWidth homeContentMarginBegin">
 						<l:content>
 						
 						<HBox>
@@ -36,7 +36,7 @@
 						
 							<!-- Who am I Section -->
 							<Panel 
-								width="94%"
+								width="90%"
 								headerText="Who am I"
 								class="sapUiMediumMarginTop sapUiContentPadding"
 								expandable="true"
@@ -92,7 +92,7 @@
 					</l:HorizontalLayout>
 
 					<!-- Slide Tiles -->
-					<f:GridContainer id="topTilesGrid" class="sapUiLargeMarginBottom sapUiLargeMarginBegin homeContentWidth">
+					<f:GridContainer id="topTilesGrid" class="sapUiLargeMarginBottom homeContentMarginBegin sapUiNoContentPadding">
 						<SlideTile>
 							<layoutData>
 								<f:GridContainerItemLayoutData columns="4" rows="2" />

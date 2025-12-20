@@ -103,6 +103,17 @@ body {
     }
 }
 
+/* Left margin only on screens wider than phone */
+.homeContentMarginBegin {
+    margin-left: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .homeContentMarginBegin {
+        margin-left: 2rem;
+    }
+}
+
 
 /* Dark mode background */
 @media (prefers-color-scheme: dark) {
