@@ -6,7 +6,22 @@ sap.ui.define([
 
 	return Controller.extend("com.mmd.controller.FIORIApp", {
 		onInit: function () {
-			MessageToast.show("This is not available right now, due to a scheduled maintenance, lol");
+			// Controller initialization
+		},
+		
+		onSampleQuestionsPress: function () {
+			MessageToast.show("Sample questions feature coming soon!");
+			// Could navigate to a sample questions page or open a dialog
+		},
+		
+		onHomePress: function () {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteHome");
+		},
+		
+		onOtherArticlesPress: function () {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("RouteHome");
 		}
 	});
 });

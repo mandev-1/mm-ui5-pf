@@ -16,8 +16,8 @@
 		</headerContent>
 		<content>
 			<ScrollContainer horizontal="false" vertical="true" height="100%">
-				<l:VerticalLayout class="sapUiLargeMargin" width="100%">
-					<l:content>
+				<l:VerticalLayout class="sapUiLargeMargin" width="85%">
+					<l:content  width="100%">
 						<Title 
 							text="Get Ready for ABAP Development"
 							level="H1" 

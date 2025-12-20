@@ -3,19 +3,172 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.f"
 	height="100%">
-	<Page title="Get Ready for FIORI App Development" showNavButton="false">
+	<Page title="Get Ready for FIORI App Development" showNavButton="false" class="sapUiNoContentPadding">
+		<headerContent>
+			<Breadcrumbs currentLocationText="Get ready for FIORI app development">
+				<Link text="Home" press=".onHomePress" />
+				<Link text="Other (articles, etc.)" press=".onOtherArticlesPress" />
+				<Link text="Study focused applications" />
+			</Breadcrumbs>
+		</headerContent>
 		<content>
 			<ScrollContainer horizontal="false" vertical="true" height="100%">
-				<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:VerticalLayout class="sapUiLargeMargin" width="85%">
 					<l:content>
+						<!-- Breadcrumb and Certification Code -->
+						<l:VerticalLayout class="sapUiSmallMarginBottom">
+							<l:content>
+								<Text 
+									text="SAP CERTIFICATION • C_FIORD"
+									class="sapUiTinyMarginBottom"
+									style="font-size: 0.875rem; color: var(--sapNeutralTextColor, #6a6d70);" />
+							</l:content>
+						</l:VerticalLayout>
+						
+						<!-- Main Title -->
 						<Title 
-							text="Get Ready for FIORI App Development"
+							text="SAP Certified Associate - SAP Fiori Application Developer"
 							level="H1" 
-							class="sapUiSmallMarginBottom" />
-						<Text 
-							text="This page is not available right now, due to a scheduled maintenance, lol"
 							class="sapUiMediumMarginBottom" />
+						
+						<!-- Main Content Grid: Overview (Left) and Exam (Right) -->
+						<l:Grid defaultSpan="L6 M12 S12" hSpacing="2" vSpacing="2" class="sapUiMediumMarginTop">
+							<l:content>
+								<!-- Overview Panel (Left) -->
+								<Panel 
+									class="sapUiContentPadding">
+									<content>
+										<l:VerticalLayout>
+											<l:content>
+												<Title 
+													text="Overview"
+													level="H3"
+													class="sapUiSmallMarginBottom" />
+												<Text 
+													text="This certification verifies that you possess the required skills in the area of SAP Fiori application development as it pertains to the Frontend Developer profile. This certification builds on the basic knowledge gained by a developer from formal SAP Learning training and preferably refined by practical experience within a SAP Fiori application development project team in a mentored role. This is an entry level certification."
+													class="sapUiSmallMarginTop sapUiSmallMarginBottom" />
+												<ObjectStatus
+													text="Developer"
+													state="Information"
+													class="sapUiTinyMarginTop" />
+											</l:content>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+								<!-- Theoretical Exam Panel (Right) -->
+								<Panel 
+									class="sapUiContentPadding"
+									style="background-color: var(--sapGroup_ContentBackground, #f7f7f7); border-radius: 0.5rem; padding: 1.5rem;">
+									<content>
+										<l:VerticalLayout>
+											<l:content>
+												<l:HorizontalLayout class="sapUiSmallMarginBottom">
+													<l:content>
+														<core:Icon 
+															src="sap-icon://shield"
+															size="2rem"
+															color="#0070f3"
+															class="sapUiSmallMarginEnd" />
+														<l:VerticalLayout>
+															<l:content>
+																<Text 
+																	text="THEORETICAL EXAM • C_FIORD_2502"
+																	style="font-weight: 600; font-size: 1rem;" />
+															</l:content>
+														</l:VerticalLayout>
+													</l:content>
+												</l:HorizontalLayout>
+												
+												<l:VerticalLayout class="sapUiSmallMarginTop">
+													<l:content>
+														<l:HorizontalLayout class="sapUiTinyMarginBottom">
+															<l:content>
+																<core:Icon src="sap-icon://time-entry-request" size="1rem" class="sapUiTinyMarginEnd" />
+																<Text text="60 questions (2 hr)" />
+															</l:content>
+														</l:HorizontalLayout>
+														<l:HorizontalLayout class="sapUiTinyMarginBottom">
+															<l:content>
+																<core:Icon src="sap-icon://star" size="1rem" class="sapUiTinyMarginEnd" />
+																<Text text="68% cut score" />
+															</l:content>
+														</l:HorizontalLayout>
+														<l:HorizontalLayout class="sapUiTinyMarginBottom">
+															<l:content>
+																<core:Icon src="sap-icon://globe" size="1rem" class="sapUiTinyMarginEnd" />
+																<Text text="Available in EN" />
+															</l:content>
+														</l:HorizontalLayout>
+													</l:content>
+												</l:VerticalLayout>
+												
+												<l:VerticalLayout class="sapUiMediumMarginTop">
+													<l:content>
+														<Button
+															text="Sample questions"
+															type="Default"
+															icon="sap-icon://action-settings"
+															press=".onSampleQuestionsPress"
+															class="sapUiSmallMarginBottom" />
+														<Link
+															text="Log in to schedule exam"
+															href="https://learning.sap.com/my-learning/certifications?userlogin=true"
+															target="_blank" />
+													</l:content>
+												</l:VerticalLayout>
+											</l:content>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+							</l:content>
+						</l:Grid>
+						
+						<!-- Learning Journey Section -->
+						<l:VerticalLayout class="sapUiLargeMarginTop">
+							<l:content>
+								<Title 
+									text="Learning Journey to prepare for this certification"
+									level="H2"
+									class="sapUiMediumMarginBottom" />
+								
+								<Panel 
+									class="sapUiNoContentPadding"
+									style="background-color: var(--sapGroup_ContentBackground, #f7f7f7); border-radius: 0.5rem; padding: 1.5rem; max-width: 600px;">
+									<content>
+										<l:VerticalLayout>
+											<l:content>
+												<l:HorizontalLayout class="sapUiSmallMarginBottom">
+													<l:content>
+														<ObjectStatus
+															text="Free"
+															state="Success"
+															class="sapUiTinyMarginEnd" />
+														<core:Icon src="sap-icon://refresh" size="1rem" class="sapUiTinyMarginEnd" />
+														<Text text="LEARNING JOURNEY" style="font-size: 0.875rem; font-weight: 600;" />
+													</l:content>
+												</l:HorizontalLayout>
+												<Title 
+													text="Developing SAPUI5 Applications"
+													level="H3"
+													class="sapUiSmallMarginTop" />
+												<l:HorizontalLayout class="sapUiSmallMarginTop">
+													<l:content>
+														<core:Icon src="sap-icon://bar-chart" size="1rem" class="sapUiTinyMarginEnd" />
+														<Text text="Intermediate" class="sapUiSmallMarginEnd" />
+														<core:Icon src="sap-icon://time-entry-request" size="1rem" class="sapUiTinyMarginEnd" />
+														<Text text="31 hr" />
+													</l:content>
+												</l:HorizontalLayout>
+											</l:content>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+							</l:content>
+						</l:VerticalLayout>
 					</l:content>
 				</l:VerticalLayout>
 			</ScrollContainer>
