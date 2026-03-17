@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="com.mmd.controller.TopDeals"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	height="100%">
+	<Page
+		id="topDealsPage"
+		title="{i18n>topDeals.title}"
+		showNavButton="false"
+		class="sapUiNoContentPadding">
+		<content>
+			<ScrollContainer horizontal="false" vertical="true" height="100%">
+				<l:VerticalLayout class="sapUiLargeMargin" width="100%">
+					<l:content>
+						<Title level="H2" text="{i18n>topDeals.title}" class="sapUiSmallMarginBottom" />
+						<Text text="{i18n>topDeals.subtitle}" class="sapUiMediumMarginBottom" />
+
+						<Title level="H3" text="{i18n>topDeals.section.lombok}" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+						<l:Grid id="tilesLombok" class="sapUiSmallMarginBottom topDealsGrid" hSpacing="0.5" vSpacing="0.5" />
+
+						<Title level="H3" text="{i18n>topDeals.section.surfing}" class="sapUiMediumMarginTop sapUiSmallMarginBottom" />
+						<l:Grid id="tilesSurfing" class="sapUiSmallMarginBottom topDealsGrid" hSpacing="0.5" vSpacing="0.5" />
+					</l:content>
+				</l:VerticalLayout>
+			</ScrollContainer>
+		</content>
+	</Page>
+</mvc:View>

@@ -6,17 +6,17 @@
 	xmlns:core="sap.ui.core"
 	height="100%"
 	class="projectsView">
-	<Page title="Projects" showNavButton="false" class="sapUiNoContentPadding">
+	<Page title="{i18n>projects.title}" showNavButton="false" class="sapUiNoContentPadding">
 		<content>
 			<ScrollContainer horizontal="false" vertical="true" height="100%">
 				<l:VerticalLayout class="sapUiLargeMargin" width="100%">
 					<l:content>
-						<Title 
-							text="SAP Projects"
-							level="H1" 
+						<Title
+							text="{i18n>projects.title}"
+							level="H1"
 							class="sapUiSmallMarginBottom" />
-						<Text 
-							text="A collection of SAP-focused projects I've worked on."
+						<Text
+							text="{i18n>projects.subtitle}"
 							class="sapUiMediumMarginBottom projectsSubtitle" />
 						
 						<!-- Projects Grid -->

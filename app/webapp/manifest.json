@@ -149,6 +149,16 @@
           "name": "RouteCAPBackend",
           "pattern": "cap-backend-certification",
           "target": ["TargetCAPBackend"]
+        },
+        {
+          "name": "RouteProjects",
+          "pattern": "projects",
+          "target": ["TargetProjects"]
+        },
+        {
+          "name": "RouteTopDeals",
+          "pattern": "top-deals",
+          "target": ["TargetTopDeals"]
         }
       ],
       "targets": {
@@ -207,6 +217,14 @@
         "TargetCAPBackend": {
           "viewId": "cap-backend-certification",
           "viewName": "CAPBackend"
+        },
+        "TargetProjects": {
+          "viewId": "projects",
+          "viewName": "Projects"
+        },
+        "TargetTopDeals": {
+          "viewId": "top-deals",
+          "viewName": "TopDeals"
         }
       }
     }

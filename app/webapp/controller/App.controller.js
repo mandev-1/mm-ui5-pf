@@ -72,7 +72,9 @@ sap.ui.define([
 				"RouteStudying42": "42-prague",
 				"RouteABAPDevelopment": "abap-development",
 				"RouteFIORIApp": "42-fiori-app",
-				"RouteCAPBackend": "cap-backend-certification"
+				"RouteCAPBackend": "cap-backend-certification",
+				"RouteProjects": "projects",
+				"RouteTopDeals": "top-deals"
 			};
 			
 			sKey = mRouteToKey[sRouteName] || "home";
@@ -95,7 +97,8 @@ sap.ui.define([
 		},
 
 		onAboutPress: function () {
-			MessageBox.information("MMD CAP Application\n\nA minimal CAP application with UI5 frontend.");
+			var oBundle = this.getView().getModel("i18n").getResourceBundle();
+			MessageBox.information(oBundle.getText("about.text"), { title: oBundle.getText("about.title") });
 		},
 
 		onNavigationItemSelect: function (oEvent) {
@@ -147,6 +150,12 @@ sap.ui.define([
 				case "cap-backend-certification":
 					sRouteName = "RouteCAPBackend";
 					break;
+				case "projects":
+					sRouteName = "RouteProjects";
+					break;
+				case "top-deals":
+					sRouteName = "RouteTopDeals";
+					break;
 				default:
 					// Try to construct route name from key
 					sRouteName = "Route" + sKey.charAt(0).toUpperCase() + sKey.slice(1).replace(/-([a-z])/g, function(g) { return g[1].toUpperCase(); });
@@ -166,33 +175,34 @@ sap.ui.define([
 
 		quickContactPress: function () {
 			if (!this.oContactDialog) {
+				var oBundle = this.getView().getModel("i18n").getResourceBundle();
 				this.oContactDialog = new Dialog({
-					title: "Quick Contact",
+					title: oBundle.getText("quickContact.title"),
 					type: "Message",
 					content: [
 						new Label({
-							text: "Name:",
+							text: oBundle.getText("quickContact.name") + ":",
 							labelFor: this.getView().getId() + "--contactName",
 							required: true
 						}),
 						new Input({
 							id: this.getView().getId() + "--contactName",
 							width: "100%",
-							placeholder: "Enter your name",
+							placeholder: oBundle.getText("quickContact.placeholder.name"),
 							value: ""
 						}),
 						new Label({
-							text: "LinkedIn:",
+							text: oBundle.getText("quickContact.linkedin") + ":",
 							labelFor: this.getView().getId() + "--contactLinkedIn"
 						}),
 						new Input({
 							id: this.getView().getId() + "--contactLinkedIn",
 							width: "100%",
-							placeholder: "Enter your LinkedIn profile URL",
+							placeholder: oBundle.getText("quickContact.placeholder.linkedin"),
 							value: ""
 						}),
 						new Label({
-							text: "Message:",
+							text: oBundle.getText("quickContact.message") + ":",
 							labelFor: this.getView().getId() + "--contactMessage",
 							required: true
 						}),
@@ -200,7 +210,7 @@ sap.ui.define([
 							id: this.getView().getId() + "--contactMessage",
 							width: "100%",
 							rows: 5,
-							placeholder: "Enter your message",
+							placeholder: oBundle.getText("quickContact.placeholder.message"),
 							value: "",
 							growing: true,
 							growingMaxLines: 10
@@ -208,7 +218,7 @@ sap.ui.define([
 					],
 					beginButton: new Button({
 						type: "Emphasized",
-						text: "Send Email",
+						text: oBundle.getText("quickContact.send"),
 						icon: "sap-icon://email",
 						press: function () {
 							var sViewId = this.getView().getId();
@@ -257,7 +267,7 @@ sap.ui.define([
 						}.bind(this)
 					}),
 					endButton: new Button({
-						text: "Cancel",
+						text: oBundle.getText("quickContact.cancel"),
 						press: function () {
 							this.oContactDialog.close();
 						}.bind(this)

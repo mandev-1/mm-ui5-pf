@@ -823,3 +823,46 @@ body {
         content: "Send";
     }
 }
+
+/* Top Deals – flow layout; price + date visible; opaque overlay for readability */
+.topDealsGrid {
+    width: 100%;
+}
+.topDealsTile.sapMGT {
+    min-height: 11rem;
+}
+.topDealsTile.sapMGT .sapMGTContent {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Opaque overlay so price and date are always clearly visible */
+.topDealsTile.sapMGT .sapMGTContent::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.35) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+.topDealsTile.sapMGT .sapMGTContent > * {
+    position: relative;
+    z-index: 1;
+}
+.topDealsTile.sapMGT .sapMGTHdrTxt,
+.topDealsTile.sapMGT .sapMGTSubHdrTxt {
+    text-shadow: 0 1px 3px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,0.9);
+    color: #fff !important;
+}
+.topDealsTile.sapMGT .sapMTileCntFtrTxt,
+.topDealsTile.sapMGT .sapMTileCntUnit {
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,1);
+    font-weight: 700;
+}
+.topDealsTile.sapMGT .sapMTileCntUnit {
+    font-size: 1.25rem;
+}
+.topDealsTile.sapMGT .sapMTileCntFtrTxt {
+    font-size: 0.9375rem;
+}

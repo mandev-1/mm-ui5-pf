@@ -7,15 +7,13 @@
 			<StandardListItem
 				id="darkModeListItem"
 				icon="{= ${language>/darkMode} ? 'sap-icon://light-mode' : 'sap-icon://dark-mode'}"
-				title="{= ${language>/darkMode} ? 'Switch to Light Mode' : 'Switch to Dark Mode'}"
+				title="{= ${language>/darkMode} ? ${i18n>profile.lightMode} : ${i18n>profile.darkMode}}"
 				type="Active"
 				press=".onDarkModePress" />
-			
-			<!-- Language Mode Toggle -->
 			<StandardListItem
 				id="languageModeListItem"
 				icon="{= ${language>/mode} === 'work' ? 'sap-icon://palette' : 'sap-icon://business-objects-experience'}"
-				title="{= ${language>/mode} === 'work' ? 'Switch to Fun Mode (weekend)' : 'Switch to Work Mode'}"
+				title="{= ${language>/mode} === 'work' ? ${i18n>profile.funMode} : ${i18n>profile.workMode}}"
 				type="Active"
 				press=".onLanguageModePress" />
 		</items>

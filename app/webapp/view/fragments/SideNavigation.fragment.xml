@@ -4,55 +4,42 @@
 	xmlns:tnt="sap.tnt">
 	<tnt:SideNavigation id="sideNavigation" selectedKey="home" expanded="false">
 		<tnt:NavigationList expanded="false">
-			<!-- Top Level Items -->
-			<tnt:NavigationListItem text="Home" key="home" icon="sap-icon://home" press=".onNavigationItemSelect" />
-			<tnt:NavigationListItem text="Demo" key="demo" icon="sap-icon://activate" press=".onNavigationItemSelect" />
-			
-			<!-- Projects Group -->
-			<tnt:NavigationListGroup text="Projects" expanded="false">
-				<!-- <tnt:NavigationListItem text="BTP Applications - CAP and UI5" key="btp-apps" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
-				<tnt:NavigationListItem text="LLMs and RAG" key="llms-rag" icon="sap-icon://artificial-intelligence" press=".onNavigationItemSelect" /> -->
+			<tnt:NavigationListItem text="{i18n>nav.home}" key="home" icon="sap-icon://home" press=".onNavigationItemSelect" />
+			<tnt:NavigationListItem text="{i18n>nav.demo}" key="demo" icon="sap-icon://activate" press=".onNavigationItemSelect" />
+			<tnt:NavigationListItem text="{i18n>nav.topDeals}" key="top-deals" icon="sap-icon://flight" press=".onNavigationItemSelect" />
+			<tnt:NavigationListGroup text="{i18n>nav.projects}" expanded="false">
 				<tnt:NavigationListItem text="Data Analytics" key="data-analytics" icon="sap-icon://bar-chart" press=".onNavigationItemSelect" />
-				<!-- <tnt:NavigationListItem text="Low level Projects" key="low-level" icon="sap-icon://technical-object" press=".onNavigationItemSelect" />
-				<tnt:NavigationListItem text="Networking" key="networking" icon="sap-icon://connected" press=".onNavigationItemSelect" />
-				<tnt:NavigationListItem text="K8s, Docker. DevOps" key="devops" icon="sap-icon://deployment" press=".onNavigationItemSelect" /> -->
 			</tnt:NavigationListGroup>
-			
-			<!-- Articles Group -->
-			<tnt:NavigationListGroup text="Articles" expanded="false">
+			<tnt:NavigationListGroup text="{i18n>nav.articles}" expanded="false">
 				<tnt:NavigationListItem text="Cloud Native" key="cloud-native" icon="sap-icon://cloud" press=".onNavigationItemSelect" />
 				<tnt:NavigationListItem text="LLMOps" key="llmops" icon="sap-icon://e-learning" press=".onNavigationItemSelect" />
 				<tnt:NavigationListItem text="Studying at 42 Prague" key="42-prague" icon="sap-icon://study-leave" press=".onNavigationItemSelect" />
 			</tnt:NavigationListGroup>
-			
-			<!-- Study Applications Group -->
-			<tnt:NavigationListGroup text="Study Applications" expanded="false">
+			<tnt:NavigationListGroup text="{i18n>nav.studyApps}" expanded="false">
 				<tnt:NavigationListItem text="ABAP Development" key="abap-development" icon="sap-icon://education" press=".onNavigationItemSelect" />
 				<tnt:NavigationListItem text="FIORI App Development" key="42-fiori-app" icon="sap-icon://it-instance" press=".onNavigationItemSelect" />
 				<tnt:NavigationListItem text="CAP Backend Certification" key="cap-backend-certification" icon="sap-icon://laptop" press=".onNavigationItemSelect" />
 			</tnt:NavigationListGroup>
 		</tnt:NavigationList>
-		
-		<!-- Fixed Items -->
 		<tnt:fixedItem>
 			<tnt:NavigationList>
-				<tnt:NavigationListItem 
-					ariaHasPopup="Dialog" 
-					id="quickContact" 
-					press=".quickContactPress" 
-					text="Quick Contact" 
-					icon="sap-icon://email" 
-					design="Action" 
+				<tnt:NavigationListItem
+					ariaHasPopup="Dialog"
+					id="quickContact"
+					press=".quickContactPress"
+					text="{i18n>nav.quickContact}"
+					icon="sap-icon://email"
+					design="Action"
 					selectable="false" />
-				<tnt:NavigationListItem text="Martin Man" icon="sap-icon://settings" selectable="false" 
-					href="https://www.linkedin.com/in/martin1man" 
+				<tnt:NavigationListItem text="{i18n>nav.linkedin}" icon="sap-icon://linkedin" selectable="false"
+					href="https://www.linkedin.com/in/martin1man"
 					target="_blank" />
-				<tnt:NavigationListItem 
-					selectable="false" 
-					href="https://github.com/mandev-1" 
-					target="_blank" 
-					text="Any Githubs in the chat?" 
-					icon="sap-icon://attachment" />
+				<tnt:NavigationListItem
+					selectable="false"
+					href="https://github.com/mandev-1"
+					target="_blank"
+					text="{i18n>nav.github}"
+					icon="sap-icon://source-code" />
 			</tnt:NavigationList>
 		</tnt:fixedItem>
 	</tnt:SideNavigation>

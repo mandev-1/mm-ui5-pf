@@ -1,0 +1,17 @@
+{
+  "name": "flight-scraper",
+  "version": "1.0.0",
+  "description": "Dockerized flight price scraper from Prague (runs standalone, CAP app calls it)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^21.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

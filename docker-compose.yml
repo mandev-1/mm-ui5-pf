@@ -1,0 +1,37 @@
+# Run flight scraper + flight table (HeroUI v3) with Docker.
+# Usage:
+#   docker compose up -d flight-scraper flight-table   # scraper + table
+#   docker compose up -d                               # all services
+# Table: http://localhost:5174  (return flight costs by month)
+# Scraper API: http://localhost:3000/deals?origin=PRG, http://localhost:3000/calendar?origin=PRG&destination=LOP
+
+services:
+  flight-scraper:
+    build: ./flight-scraper
+    image: mmd-flight-scraper
+    container_name: flight-scraper
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      # Set SCRAPE=true to attempt Kiwi.com scraping (may be rate-limited/blocked)
+      - SCRAPE=false
+    restart: unless-stopped
+
+  flight-table:
+    build: ./flight-table
+    image: mmd-flight-table
+    container_name: flight-table
+    ports:
+      - "5174:80"
+    restart: unless-stopped
+
+  # Optional: run CAP app in Docker and point it at the scraper
+  # app:
+  #   build: .
+  #   ports:
+  #     - "4004:4004"
+  #   environment:
+  #     - FLIGHT_SCRAPER_URL=http://flight-scraper:3000
+  #   depends_on:
+  #     - flight-scraper

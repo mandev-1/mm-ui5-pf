@@ -12,8 +12,8 @@
 	<tnt:ToolPage id="toolPage">
 		<tnt:header>
 			<f:ShellBar
-				title="MMD"
-				secondTitle="Application"
+				title="{i18n>shell.title}"
+				secondTitle="{i18n>shell.secondTitle}"
 				showMenuButton="true"
 				homeIcon="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg.adapt.svg/1493030643828.svg"
 				showCopilot="true"
@@ -23,7 +23,7 @@
 				class="shellBarWithCopilot">
 				<f:menu>
 					<Menu>
-						<MenuItem text="About" icon="sap-icon://information" press="onAboutPress" />
+						<MenuItem text="{i18n>shell.about}" icon="sap-icon://information" press="onAboutPress" />
 					</Menu>
 				</f:menu>
 				<f:profile>
